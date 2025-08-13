@@ -8,7 +8,7 @@ part 'user_model.g.dart';
 /// Modello utente per l'applicazione
 @freezed
 class UserModel with _$UserModel {
-  const UserModel._(); // Aggiungi questo per metodi custom
+  const UserModel._();
 
   const factory UserModel({
     required String id,
@@ -30,6 +30,21 @@ class UserModel with _$UserModel {
 
   factory UserModel.fromJson(Map<String, dynamic> json) =>
       _$UserModelFromJson(json);
+
+  // Metodi getter custom per l'avatar
+  String get avatarUri => avatarUrl ?? '';
+
+  // Altri metodi custom utili
+  String get fullName => '$nome $cognome';
+
+  bool hasPermission(String permission) {
+    return permessi.contains(permission) || permessi.contains('all');
+  }
+
+  bool get isAdmin => ruolo == UserRole.adminStudio;
+  bool get isAvvocato => ruolo == UserRole.avvocato;
+  bool get isCliente => ruolo == UserRole.cliente;
+  bool get isGuest => ruolo == UserRole.guest;
 }
 
 /// Enum per i ruoli utente

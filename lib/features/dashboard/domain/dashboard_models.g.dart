@@ -6,8 +6,9 @@ part of 'dashboard_models.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_DashboardMetrics _$DashboardMetricsFromJson(Map<String, dynamic> json) =>
-    _DashboardMetrics(
+_$DashboardMetricsImpl _$$DashboardMetricsImplFromJson(
+        Map<String, dynamic> json) =>
+    _$DashboardMetricsImpl(
       totalAssessments: (json['totalAssessments'] as num).toInt(),
       assessmentsInProgress: (json['assessmentsInProgress'] as num).toInt(),
       assessmentsCompleted: (json['assessmentsCompleted'] as num).toInt(),
@@ -32,7 +33,8 @@ _DashboardMetrics _$DashboardMetricsFromJson(Map<String, dynamic> json) =>
           : DateTime.parse(json['lastUpdated'] as String),
     );
 
-Map<String, dynamic> _$DashboardMetricsToJson(_DashboardMetrics instance) =>
+Map<String, dynamic> _$$DashboardMetricsImplToJson(
+        _$DashboardMetricsImpl instance) =>
     <String, dynamic>{
       'totalAssessments': instance.totalAssessments,
       'assessmentsInProgress': instance.assessmentsInProgress,
@@ -49,8 +51,9 @@ Map<String, dynamic> _$DashboardMetricsToJson(_DashboardMetrics instance) =>
       'lastUpdated': instance.lastUpdated?.toIso8601String(),
     };
 
-_AssessmentSummary _$AssessmentSummaryFromJson(Map<String, dynamic> json) =>
-    _AssessmentSummary(
+_$AssessmentSummaryImpl _$$AssessmentSummaryImplFromJson(
+        Map<String, dynamic> json) =>
+    _$AssessmentSummaryImpl(
       id: json['id'] as String,
       nomeAzienda: json['nomeAzienda'] as String,
       status: json['status'] as String,
@@ -63,7 +66,8 @@ _AssessmentSummary _$AssessmentSummaryFromJson(Map<String, dynamic> json) =>
       progressPercentage: (json['progressPercentage'] as num?)?.toInt() ?? 0,
     );
 
-Map<String, dynamic> _$AssessmentSummaryToJson(_AssessmentSummary instance) =>
+Map<String, dynamic> _$$AssessmentSummaryImplToJson(
+        _$AssessmentSummaryImpl instance) =>
     <String, dynamic>{
       'id': instance.id,
       'nomeAzienda': instance.nomeAzienda,
@@ -75,7 +79,8 @@ Map<String, dynamic> _$AssessmentSummaryToJson(_AssessmentSummary instance) =>
       'progressPercentage': instance.progressPercentage,
     };
 
-_AlertItem _$AlertItemFromJson(Map<String, dynamic> json) => _AlertItem(
+_$AlertItemImpl _$$AlertItemImplFromJson(Map<String, dynamic> json) =>
+    _$AlertItemImpl(
       id: json['id'] as String,
       tipo: $enumDecode(_$AlertTypeEnumMap, json['tipo']),
       severity: $enumDecode(_$AlertSeverityEnumMap, json['severity']),
@@ -87,7 +92,7 @@ _AlertItem _$AlertItemFromJson(Map<String, dynamic> json) => _AlertItem(
       link: json['link'] as String?,
     );
 
-Map<String, dynamic> _$AlertItemToJson(_AlertItem instance) =>
+Map<String, dynamic> _$$AlertItemImplToJson(_$AlertItemImpl instance) =>
     <String, dynamic>{
       'id': instance.id,
       'tipo': _$AlertTypeEnumMap[instance.tipo]!,
@@ -114,28 +119,30 @@ const _$AlertSeverityEnumMap = {
   AlertSeverity.critical: 'critical',
 };
 
-_TimeSeriesData _$TimeSeriesDataFromJson(Map<String, dynamic> json) =>
-    _TimeSeriesData(
+_$TimeSeriesDataImpl _$$TimeSeriesDataImplFromJson(Map<String, dynamic> json) =>
+    _$TimeSeriesDataImpl(
       date: DateTime.parse(json['date'] as String),
       value: (json['value'] as num).toDouble(),
       label: json['label'] as String?,
     );
 
-Map<String, dynamic> _$TimeSeriesDataToJson(_TimeSeriesData instance) =>
+Map<String, dynamic> _$$TimeSeriesDataImplToJson(
+        _$TimeSeriesDataImpl instance) =>
     <String, dynamic>{
       'date': instance.date.toIso8601String(),
       'value': instance.value,
       'label': instance.label,
     };
 
-_ChartData _$ChartDataFromJson(Map<String, dynamic> json) => _ChartData(
+_$ChartDataImpl _$$ChartDataImplFromJson(Map<String, dynamic> json) =>
+    _$ChartDataImpl(
       label: json['label'] as String,
       value: (json['value'] as num).toDouble(),
       color: json['color'] as String?,
       metadata: json['metadata'] as Map<String, dynamic>?,
     );
 
-Map<String, dynamic> _$ChartDataToJson(_ChartData instance) =>
+Map<String, dynamic> _$$ChartDataImplToJson(_$ChartDataImpl instance) =>
     <String, dynamic>{
       'label': instance.label,
       'value': instance.value,

@@ -53,12 +53,12 @@ class AuthService {
         'cognome': 'Verdi',
         'ruolo': 'cliente',
         'azienda': 'Azienda Test S.p.A.',
-        'telefono': '+39 02 11223344',
+        'telefono': '+39 02 11111111',
         'emailVerificata': true,
         'dataCreazione': '2024-01-01T00:00:00.000Z',
         'permessi': ['assessment.read'],
       }
-    },
+    }
   };
 
   /// Effettua il login con email e password
@@ -66,70 +66,85 @@ class AuthService {
     required String email,
     required String password,
   }) async {
-    // Simula latenza di rete
+    // Simula un delay di rete
     await Future.delayed(const Duration(seconds: 1));
 
-    // Verifica credenziali mock
-    final mockUser = _mockUsers[email.toLowerCase()];
-    if (mockUser == null || mockUser['password'] != password) {
-      return null;
+    final userData = _mockUsers[email.toLowerCase()];
+    if (userData == null) {
+      throw Exception('Utente non trovato');
     }
 
-    // Crea user model
-    final userData = Map<String, dynamic>.from(mockUser['user']);
-    userData['ultimoAccesso'] = DateTime.now().toIso8601String();
-    userData['token'] = _generateMockToken(userData['id']);
-    userData['refreshToken'] = _generateMockRefreshToken(userData['id']);
-    userData['dataCreazione'] = DateTime.parse(userData['dataCreazione'] as String);
+    if (userData['password'] != password) {
+      throw Exception('Password non corretta');
+    }
 
-    final user = UserModel.fromJson(userData);
+    final userJson = Map<String, dynamic>.from(userData['user'] as Map);
+    userJson['ultimoAccesso'] = DateTime.now().toIso8601String();
+    userJson['token'] = _generateMockToken();
+    userJson['refreshToken'] = _generateMockRefreshToken();
 
-    // Salva in local storage
+    final user = UserModel.fromJson(userJson);
+
+    // Salva i dati localmente
     await _saveAuthData(user);
 
     return user;
   }
 
-  /// Login con Azure AD B2C (mock)
+  /// Login con Azure AD B2C (mock implementation)
   Future<UserModel?> loginWithAzureAD() async {
-    // Simula OAuth flow
+    // Simula un delay di rete
     await Future.delayed(const Duration(seconds: 2));
 
-    // Per testing, ritorna un utente admin
+    // Per ora ritorna l'utente admin come mock
     return login(
       email: 'admin@polisavvocati.it',
       password: 'Admin123!',
     );
   }
 
-  /// Ottiene l'utente corrente dal local storage
+  /// Ottiene l'utente corrente dal storage locale
   Future<UserModel?> getCurrentUser() async {
     try {
       final prefs = await SharedPreferences.getInstance();
-      final token = prefs.getString(_tokenKey);
-
-      if (token == null || !_isTokenValid(token)) {
-        return null;
-      }
-
       final userJson = prefs.getString(_userKey);
-      if (userJson == null) {
-        return null;
+
+      if (userJson != null) {
+        final userData = jsonDecode(userJson) as Map<String, dynamic>;
+        return UserModel.fromJson(userData);
       }
 
-      final userData = jsonDecode(userJson) as Map<String, dynamic>;
-      // Converti le date da stringhe
-      if (userData['dataCreazione'] is String) {
-        userData['dataCreazione'] = DateTime.parse(userData['dataCreazione'] as String);
-      }
-      if (userData['ultimoAccesso'] != null && userData['ultimoAccesso'] is String) {
-        userData['ultimoAccesso'] = DateTime.parse(userData['ultimoAccesso'] as String);
-      }
-
-      return UserModel.fromJson(userData);
-    } catch (e) {
-      print('Errore nel recupero utente: $e');
       return null;
+    } catch (e) {
+      return null;
+    }
+  }
+
+  /// Verifica se l'utente è autenticato
+  Future<bool> isAuthenticated() async {
+    final user = await getCurrentUser();
+    return user != null;
+  }
+
+  /// Aggiorna il token di accesso
+  Future<bool> refreshToken() async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      final refreshToken = prefs.getString(_refreshTokenKey);
+
+      if (refreshToken == null) {
+        return false;
+      }
+
+      // Simula chiamata API per refresh token
+      await Future.delayed(const Duration(seconds: 1));
+
+      final newToken = _generateMockToken();
+      await prefs.setString(_tokenKey, newToken);
+
+      return true;
+    } catch (e) {
+      return false;
     }
   }
 
@@ -141,100 +156,63 @@ class AuthService {
     await prefs.remove(_refreshTokenKey);
   }
 
-  /// Aggiorna il token
-  Future<UserModel?> refreshToken() async {
-    try {
-      final prefs = await SharedPreferences.getInstance();
-      final refreshToken = prefs.getString(_refreshTokenKey);
+  /// Aggiorna i dati dell'utente
+  Future<UserModel?> updateUserProfile(UserModel user) async {
+    // Simula update su server
+    await Future.delayed(const Duration(milliseconds: 500));
 
-      if (refreshToken == null) {
-        return null;
-      }
+    final updatedUser = user.copyWith(
+      ultimoAccesso: DateTime.now(),
+    );
 
-      // Simula refresh token
-      await Future.delayed(const Duration(milliseconds: 500));
-
-      final currentUser = await getCurrentUser();
-      if (currentUser == null) {
-        return null;
-      }
-
-      // Genera nuovo token
-      final updatedUser = currentUser.copyWith(
-        token: _generateMockToken(currentUser.id),
-        ultimoAccesso: DateTime.now(),
-      );
-
-      await _saveAuthData(updatedUser);
-      return updatedUser;
-    } catch (e) {
-      print('Errore nel refresh token: $e');
-      return null;
-    }
+    await _saveAuthData(updatedUser);
+    return updatedUser;
   }
 
-  /// Reset password (mock)
-  Future<bool> resetPassword(String email) async {
+  /// Cambia password
+  Future<bool> changePassword({
+    required String currentPassword,
+    required String newPassword,
+  }) async {
+    // Simula cambio password
     await Future.delayed(const Duration(seconds: 1));
 
-    // Verifica se l'email esiste
+    // In un'implementazione reale, qui si farebbe la chiamata API
+    return true;
+  }
+
+  /// Richiede reset password
+  Future<bool> requestPasswordReset(String email) async {
+    // Simula richiesta reset password
+    await Future.delayed(const Duration(seconds: 1));
+
+    // In un'implementazione reale, qui si farebbe la chiamata API
     return _mockUsers.containsKey(email.toLowerCase());
   }
 
-  /// Verifica se il token è valido (mock)
-  bool _isTokenValid(String token) {
-    try {
-      // Per testing, decodifica il mock token
-      final parts = token.split('.');
-      if (parts.length != 3) return false;
-
-      final payload = parts[1];
-      final decodedBytes = base64.decode(base64.normalize(payload));
-      final decodedString = utf8.decode(decodedBytes);
-      final data = jsonDecode(decodedString) as Map<String, dynamic>;
-
-      final exp = data['exp'] as int;
-      final now = DateTime.now().millisecondsSinceEpoch ~/ 1000;
-
-      return exp > now;
-    } catch (e) {
-      return false;
-    }
-  }
-
-  /// Genera un mock JWT token
-  String _generateMockToken(String userId) {
-    final header = base64.encode(utf8.encode(jsonEncode({'alg': 'HS256', 'typ': 'JWT'})));
-    final payload = base64.encode(utf8.encode(jsonEncode({
-      'sub': userId,
-      'iat': DateTime.now().millisecondsSinceEpoch ~/ 1000,
-      'exp': DateTime.now().add(const Duration(hours: 1)).millisecondsSinceEpoch ~/ 1000,
-    })));
-    final signature = base64.encode(utf8.encode('mock_signature'));
-
-    return '$header.$payload.$signature';
-  }
-
-  /// Genera un mock refresh token
-  String _generateMockRefreshToken(String userId) {
-    return base64.encode(utf8.encode('refresh_$userId_${DateTime.now().millisecondsSinceEpoch}'));
-  }
-
-  /// Salva i dati di autenticazione
+  /// Salva i dati di autenticazione localmente
   Future<void> _saveAuthData(UserModel user) async {
     final prefs = await SharedPreferences.getInstance();
-    await prefs.setString(_tokenKey, user.token ?? '');
-    await prefs.setString(_refreshTokenKey, user.refreshToken ?? '');
+    await prefs.setString(_userKey, jsonEncode(user.toJson()));
 
-    // Converti le date in stringhe per il JSON
-    final userData = user.toJson();
-    if (userData['dataCreazione'] is DateTime) {
-      userData['dataCreazione'] = (userData['dataCreazione'] as DateTime).toIso8601String();
-    }
-    if (userData['ultimoAccesso'] != null && userData['ultimoAccesso'] is DateTime) {
-      userData['ultimoAccesso'] = (userData['ultimoAccesso'] as DateTime).toIso8601String();
+    if (user.token != null) {
+      await prefs.setString(_tokenKey, user.token!);
     }
 
-    await prefs.setString(_userKey, jsonEncode(userData));
+    if (user.refreshToken != null) {
+      await prefs.setString(_refreshTokenKey, user.refreshToken!);
+    }
+  }
+
+  /// Genera un token mock
+  String _generateMockToken() {
+    final now = DateTime.now().millisecondsSinceEpoch;
+    return 'mock_token_$now';
+  }
+
+  /// Genera un refresh token mock
+  String _generateMockRefreshToken() {
+    final now = DateTime.now().millisecondsSinceEpoch;
+    return 'mock_refresh_token_$now';
   }
 }

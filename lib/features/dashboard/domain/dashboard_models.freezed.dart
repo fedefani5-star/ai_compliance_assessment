@@ -1,5 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
 // coverage:ignore-file
+// GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -9,97 +9,49 @@ part of 'dashboard_models.dart';
 // FreezedGenerator
 // **************************************************************************
 
-// dart format off
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+
+DashboardMetrics _$DashboardMetricsFromJson(Map<String, dynamic> json) {
+  return _DashboardMetrics.fromJson(json);
+}
 
 /// @nodoc
 mixin _$DashboardMetrics {
-  int get totalAssessments;
-  int get assessmentsInProgress;
-  int get assessmentsCompleted;
-  int get assessmentsUnderReview;
-  double get averageRiskScore;
-  double get complianceRate;
-  int get criticalIssues;
-  int get openMitigations;
-  List<AssessmentSummary> get recentAssessments;
-  Map<String, int> get assessmentsByStatus;
-  Map<String, double> get riskDistribution;
-  List<AlertItem> get alerts;
-  DateTime? get lastUpdated;
+  int get totalAssessments => throw _privateConstructorUsedError;
+  int get assessmentsInProgress => throw _privateConstructorUsedError;
+  int get assessmentsCompleted => throw _privateConstructorUsedError;
+  int get assessmentsUnderReview => throw _privateConstructorUsedError;
+  double get averageRiskScore => throw _privateConstructorUsedError;
+  double get complianceRate => throw _privateConstructorUsedError;
+  int get criticalIssues => throw _privateConstructorUsedError;
+  int get openMitigations => throw _privateConstructorUsedError;
+  List<AssessmentSummary> get recentAssessments =>
+      throw _privateConstructorUsedError;
+  Map<String, int> get assessmentsByStatus =>
+      throw _privateConstructorUsedError;
+  Map<String, double> get riskDistribution =>
+      throw _privateConstructorUsedError;
+  List<AlertItem> get alerts => throw _privateConstructorUsedError;
+  DateTime? get lastUpdated => throw _privateConstructorUsedError;
+
+  /// Serializes this DashboardMetrics to a JSON map.
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
 
   /// Create a copy of DashboardMetrics
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
   $DashboardMetricsCopyWith<DashboardMetrics> get copyWith =>
-      _$DashboardMetricsCopyWithImpl<DashboardMetrics>(
-          this as DashboardMetrics, _$identity);
-
-  /// Serializes this DashboardMetrics to a JSON map.
-  Map<String, dynamic> toJson();
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is DashboardMetrics &&
-            (identical(other.totalAssessments, totalAssessments) ||
-                other.totalAssessments == totalAssessments) &&
-            (identical(other.assessmentsInProgress, assessmentsInProgress) ||
-                other.assessmentsInProgress == assessmentsInProgress) &&
-            (identical(other.assessmentsCompleted, assessmentsCompleted) ||
-                other.assessmentsCompleted == assessmentsCompleted) &&
-            (identical(other.assessmentsUnderReview, assessmentsUnderReview) ||
-                other.assessmentsUnderReview == assessmentsUnderReview) &&
-            (identical(other.averageRiskScore, averageRiskScore) ||
-                other.averageRiskScore == averageRiskScore) &&
-            (identical(other.complianceRate, complianceRate) ||
-                other.complianceRate == complianceRate) &&
-            (identical(other.criticalIssues, criticalIssues) ||
-                other.criticalIssues == criticalIssues) &&
-            (identical(other.openMitigations, openMitigations) ||
-                other.openMitigations == openMitigations) &&
-            const DeepCollectionEquality()
-                .equals(other.recentAssessments, recentAssessments) &&
-            const DeepCollectionEquality()
-                .equals(other.assessmentsByStatus, assessmentsByStatus) &&
-            const DeepCollectionEquality()
-                .equals(other.riskDistribution, riskDistribution) &&
-            const DeepCollectionEquality().equals(other.alerts, alerts) &&
-            (identical(other.lastUpdated, lastUpdated) ||
-                other.lastUpdated == lastUpdated));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      totalAssessments,
-      assessmentsInProgress,
-      assessmentsCompleted,
-      assessmentsUnderReview,
-      averageRiskScore,
-      complianceRate,
-      criticalIssues,
-      openMitigations,
-      const DeepCollectionEquality().hash(recentAssessments),
-      const DeepCollectionEquality().hash(assessmentsByStatus),
-      const DeepCollectionEquality().hash(riskDistribution),
-      const DeepCollectionEquality().hash(alerts),
-      lastUpdated);
-
-  @override
-  String toString() {
-    return 'DashboardMetrics(totalAssessments: $totalAssessments, assessmentsInProgress: $assessmentsInProgress, assessmentsCompleted: $assessmentsCompleted, assessmentsUnderReview: $assessmentsUnderReview, averageRiskScore: $averageRiskScore, complianceRate: $complianceRate, criticalIssues: $criticalIssues, openMitigations: $openMitigations, recentAssessments: $recentAssessments, assessmentsByStatus: $assessmentsByStatus, riskDistribution: $riskDistribution, alerts: $alerts, lastUpdated: $lastUpdated)';
-  }
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract mixin class $DashboardMetricsCopyWith<$Res> {
+abstract class $DashboardMetricsCopyWith<$Res> {
   factory $DashboardMetricsCopyWith(
-          DashboardMetrics value, $Res Function(DashboardMetrics) _then) =
-      _$DashboardMetricsCopyWithImpl;
+          DashboardMetrics value, $Res Function(DashboardMetrics) then) =
+      _$DashboardMetricsCopyWithImpl<$Res, DashboardMetrics>;
   @useResult
   $Res call(
       {int totalAssessments,
@@ -118,12 +70,14 @@ abstract mixin class $DashboardMetricsCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$DashboardMetricsCopyWithImpl<$Res>
+class _$DashboardMetricsCopyWithImpl<$Res, $Val extends DashboardMetrics>
     implements $DashboardMetricsCopyWith<$Res> {
-  _$DashboardMetricsCopyWithImpl(this._self, this._then);
+  _$DashboardMetricsCopyWithImpl(this._value, this._then);
 
-  final DashboardMetrics _self;
-  final $Res Function(DashboardMetrics) _then;
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
   /// Create a copy of DashboardMetrics
   /// with the given fields replaced by the non-null parameter values.
@@ -144,305 +98,175 @@ class _$DashboardMetricsCopyWithImpl<$Res>
     Object? alerts = null,
     Object? lastUpdated = freezed,
   }) {
-    return _then(_self.copyWith(
+    return _then(_value.copyWith(
       totalAssessments: null == totalAssessments
-          ? _self.totalAssessments
+          ? _value.totalAssessments
           : totalAssessments // ignore: cast_nullable_to_non_nullable
               as int,
       assessmentsInProgress: null == assessmentsInProgress
-          ? _self.assessmentsInProgress
+          ? _value.assessmentsInProgress
           : assessmentsInProgress // ignore: cast_nullable_to_non_nullable
               as int,
       assessmentsCompleted: null == assessmentsCompleted
-          ? _self.assessmentsCompleted
+          ? _value.assessmentsCompleted
           : assessmentsCompleted // ignore: cast_nullable_to_non_nullable
               as int,
       assessmentsUnderReview: null == assessmentsUnderReview
-          ? _self.assessmentsUnderReview
+          ? _value.assessmentsUnderReview
           : assessmentsUnderReview // ignore: cast_nullable_to_non_nullable
               as int,
       averageRiskScore: null == averageRiskScore
-          ? _self.averageRiskScore
+          ? _value.averageRiskScore
           : averageRiskScore // ignore: cast_nullable_to_non_nullable
               as double,
       complianceRate: null == complianceRate
-          ? _self.complianceRate
+          ? _value.complianceRate
           : complianceRate // ignore: cast_nullable_to_non_nullable
               as double,
       criticalIssues: null == criticalIssues
-          ? _self.criticalIssues
+          ? _value.criticalIssues
           : criticalIssues // ignore: cast_nullable_to_non_nullable
               as int,
       openMitigations: null == openMitigations
-          ? _self.openMitigations
+          ? _value.openMitigations
           : openMitigations // ignore: cast_nullable_to_non_nullable
               as int,
       recentAssessments: null == recentAssessments
-          ? _self.recentAssessments
+          ? _value.recentAssessments
           : recentAssessments // ignore: cast_nullable_to_non_nullable
               as List<AssessmentSummary>,
       assessmentsByStatus: null == assessmentsByStatus
-          ? _self.assessmentsByStatus
+          ? _value.assessmentsByStatus
           : assessmentsByStatus // ignore: cast_nullable_to_non_nullable
               as Map<String, int>,
       riskDistribution: null == riskDistribution
-          ? _self.riskDistribution
+          ? _value.riskDistribution
           : riskDistribution // ignore: cast_nullable_to_non_nullable
               as Map<String, double>,
       alerts: null == alerts
-          ? _self.alerts
+          ? _value.alerts
           : alerts // ignore: cast_nullable_to_non_nullable
               as List<AlertItem>,
       lastUpdated: freezed == lastUpdated
-          ? _self.lastUpdated
+          ? _value.lastUpdated
+          : lastUpdated // ignore: cast_nullable_to_non_nullable
+              as DateTime?,
+    ) as $Val);
+  }
+}
+
+/// @nodoc
+abstract class _$$DashboardMetricsImplCopyWith<$Res>
+    implements $DashboardMetricsCopyWith<$Res> {
+  factory _$$DashboardMetricsImplCopyWith(_$DashboardMetricsImpl value,
+          $Res Function(_$DashboardMetricsImpl) then) =
+      __$$DashboardMetricsImplCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call(
+      {int totalAssessments,
+      int assessmentsInProgress,
+      int assessmentsCompleted,
+      int assessmentsUnderReview,
+      double averageRiskScore,
+      double complianceRate,
+      int criticalIssues,
+      int openMitigations,
+      List<AssessmentSummary> recentAssessments,
+      Map<String, int> assessmentsByStatus,
+      Map<String, double> riskDistribution,
+      List<AlertItem> alerts,
+      DateTime? lastUpdated});
+}
+
+/// @nodoc
+class __$$DashboardMetricsImplCopyWithImpl<$Res>
+    extends _$DashboardMetricsCopyWithImpl<$Res, _$DashboardMetricsImpl>
+    implements _$$DashboardMetricsImplCopyWith<$Res> {
+  __$$DashboardMetricsImplCopyWithImpl(_$DashboardMetricsImpl _value,
+      $Res Function(_$DashboardMetricsImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of DashboardMetrics
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? totalAssessments = null,
+    Object? assessmentsInProgress = null,
+    Object? assessmentsCompleted = null,
+    Object? assessmentsUnderReview = null,
+    Object? averageRiskScore = null,
+    Object? complianceRate = null,
+    Object? criticalIssues = null,
+    Object? openMitigations = null,
+    Object? recentAssessments = null,
+    Object? assessmentsByStatus = null,
+    Object? riskDistribution = null,
+    Object? alerts = null,
+    Object? lastUpdated = freezed,
+  }) {
+    return _then(_$DashboardMetricsImpl(
+      totalAssessments: null == totalAssessments
+          ? _value.totalAssessments
+          : totalAssessments // ignore: cast_nullable_to_non_nullable
+              as int,
+      assessmentsInProgress: null == assessmentsInProgress
+          ? _value.assessmentsInProgress
+          : assessmentsInProgress // ignore: cast_nullable_to_non_nullable
+              as int,
+      assessmentsCompleted: null == assessmentsCompleted
+          ? _value.assessmentsCompleted
+          : assessmentsCompleted // ignore: cast_nullable_to_non_nullable
+              as int,
+      assessmentsUnderReview: null == assessmentsUnderReview
+          ? _value.assessmentsUnderReview
+          : assessmentsUnderReview // ignore: cast_nullable_to_non_nullable
+              as int,
+      averageRiskScore: null == averageRiskScore
+          ? _value.averageRiskScore
+          : averageRiskScore // ignore: cast_nullable_to_non_nullable
+              as double,
+      complianceRate: null == complianceRate
+          ? _value.complianceRate
+          : complianceRate // ignore: cast_nullable_to_non_nullable
+              as double,
+      criticalIssues: null == criticalIssues
+          ? _value.criticalIssues
+          : criticalIssues // ignore: cast_nullable_to_non_nullable
+              as int,
+      openMitigations: null == openMitigations
+          ? _value.openMitigations
+          : openMitigations // ignore: cast_nullable_to_non_nullable
+              as int,
+      recentAssessments: null == recentAssessments
+          ? _value._recentAssessments
+          : recentAssessments // ignore: cast_nullable_to_non_nullable
+              as List<AssessmentSummary>,
+      assessmentsByStatus: null == assessmentsByStatus
+          ? _value._assessmentsByStatus
+          : assessmentsByStatus // ignore: cast_nullable_to_non_nullable
+              as Map<String, int>,
+      riskDistribution: null == riskDistribution
+          ? _value._riskDistribution
+          : riskDistribution // ignore: cast_nullable_to_non_nullable
+              as Map<String, double>,
+      alerts: null == alerts
+          ? _value._alerts
+          : alerts // ignore: cast_nullable_to_non_nullable
+              as List<AlertItem>,
+      lastUpdated: freezed == lastUpdated
+          ? _value.lastUpdated
           : lastUpdated // ignore: cast_nullable_to_non_nullable
               as DateTime?,
     ));
   }
 }
 
-/// Adds pattern-matching-related methods to [DashboardMetrics].
-extension DashboardMetricsPatterns on DashboardMetrics {
-  /// A variant of `map` that fallback to returning `orElse`.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case _:
-  ///     return orElse();
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>(
-    TResult Function(_DashboardMetrics value)? $default, {
-    required TResult orElse(),
-  }) {
-    final _that = this;
-    switch (_that) {
-      case _DashboardMetrics() when $default != null:
-        return $default(_that);
-      case _:
-        return orElse();
-    }
-  }
-
-  /// A `switch`-like method, using callbacks.
-  ///
-  /// Callbacks receives the raw object, upcasted.
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case final Subclass2 value:
-  ///     return ...;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>(
-    TResult Function(_DashboardMetrics value) $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _DashboardMetrics():
-        return $default(_that);
-      case _:
-        throw StateError('Unexpected subclass');
-    }
-  }
-
-  /// A variant of `map` that fallback to returning `null`.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case _:
-  ///     return null;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>(
-    TResult? Function(_DashboardMetrics value)? $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _DashboardMetrics() when $default != null:
-        return $default(_that);
-      case _:
-        return null;
-    }
-  }
-
-  /// A variant of `when` that fallback to an `orElse` callback.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case _:
-  ///     return orElse();
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>(
-    TResult Function(
-            int totalAssessments,
-            int assessmentsInProgress,
-            int assessmentsCompleted,
-            int assessmentsUnderReview,
-            double averageRiskScore,
-            double complianceRate,
-            int criticalIssues,
-            int openMitigations,
-            List<AssessmentSummary> recentAssessments,
-            Map<String, int> assessmentsByStatus,
-            Map<String, double> riskDistribution,
-            List<AlertItem> alerts,
-            DateTime? lastUpdated)?
-        $default, {
-    required TResult orElse(),
-  }) {
-    final _that = this;
-    switch (_that) {
-      case _DashboardMetrics() when $default != null:
-        return $default(
-            _that.totalAssessments,
-            _that.assessmentsInProgress,
-            _that.assessmentsCompleted,
-            _that.assessmentsUnderReview,
-            _that.averageRiskScore,
-            _that.complianceRate,
-            _that.criticalIssues,
-            _that.openMitigations,
-            _that.recentAssessments,
-            _that.assessmentsByStatus,
-            _that.riskDistribution,
-            _that.alerts,
-            _that.lastUpdated);
-      case _:
-        return orElse();
-    }
-  }
-
-  /// A `switch`-like method, using callbacks.
-  ///
-  /// As opposed to `map`, this offers destructuring.
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case Subclass2(:final field2):
-  ///     return ...;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>(
-    TResult Function(
-            int totalAssessments,
-            int assessmentsInProgress,
-            int assessmentsCompleted,
-            int assessmentsUnderReview,
-            double averageRiskScore,
-            double complianceRate,
-            int criticalIssues,
-            int openMitigations,
-            List<AssessmentSummary> recentAssessments,
-            Map<String, int> assessmentsByStatus,
-            Map<String, double> riskDistribution,
-            List<AlertItem> alerts,
-            DateTime? lastUpdated)
-        $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _DashboardMetrics():
-        return $default(
-            _that.totalAssessments,
-            _that.assessmentsInProgress,
-            _that.assessmentsCompleted,
-            _that.assessmentsUnderReview,
-            _that.averageRiskScore,
-            _that.complianceRate,
-            _that.criticalIssues,
-            _that.openMitigations,
-            _that.recentAssessments,
-            _that.assessmentsByStatus,
-            _that.riskDistribution,
-            _that.alerts,
-            _that.lastUpdated);
-      case _:
-        throw StateError('Unexpected subclass');
-    }
-  }
-
-  /// A variant of `when` that fallback to returning `null`
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case _:
-  ///     return null;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>(
-    TResult? Function(
-            int totalAssessments,
-            int assessmentsInProgress,
-            int assessmentsCompleted,
-            int assessmentsUnderReview,
-            double averageRiskScore,
-            double complianceRate,
-            int criticalIssues,
-            int openMitigations,
-            List<AssessmentSummary> recentAssessments,
-            Map<String, int> assessmentsByStatus,
-            Map<String, double> riskDistribution,
-            List<AlertItem> alerts,
-            DateTime? lastUpdated)?
-        $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _DashboardMetrics() when $default != null:
-        return $default(
-            _that.totalAssessments,
-            _that.assessmentsInProgress,
-            _that.assessmentsCompleted,
-            _that.assessmentsUnderReview,
-            _that.averageRiskScore,
-            _that.complianceRate,
-            _that.criticalIssues,
-            _that.openMitigations,
-            _that.recentAssessments,
-            _that.assessmentsByStatus,
-            _that.riskDistribution,
-            _that.alerts,
-            _that.lastUpdated);
-      case _:
-        return null;
-    }
-  }
-}
-
 /// @nodoc
 @JsonSerializable()
-class _DashboardMetrics extends DashboardMetrics {
-  const _DashboardMetrics(
+class _$DashboardMetricsImpl extends _DashboardMetrics {
+  const _$DashboardMetricsImpl(
       {required this.totalAssessments,
       required this.assessmentsInProgress,
       required this.assessmentsCompleted,
@@ -461,8 +285,9 @@ class _DashboardMetrics extends DashboardMetrics {
         _riskDistribution = riskDistribution,
         _alerts = alerts,
         super._();
-  factory _DashboardMetrics.fromJson(Map<String, dynamic> json) =>
-      _$DashboardMetricsFromJson(json);
+
+  factory _$DashboardMetricsImpl.fromJson(Map<String, dynamic> json) =>
+      _$$DashboardMetricsImplFromJson(json);
 
   @override
   final int totalAssessments;
@@ -517,26 +342,16 @@ class _DashboardMetrics extends DashboardMetrics {
   @override
   final DateTime? lastUpdated;
 
-  /// Create a copy of DashboardMetrics
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  _$DashboardMetricsCopyWith<_DashboardMetrics> get copyWith =>
-      __$DashboardMetricsCopyWithImpl<_DashboardMetrics>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$DashboardMetricsToJson(
-      this,
-    );
+  String toString() {
+    return 'DashboardMetrics(totalAssessments: $totalAssessments, assessmentsInProgress: $assessmentsInProgress, assessmentsCompleted: $assessmentsCompleted, assessmentsUnderReview: $assessmentsUnderReview, averageRiskScore: $averageRiskScore, complianceRate: $complianceRate, criticalIssues: $criticalIssues, openMitigations: $openMitigations, recentAssessments: $recentAssessments, assessmentsByStatus: $assessmentsByStatus, riskDistribution: $riskDistribution, alerts: $alerts, lastUpdated: $lastUpdated)';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _DashboardMetrics &&
+            other is _$DashboardMetricsImpl &&
             (identical(other.totalAssessments, totalAssessments) ||
                 other.totalAssessments == totalAssessments) &&
             (identical(other.assessmentsInProgress, assessmentsInProgress) ||
@@ -582,187 +397,108 @@ class _DashboardMetrics extends DashboardMetrics {
       const DeepCollectionEquality().hash(_alerts),
       lastUpdated);
 
+  /// Create a copy of DashboardMetrics
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  String toString() {
-    return 'DashboardMetrics(totalAssessments: $totalAssessments, assessmentsInProgress: $assessmentsInProgress, assessmentsCompleted: $assessmentsCompleted, assessmentsUnderReview: $assessmentsUnderReview, averageRiskScore: $averageRiskScore, complianceRate: $complianceRate, criticalIssues: $criticalIssues, openMitigations: $openMitigations, recentAssessments: $recentAssessments, assessmentsByStatus: $assessmentsByStatus, riskDistribution: $riskDistribution, alerts: $alerts, lastUpdated: $lastUpdated)';
+  @pragma('vm:prefer-inline')
+  _$$DashboardMetricsImplCopyWith<_$DashboardMetricsImpl> get copyWith =>
+      __$$DashboardMetricsImplCopyWithImpl<_$DashboardMetricsImpl>(
+          this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$DashboardMetricsImplToJson(
+      this,
+    );
   }
 }
 
-/// @nodoc
-abstract mixin class _$DashboardMetricsCopyWith<$Res>
-    implements $DashboardMetricsCopyWith<$Res> {
-  factory _$DashboardMetricsCopyWith(
-          _DashboardMetrics value, $Res Function(_DashboardMetrics) _then) =
-      __$DashboardMetricsCopyWithImpl;
+abstract class _DashboardMetrics extends DashboardMetrics {
+  const factory _DashboardMetrics(
+      {required final int totalAssessments,
+      required final int assessmentsInProgress,
+      required final int assessmentsCompleted,
+      required final int assessmentsUnderReview,
+      required final double averageRiskScore,
+      required final double complianceRate,
+      required final int criticalIssues,
+      required final int openMitigations,
+      required final List<AssessmentSummary> recentAssessments,
+      required final Map<String, int> assessmentsByStatus,
+      required final Map<String, double> riskDistribution,
+      required final List<AlertItem> alerts,
+      final DateTime? lastUpdated}) = _$DashboardMetricsImpl;
+  const _DashboardMetrics._() : super._();
+
+  factory _DashboardMetrics.fromJson(Map<String, dynamic> json) =
+      _$DashboardMetricsImpl.fromJson;
+
   @override
-  @useResult
-  $Res call(
-      {int totalAssessments,
-      int assessmentsInProgress,
-      int assessmentsCompleted,
-      int assessmentsUnderReview,
-      double averageRiskScore,
-      double complianceRate,
-      int criticalIssues,
-      int openMitigations,
-      List<AssessmentSummary> recentAssessments,
-      Map<String, int> assessmentsByStatus,
-      Map<String, double> riskDistribution,
-      List<AlertItem> alerts,
-      DateTime? lastUpdated});
-}
-
-/// @nodoc
-class __$DashboardMetricsCopyWithImpl<$Res>
-    implements _$DashboardMetricsCopyWith<$Res> {
-  __$DashboardMetricsCopyWithImpl(this._self, this._then);
-
-  final _DashboardMetrics _self;
-  final $Res Function(_DashboardMetrics) _then;
+  int get totalAssessments;
+  @override
+  int get assessmentsInProgress;
+  @override
+  int get assessmentsCompleted;
+  @override
+  int get assessmentsUnderReview;
+  @override
+  double get averageRiskScore;
+  @override
+  double get complianceRate;
+  @override
+  int get criticalIssues;
+  @override
+  int get openMitigations;
+  @override
+  List<AssessmentSummary> get recentAssessments;
+  @override
+  Map<String, int> get assessmentsByStatus;
+  @override
+  Map<String, double> get riskDistribution;
+  @override
+  List<AlertItem> get alerts;
+  @override
+  DateTime? get lastUpdated;
 
   /// Create a copy of DashboardMetrics
   /// with the given fields replaced by the non-null parameter values.
   @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? totalAssessments = null,
-    Object? assessmentsInProgress = null,
-    Object? assessmentsCompleted = null,
-    Object? assessmentsUnderReview = null,
-    Object? averageRiskScore = null,
-    Object? complianceRate = null,
-    Object? criticalIssues = null,
-    Object? openMitigations = null,
-    Object? recentAssessments = null,
-    Object? assessmentsByStatus = null,
-    Object? riskDistribution = null,
-    Object? alerts = null,
-    Object? lastUpdated = freezed,
-  }) {
-    return _then(_DashboardMetrics(
-      totalAssessments: null == totalAssessments
-          ? _self.totalAssessments
-          : totalAssessments // ignore: cast_nullable_to_non_nullable
-              as int,
-      assessmentsInProgress: null == assessmentsInProgress
-          ? _self.assessmentsInProgress
-          : assessmentsInProgress // ignore: cast_nullable_to_non_nullable
-              as int,
-      assessmentsCompleted: null == assessmentsCompleted
-          ? _self.assessmentsCompleted
-          : assessmentsCompleted // ignore: cast_nullable_to_non_nullable
-              as int,
-      assessmentsUnderReview: null == assessmentsUnderReview
-          ? _self.assessmentsUnderReview
-          : assessmentsUnderReview // ignore: cast_nullable_to_non_nullable
-              as int,
-      averageRiskScore: null == averageRiskScore
-          ? _self.averageRiskScore
-          : averageRiskScore // ignore: cast_nullable_to_non_nullable
-              as double,
-      complianceRate: null == complianceRate
-          ? _self.complianceRate
-          : complianceRate // ignore: cast_nullable_to_non_nullable
-              as double,
-      criticalIssues: null == criticalIssues
-          ? _self.criticalIssues
-          : criticalIssues // ignore: cast_nullable_to_non_nullable
-              as int,
-      openMitigations: null == openMitigations
-          ? _self.openMitigations
-          : openMitigations // ignore: cast_nullable_to_non_nullable
-              as int,
-      recentAssessments: null == recentAssessments
-          ? _self._recentAssessments
-          : recentAssessments // ignore: cast_nullable_to_non_nullable
-              as List<AssessmentSummary>,
-      assessmentsByStatus: null == assessmentsByStatus
-          ? _self._assessmentsByStatus
-          : assessmentsByStatus // ignore: cast_nullable_to_non_nullable
-              as Map<String, int>,
-      riskDistribution: null == riskDistribution
-          ? _self._riskDistribution
-          : riskDistribution // ignore: cast_nullable_to_non_nullable
-              as Map<String, double>,
-      alerts: null == alerts
-          ? _self._alerts
-          : alerts // ignore: cast_nullable_to_non_nullable
-              as List<AlertItem>,
-      lastUpdated: freezed == lastUpdated
-          ? _self.lastUpdated
-          : lastUpdated // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-    ));
-  }
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$DashboardMetricsImplCopyWith<_$DashboardMetricsImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+AssessmentSummary _$AssessmentSummaryFromJson(Map<String, dynamic> json) {
+  return _AssessmentSummary.fromJson(json);
 }
 
 /// @nodoc
 mixin _$AssessmentSummary {
-  String get id;
-  String get nomeAzienda;
-  String get status;
-  double get riskScore;
-  DateTime get dataCreazione;
-  DateTime? get dataUltimaModifica;
-  String? get assignedTo;
-  int get progressPercentage;
+  String get id => throw _privateConstructorUsedError;
+  String get nomeAzienda => throw _privateConstructorUsedError;
+  String get status => throw _privateConstructorUsedError;
+  double get riskScore => throw _privateConstructorUsedError;
+  DateTime get dataCreazione => throw _privateConstructorUsedError;
+  DateTime? get dataUltimaModifica => throw _privateConstructorUsedError;
+  String? get assignedTo => throw _privateConstructorUsedError;
+  int get progressPercentage => throw _privateConstructorUsedError;
+
+  /// Serializes this AssessmentSummary to a JSON map.
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
 
   /// Create a copy of AssessmentSummary
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
   $AssessmentSummaryCopyWith<AssessmentSummary> get copyWith =>
-      _$AssessmentSummaryCopyWithImpl<AssessmentSummary>(
-          this as AssessmentSummary, _$identity);
-
-  /// Serializes this AssessmentSummary to a JSON map.
-  Map<String, dynamic> toJson();
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is AssessmentSummary &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.nomeAzienda, nomeAzienda) ||
-                other.nomeAzienda == nomeAzienda) &&
-            (identical(other.status, status) || other.status == status) &&
-            (identical(other.riskScore, riskScore) ||
-                other.riskScore == riskScore) &&
-            (identical(other.dataCreazione, dataCreazione) ||
-                other.dataCreazione == dataCreazione) &&
-            (identical(other.dataUltimaModifica, dataUltimaModifica) ||
-                other.dataUltimaModifica == dataUltimaModifica) &&
-            (identical(other.assignedTo, assignedTo) ||
-                other.assignedTo == assignedTo) &&
-            (identical(other.progressPercentage, progressPercentage) ||
-                other.progressPercentage == progressPercentage));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      id,
-      nomeAzienda,
-      status,
-      riskScore,
-      dataCreazione,
-      dataUltimaModifica,
-      assignedTo,
-      progressPercentage);
-
-  @override
-  String toString() {
-    return 'AssessmentSummary(id: $id, nomeAzienda: $nomeAzienda, status: $status, riskScore: $riskScore, dataCreazione: $dataCreazione, dataUltimaModifica: $dataUltimaModifica, assignedTo: $assignedTo, progressPercentage: $progressPercentage)';
-  }
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract mixin class $AssessmentSummaryCopyWith<$Res> {
+abstract class $AssessmentSummaryCopyWith<$Res> {
   factory $AssessmentSummaryCopyWith(
-          AssessmentSummary value, $Res Function(AssessmentSummary) _then) =
-      _$AssessmentSummaryCopyWithImpl;
+          AssessmentSummary value, $Res Function(AssessmentSummary) then) =
+      _$AssessmentSummaryCopyWithImpl<$Res, AssessmentSummary>;
   @useResult
   $Res call(
       {String id,
@@ -776,12 +512,14 @@ abstract mixin class $AssessmentSummaryCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$AssessmentSummaryCopyWithImpl<$Res>
+class _$AssessmentSummaryCopyWithImpl<$Res, $Val extends AssessmentSummary>
     implements $AssessmentSummaryCopyWith<$Res> {
-  _$AssessmentSummaryCopyWithImpl(this._self, this._then);
+  _$AssessmentSummaryCopyWithImpl(this._value, this._then);
 
-  final AssessmentSummary _self;
-  final $Res Function(AssessmentSummary) _then;
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
   /// Create a copy of AssessmentSummary
   /// with the given fields replaced by the non-null parameter values.
@@ -797,255 +535,125 @@ class _$AssessmentSummaryCopyWithImpl<$Res>
     Object? assignedTo = freezed,
     Object? progressPercentage = null,
   }) {
-    return _then(_self.copyWith(
+    return _then(_value.copyWith(
       id: null == id
-          ? _self.id
+          ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
       nomeAzienda: null == nomeAzienda
-          ? _self.nomeAzienda
+          ? _value.nomeAzienda
           : nomeAzienda // ignore: cast_nullable_to_non_nullable
               as String,
       status: null == status
-          ? _self.status
+          ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
               as String,
       riskScore: null == riskScore
-          ? _self.riskScore
+          ? _value.riskScore
           : riskScore // ignore: cast_nullable_to_non_nullable
               as double,
       dataCreazione: null == dataCreazione
-          ? _self.dataCreazione
+          ? _value.dataCreazione
           : dataCreazione // ignore: cast_nullable_to_non_nullable
               as DateTime,
       dataUltimaModifica: freezed == dataUltimaModifica
-          ? _self.dataUltimaModifica
+          ? _value.dataUltimaModifica
           : dataUltimaModifica // ignore: cast_nullable_to_non_nullable
               as DateTime?,
       assignedTo: freezed == assignedTo
-          ? _self.assignedTo
+          ? _value.assignedTo
           : assignedTo // ignore: cast_nullable_to_non_nullable
               as String?,
       progressPercentage: null == progressPercentage
-          ? _self.progressPercentage
+          ? _value.progressPercentage
+          : progressPercentage // ignore: cast_nullable_to_non_nullable
+              as int,
+    ) as $Val);
+  }
+}
+
+/// @nodoc
+abstract class _$$AssessmentSummaryImplCopyWith<$Res>
+    implements $AssessmentSummaryCopyWith<$Res> {
+  factory _$$AssessmentSummaryImplCopyWith(_$AssessmentSummaryImpl value,
+          $Res Function(_$AssessmentSummaryImpl) then) =
+      __$$AssessmentSummaryImplCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call(
+      {String id,
+      String nomeAzienda,
+      String status,
+      double riskScore,
+      DateTime dataCreazione,
+      DateTime? dataUltimaModifica,
+      String? assignedTo,
+      int progressPercentage});
+}
+
+/// @nodoc
+class __$$AssessmentSummaryImplCopyWithImpl<$Res>
+    extends _$AssessmentSummaryCopyWithImpl<$Res, _$AssessmentSummaryImpl>
+    implements _$$AssessmentSummaryImplCopyWith<$Res> {
+  __$$AssessmentSummaryImplCopyWithImpl(_$AssessmentSummaryImpl _value,
+      $Res Function(_$AssessmentSummaryImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of AssessmentSummary
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? id = null,
+    Object? nomeAzienda = null,
+    Object? status = null,
+    Object? riskScore = null,
+    Object? dataCreazione = null,
+    Object? dataUltimaModifica = freezed,
+    Object? assignedTo = freezed,
+    Object? progressPercentage = null,
+  }) {
+    return _then(_$AssessmentSummaryImpl(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      nomeAzienda: null == nomeAzienda
+          ? _value.nomeAzienda
+          : nomeAzienda // ignore: cast_nullable_to_non_nullable
+              as String,
+      status: null == status
+          ? _value.status
+          : status // ignore: cast_nullable_to_non_nullable
+              as String,
+      riskScore: null == riskScore
+          ? _value.riskScore
+          : riskScore // ignore: cast_nullable_to_non_nullable
+              as double,
+      dataCreazione: null == dataCreazione
+          ? _value.dataCreazione
+          : dataCreazione // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      dataUltimaModifica: freezed == dataUltimaModifica
+          ? _value.dataUltimaModifica
+          : dataUltimaModifica // ignore: cast_nullable_to_non_nullable
+              as DateTime?,
+      assignedTo: freezed == assignedTo
+          ? _value.assignedTo
+          : assignedTo // ignore: cast_nullable_to_non_nullable
+              as String?,
+      progressPercentage: null == progressPercentage
+          ? _value.progressPercentage
           : progressPercentage // ignore: cast_nullable_to_non_nullable
               as int,
     ));
   }
 }
 
-/// Adds pattern-matching-related methods to [AssessmentSummary].
-extension AssessmentSummaryPatterns on AssessmentSummary {
-  /// A variant of `map` that fallback to returning `orElse`.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case _:
-  ///     return orElse();
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>(
-    TResult Function(_AssessmentSummary value)? $default, {
-    required TResult orElse(),
-  }) {
-    final _that = this;
-    switch (_that) {
-      case _AssessmentSummary() when $default != null:
-        return $default(_that);
-      case _:
-        return orElse();
-    }
-  }
-
-  /// A `switch`-like method, using callbacks.
-  ///
-  /// Callbacks receives the raw object, upcasted.
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case final Subclass2 value:
-  ///     return ...;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>(
-    TResult Function(_AssessmentSummary value) $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _AssessmentSummary():
-        return $default(_that);
-      case _:
-        throw StateError('Unexpected subclass');
-    }
-  }
-
-  /// A variant of `map` that fallback to returning `null`.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case _:
-  ///     return null;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>(
-    TResult? Function(_AssessmentSummary value)? $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _AssessmentSummary() when $default != null:
-        return $default(_that);
-      case _:
-        return null;
-    }
-  }
-
-  /// A variant of `when` that fallback to an `orElse` callback.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case _:
-  ///     return orElse();
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>(
-    TResult Function(
-            String id,
-            String nomeAzienda,
-            String status,
-            double riskScore,
-            DateTime dataCreazione,
-            DateTime? dataUltimaModifica,
-            String? assignedTo,
-            int progressPercentage)?
-        $default, {
-    required TResult orElse(),
-  }) {
-    final _that = this;
-    switch (_that) {
-      case _AssessmentSummary() when $default != null:
-        return $default(
-            _that.id,
-            _that.nomeAzienda,
-            _that.status,
-            _that.riskScore,
-            _that.dataCreazione,
-            _that.dataUltimaModifica,
-            _that.assignedTo,
-            _that.progressPercentage);
-      case _:
-        return orElse();
-    }
-  }
-
-  /// A `switch`-like method, using callbacks.
-  ///
-  /// As opposed to `map`, this offers destructuring.
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case Subclass2(:final field2):
-  ///     return ...;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>(
-    TResult Function(
-            String id,
-            String nomeAzienda,
-            String status,
-            double riskScore,
-            DateTime dataCreazione,
-            DateTime? dataUltimaModifica,
-            String? assignedTo,
-            int progressPercentage)
-        $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _AssessmentSummary():
-        return $default(
-            _that.id,
-            _that.nomeAzienda,
-            _that.status,
-            _that.riskScore,
-            _that.dataCreazione,
-            _that.dataUltimaModifica,
-            _that.assignedTo,
-            _that.progressPercentage);
-      case _:
-        throw StateError('Unexpected subclass');
-    }
-  }
-
-  /// A variant of `when` that fallback to returning `null`
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case _:
-  ///     return null;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>(
-    TResult? Function(
-            String id,
-            String nomeAzienda,
-            String status,
-            double riskScore,
-            DateTime dataCreazione,
-            DateTime? dataUltimaModifica,
-            String? assignedTo,
-            int progressPercentage)?
-        $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _AssessmentSummary() when $default != null:
-        return $default(
-            _that.id,
-            _that.nomeAzienda,
-            _that.status,
-            _that.riskScore,
-            _that.dataCreazione,
-            _that.dataUltimaModifica,
-            _that.assignedTo,
-            _that.progressPercentage);
-      case _:
-        return null;
-    }
-  }
-}
-
 /// @nodoc
 @JsonSerializable()
-class _AssessmentSummary extends AssessmentSummary {
-  const _AssessmentSummary(
+class _$AssessmentSummaryImpl extends _AssessmentSummary {
+  const _$AssessmentSummaryImpl(
       {required this.id,
       required this.nomeAzienda,
       required this.status,
@@ -1055,8 +663,9 @@ class _AssessmentSummary extends AssessmentSummary {
       this.assignedTo,
       this.progressPercentage = 0})
       : super._();
-  factory _AssessmentSummary.fromJson(Map<String, dynamic> json) =>
-      _$AssessmentSummaryFromJson(json);
+
+  factory _$AssessmentSummaryImpl.fromJson(Map<String, dynamic> json) =>
+      _$$AssessmentSummaryImplFromJson(json);
 
   @override
   final String id;
@@ -1076,26 +685,16 @@ class _AssessmentSummary extends AssessmentSummary {
   @JsonKey()
   final int progressPercentage;
 
-  /// Create a copy of AssessmentSummary
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  _$AssessmentSummaryCopyWith<_AssessmentSummary> get copyWith =>
-      __$AssessmentSummaryCopyWithImpl<_AssessmentSummary>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$AssessmentSummaryToJson(
-      this,
-    );
+  String toString() {
+    return 'AssessmentSummary(id: $id, nomeAzienda: $nomeAzienda, status: $status, riskScore: $riskScore, dataCreazione: $dataCreazione, dataUltimaModifica: $dataUltimaModifica, assignedTo: $assignedTo, progressPercentage: $progressPercentage)';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _AssessmentSummary &&
+            other is _$AssessmentSummaryImpl &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.nomeAzienda, nomeAzienda) ||
                 other.nomeAzienda == nomeAzienda) &&
@@ -1125,146 +724,93 @@ class _AssessmentSummary extends AssessmentSummary {
       assignedTo,
       progressPercentage);
 
+  /// Create a copy of AssessmentSummary
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  String toString() {
-    return 'AssessmentSummary(id: $id, nomeAzienda: $nomeAzienda, status: $status, riskScore: $riskScore, dataCreazione: $dataCreazione, dataUltimaModifica: $dataUltimaModifica, assignedTo: $assignedTo, progressPercentage: $progressPercentage)';
+  @pragma('vm:prefer-inline')
+  _$$AssessmentSummaryImplCopyWith<_$AssessmentSummaryImpl> get copyWith =>
+      __$$AssessmentSummaryImplCopyWithImpl<_$AssessmentSummaryImpl>(
+          this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$AssessmentSummaryImplToJson(
+      this,
+    );
   }
 }
 
-/// @nodoc
-abstract mixin class _$AssessmentSummaryCopyWith<$Res>
-    implements $AssessmentSummaryCopyWith<$Res> {
-  factory _$AssessmentSummaryCopyWith(
-          _AssessmentSummary value, $Res Function(_AssessmentSummary) _then) =
-      __$AssessmentSummaryCopyWithImpl;
+abstract class _AssessmentSummary extends AssessmentSummary {
+  const factory _AssessmentSummary(
+      {required final String id,
+      required final String nomeAzienda,
+      required final String status,
+      required final double riskScore,
+      required final DateTime dataCreazione,
+      final DateTime? dataUltimaModifica,
+      final String? assignedTo,
+      final int progressPercentage}) = _$AssessmentSummaryImpl;
+  const _AssessmentSummary._() : super._();
+
+  factory _AssessmentSummary.fromJson(Map<String, dynamic> json) =
+      _$AssessmentSummaryImpl.fromJson;
+
   @override
-  @useResult
-  $Res call(
-      {String id,
-      String nomeAzienda,
-      String status,
-      double riskScore,
-      DateTime dataCreazione,
-      DateTime? dataUltimaModifica,
-      String? assignedTo,
-      int progressPercentage});
-}
-
-/// @nodoc
-class __$AssessmentSummaryCopyWithImpl<$Res>
-    implements _$AssessmentSummaryCopyWith<$Res> {
-  __$AssessmentSummaryCopyWithImpl(this._self, this._then);
-
-  final _AssessmentSummary _self;
-  final $Res Function(_AssessmentSummary) _then;
+  String get id;
+  @override
+  String get nomeAzienda;
+  @override
+  String get status;
+  @override
+  double get riskScore;
+  @override
+  DateTime get dataCreazione;
+  @override
+  DateTime? get dataUltimaModifica;
+  @override
+  String? get assignedTo;
+  @override
+  int get progressPercentage;
 
   /// Create a copy of AssessmentSummary
   /// with the given fields replaced by the non-null parameter values.
   @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = null,
-    Object? nomeAzienda = null,
-    Object? status = null,
-    Object? riskScore = null,
-    Object? dataCreazione = null,
-    Object? dataUltimaModifica = freezed,
-    Object? assignedTo = freezed,
-    Object? progressPercentage = null,
-  }) {
-    return _then(_AssessmentSummary(
-      id: null == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
-      nomeAzienda: null == nomeAzienda
-          ? _self.nomeAzienda
-          : nomeAzienda // ignore: cast_nullable_to_non_nullable
-              as String,
-      status: null == status
-          ? _self.status
-          : status // ignore: cast_nullable_to_non_nullable
-              as String,
-      riskScore: null == riskScore
-          ? _self.riskScore
-          : riskScore // ignore: cast_nullable_to_non_nullable
-              as double,
-      dataCreazione: null == dataCreazione
-          ? _self.dataCreazione
-          : dataCreazione // ignore: cast_nullable_to_non_nullable
-              as DateTime,
-      dataUltimaModifica: freezed == dataUltimaModifica
-          ? _self.dataUltimaModifica
-          : dataUltimaModifica // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      assignedTo: freezed == assignedTo
-          ? _self.assignedTo
-          : assignedTo // ignore: cast_nullable_to_non_nullable
-              as String?,
-      progressPercentage: null == progressPercentage
-          ? _self.progressPercentage
-          : progressPercentage // ignore: cast_nullable_to_non_nullable
-              as int,
-    ));
-  }
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$AssessmentSummaryImplCopyWith<_$AssessmentSummaryImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+AlertItem _$AlertItemFromJson(Map<String, dynamic> json) {
+  return _AlertItem.fromJson(json);
 }
 
 /// @nodoc
 mixin _$AlertItem {
-  String get id;
-  AlertType get tipo;
-  AlertSeverity get severity;
-  String get titolo;
-  String get descrizione;
-  DateTime get data;
-  bool get letto;
-  String? get assessmentId;
-  String? get link;
+  String get id => throw _privateConstructorUsedError;
+  AlertType get tipo => throw _privateConstructorUsedError;
+  AlertSeverity get severity => throw _privateConstructorUsedError;
+  String get titolo => throw _privateConstructorUsedError;
+  String get descrizione => throw _privateConstructorUsedError;
+  DateTime get data => throw _privateConstructorUsedError;
+  bool get letto => throw _privateConstructorUsedError;
+  String? get assessmentId => throw _privateConstructorUsedError;
+  String? get link => throw _privateConstructorUsedError;
+
+  /// Serializes this AlertItem to a JSON map.
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
 
   /// Create a copy of AlertItem
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
   $AlertItemCopyWith<AlertItem> get copyWith =>
-      _$AlertItemCopyWithImpl<AlertItem>(this as AlertItem, _$identity);
-
-  /// Serializes this AlertItem to a JSON map.
-  Map<String, dynamic> toJson();
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is AlertItem &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.tipo, tipo) || other.tipo == tipo) &&
-            (identical(other.severity, severity) ||
-                other.severity == severity) &&
-            (identical(other.titolo, titolo) || other.titolo == titolo) &&
-            (identical(other.descrizione, descrizione) ||
-                other.descrizione == descrizione) &&
-            (identical(other.data, data) || other.data == data) &&
-            (identical(other.letto, letto) || other.letto == letto) &&
-            (identical(other.assessmentId, assessmentId) ||
-                other.assessmentId == assessmentId) &&
-            (identical(other.link, link) || other.link == link));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, id, tipo, severity, titolo,
-      descrizione, data, letto, assessmentId, link);
-
-  @override
-  String toString() {
-    return 'AlertItem(id: $id, tipo: $tipo, severity: $severity, titolo: $titolo, descrizione: $descrizione, data: $data, letto: $letto, assessmentId: $assessmentId, link: $link)';
-  }
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract mixin class $AlertItemCopyWith<$Res> {
-  factory $AlertItemCopyWith(AlertItem value, $Res Function(AlertItem) _then) =
-      _$AlertItemCopyWithImpl;
+abstract class $AlertItemCopyWith<$Res> {
+  factory $AlertItemCopyWith(AlertItem value, $Res Function(AlertItem) then) =
+      _$AlertItemCopyWithImpl<$Res, AlertItem>;
   @useResult
   $Res call(
       {String id,
@@ -1279,11 +825,14 @@ abstract mixin class $AlertItemCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$AlertItemCopyWithImpl<$Res> implements $AlertItemCopyWith<$Res> {
-  _$AlertItemCopyWithImpl(this._self, this._then);
+class _$AlertItemCopyWithImpl<$Res, $Val extends AlertItem>
+    implements $AlertItemCopyWith<$Res> {
+  _$AlertItemCopyWithImpl(this._value, this._then);
 
-  final AlertItem _self;
-  final $Res Function(AlertItem) _then;
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
   /// Create a copy of AlertItem
   /// with the given fields replaced by the non-null parameter values.
@@ -1300,265 +849,135 @@ class _$AlertItemCopyWithImpl<$Res> implements $AlertItemCopyWith<$Res> {
     Object? assessmentId = freezed,
     Object? link = freezed,
   }) {
-    return _then(_self.copyWith(
+    return _then(_value.copyWith(
       id: null == id
-          ? _self.id
+          ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
       tipo: null == tipo
-          ? _self.tipo
+          ? _value.tipo
           : tipo // ignore: cast_nullable_to_non_nullable
               as AlertType,
       severity: null == severity
-          ? _self.severity
+          ? _value.severity
           : severity // ignore: cast_nullable_to_non_nullable
               as AlertSeverity,
       titolo: null == titolo
-          ? _self.titolo
+          ? _value.titolo
           : titolo // ignore: cast_nullable_to_non_nullable
               as String,
       descrizione: null == descrizione
-          ? _self.descrizione
+          ? _value.descrizione
           : descrizione // ignore: cast_nullable_to_non_nullable
               as String,
       data: null == data
-          ? _self.data
+          ? _value.data
           : data // ignore: cast_nullable_to_non_nullable
               as DateTime,
       letto: null == letto
-          ? _self.letto
+          ? _value.letto
           : letto // ignore: cast_nullable_to_non_nullable
               as bool,
       assessmentId: freezed == assessmentId
-          ? _self.assessmentId
+          ? _value.assessmentId
           : assessmentId // ignore: cast_nullable_to_non_nullable
               as String?,
       link: freezed == link
-          ? _self.link
+          ? _value.link
+          : link // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ) as $Val);
+  }
+}
+
+/// @nodoc
+abstract class _$$AlertItemImplCopyWith<$Res>
+    implements $AlertItemCopyWith<$Res> {
+  factory _$$AlertItemImplCopyWith(
+          _$AlertItemImpl value, $Res Function(_$AlertItemImpl) then) =
+      __$$AlertItemImplCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call(
+      {String id,
+      AlertType tipo,
+      AlertSeverity severity,
+      String titolo,
+      String descrizione,
+      DateTime data,
+      bool letto,
+      String? assessmentId,
+      String? link});
+}
+
+/// @nodoc
+class __$$AlertItemImplCopyWithImpl<$Res>
+    extends _$AlertItemCopyWithImpl<$Res, _$AlertItemImpl>
+    implements _$$AlertItemImplCopyWith<$Res> {
+  __$$AlertItemImplCopyWithImpl(
+      _$AlertItemImpl _value, $Res Function(_$AlertItemImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of AlertItem
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? id = null,
+    Object? tipo = null,
+    Object? severity = null,
+    Object? titolo = null,
+    Object? descrizione = null,
+    Object? data = null,
+    Object? letto = null,
+    Object? assessmentId = freezed,
+    Object? link = freezed,
+  }) {
+    return _then(_$AlertItemImpl(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      tipo: null == tipo
+          ? _value.tipo
+          : tipo // ignore: cast_nullable_to_non_nullable
+              as AlertType,
+      severity: null == severity
+          ? _value.severity
+          : severity // ignore: cast_nullable_to_non_nullable
+              as AlertSeverity,
+      titolo: null == titolo
+          ? _value.titolo
+          : titolo // ignore: cast_nullable_to_non_nullable
+              as String,
+      descrizione: null == descrizione
+          ? _value.descrizione
+          : descrizione // ignore: cast_nullable_to_non_nullable
+              as String,
+      data: null == data
+          ? _value.data
+          : data // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      letto: null == letto
+          ? _value.letto
+          : letto // ignore: cast_nullable_to_non_nullable
+              as bool,
+      assessmentId: freezed == assessmentId
+          ? _value.assessmentId
+          : assessmentId // ignore: cast_nullable_to_non_nullable
+              as String?,
+      link: freezed == link
+          ? _value.link
           : link // ignore: cast_nullable_to_non_nullable
               as String?,
     ));
   }
 }
 
-/// Adds pattern-matching-related methods to [AlertItem].
-extension AlertItemPatterns on AlertItem {
-  /// A variant of `map` that fallback to returning `orElse`.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case _:
-  ///     return orElse();
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>(
-    TResult Function(_AlertItem value)? $default, {
-    required TResult orElse(),
-  }) {
-    final _that = this;
-    switch (_that) {
-      case _AlertItem() when $default != null:
-        return $default(_that);
-      case _:
-        return orElse();
-    }
-  }
-
-  /// A `switch`-like method, using callbacks.
-  ///
-  /// Callbacks receives the raw object, upcasted.
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case final Subclass2 value:
-  ///     return ...;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>(
-    TResult Function(_AlertItem value) $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _AlertItem():
-        return $default(_that);
-      case _:
-        throw StateError('Unexpected subclass');
-    }
-  }
-
-  /// A variant of `map` that fallback to returning `null`.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case _:
-  ///     return null;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>(
-    TResult? Function(_AlertItem value)? $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _AlertItem() when $default != null:
-        return $default(_that);
-      case _:
-        return null;
-    }
-  }
-
-  /// A variant of `when` that fallback to an `orElse` callback.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case _:
-  ///     return orElse();
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>(
-    TResult Function(
-            String id,
-            AlertType tipo,
-            AlertSeverity severity,
-            String titolo,
-            String descrizione,
-            DateTime data,
-            bool letto,
-            String? assessmentId,
-            String? link)?
-        $default, {
-    required TResult orElse(),
-  }) {
-    final _that = this;
-    switch (_that) {
-      case _AlertItem() when $default != null:
-        return $default(
-            _that.id,
-            _that.tipo,
-            _that.severity,
-            _that.titolo,
-            _that.descrizione,
-            _that.data,
-            _that.letto,
-            _that.assessmentId,
-            _that.link);
-      case _:
-        return orElse();
-    }
-  }
-
-  /// A `switch`-like method, using callbacks.
-  ///
-  /// As opposed to `map`, this offers destructuring.
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case Subclass2(:final field2):
-  ///     return ...;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>(
-    TResult Function(
-            String id,
-            AlertType tipo,
-            AlertSeverity severity,
-            String titolo,
-            String descrizione,
-            DateTime data,
-            bool letto,
-            String? assessmentId,
-            String? link)
-        $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _AlertItem():
-        return $default(
-            _that.id,
-            _that.tipo,
-            _that.severity,
-            _that.titolo,
-            _that.descrizione,
-            _that.data,
-            _that.letto,
-            _that.assessmentId,
-            _that.link);
-      case _:
-        throw StateError('Unexpected subclass');
-    }
-  }
-
-  /// A variant of `when` that fallback to returning `null`
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case _:
-  ///     return null;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>(
-    TResult? Function(
-            String id,
-            AlertType tipo,
-            AlertSeverity severity,
-            String titolo,
-            String descrizione,
-            DateTime data,
-            bool letto,
-            String? assessmentId,
-            String? link)?
-        $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _AlertItem() when $default != null:
-        return $default(
-            _that.id,
-            _that.tipo,
-            _that.severity,
-            _that.titolo,
-            _that.descrizione,
-            _that.data,
-            _that.letto,
-            _that.assessmentId,
-            _that.link);
-      case _:
-        return null;
-    }
-  }
-}
-
 /// @nodoc
 @JsonSerializable()
-class _AlertItem extends AlertItem {
-  const _AlertItem(
+class _$AlertItemImpl extends _AlertItem {
+  const _$AlertItemImpl(
       {required this.id,
       required this.tipo,
       required this.severity,
@@ -1569,8 +988,9 @@ class _AlertItem extends AlertItem {
       this.assessmentId,
       this.link})
       : super._();
-  factory _AlertItem.fromJson(Map<String, dynamic> json) =>
-      _$AlertItemFromJson(json);
+
+  factory _$AlertItemImpl.fromJson(Map<String, dynamic> json) =>
+      _$$AlertItemImplFromJson(json);
 
   @override
   final String id;
@@ -1592,26 +1012,16 @@ class _AlertItem extends AlertItem {
   @override
   final String? link;
 
-  /// Create a copy of AlertItem
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  _$AlertItemCopyWith<_AlertItem> get copyWith =>
-      __$AlertItemCopyWithImpl<_AlertItem>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$AlertItemToJson(
-      this,
-    );
+  String toString() {
+    return 'AlertItem(id: $id, tipo: $tipo, severity: $severity, titolo: $titolo, descrizione: $descrizione, data: $data, letto: $letto, assessmentId: $assessmentId, link: $link)';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _AlertItem &&
+            other is _$AlertItemImpl &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.tipo, tipo) || other.tipo == tipo) &&
             (identical(other.severity, severity) ||
@@ -1631,148 +1041,103 @@ class _AlertItem extends AlertItem {
   int get hashCode => Object.hash(runtimeType, id, tipo, severity, titolo,
       descrizione, data, letto, assessmentId, link);
 
+  /// Create a copy of AlertItem
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  String toString() {
-    return 'AlertItem(id: $id, tipo: $tipo, severity: $severity, titolo: $titolo, descrizione: $descrizione, data: $data, letto: $letto, assessmentId: $assessmentId, link: $link)';
+  @pragma('vm:prefer-inline')
+  _$$AlertItemImplCopyWith<_$AlertItemImpl> get copyWith =>
+      __$$AlertItemImplCopyWithImpl<_$AlertItemImpl>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$AlertItemImplToJson(
+      this,
+    );
   }
 }
 
-/// @nodoc
-abstract mixin class _$AlertItemCopyWith<$Res>
-    implements $AlertItemCopyWith<$Res> {
-  factory _$AlertItemCopyWith(
-          _AlertItem value, $Res Function(_AlertItem) _then) =
-      __$AlertItemCopyWithImpl;
+abstract class _AlertItem extends AlertItem {
+  const factory _AlertItem(
+      {required final String id,
+      required final AlertType tipo,
+      required final AlertSeverity severity,
+      required final String titolo,
+      required final String descrizione,
+      required final DateTime data,
+      final bool letto,
+      final String? assessmentId,
+      final String? link}) = _$AlertItemImpl;
+  const _AlertItem._() : super._();
+
+  factory _AlertItem.fromJson(Map<String, dynamic> json) =
+      _$AlertItemImpl.fromJson;
+
   @override
-  @useResult
-  $Res call(
-      {String id,
-      AlertType tipo,
-      AlertSeverity severity,
-      String titolo,
-      String descrizione,
-      DateTime data,
-      bool letto,
-      String? assessmentId,
-      String? link});
-}
-
-/// @nodoc
-class __$AlertItemCopyWithImpl<$Res> implements _$AlertItemCopyWith<$Res> {
-  __$AlertItemCopyWithImpl(this._self, this._then);
-
-  final _AlertItem _self;
-  final $Res Function(_AlertItem) _then;
+  String get id;
+  @override
+  AlertType get tipo;
+  @override
+  AlertSeverity get severity;
+  @override
+  String get titolo;
+  @override
+  String get descrizione;
+  @override
+  DateTime get data;
+  @override
+  bool get letto;
+  @override
+  String? get assessmentId;
+  @override
+  String? get link;
 
   /// Create a copy of AlertItem
   /// with the given fields replaced by the non-null parameter values.
   @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = null,
-    Object? tipo = null,
-    Object? severity = null,
-    Object? titolo = null,
-    Object? descrizione = null,
-    Object? data = null,
-    Object? letto = null,
-    Object? assessmentId = freezed,
-    Object? link = freezed,
-  }) {
-    return _then(_AlertItem(
-      id: null == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
-      tipo: null == tipo
-          ? _self.tipo
-          : tipo // ignore: cast_nullable_to_non_nullable
-              as AlertType,
-      severity: null == severity
-          ? _self.severity
-          : severity // ignore: cast_nullable_to_non_nullable
-              as AlertSeverity,
-      titolo: null == titolo
-          ? _self.titolo
-          : titolo // ignore: cast_nullable_to_non_nullable
-              as String,
-      descrizione: null == descrizione
-          ? _self.descrizione
-          : descrizione // ignore: cast_nullable_to_non_nullable
-              as String,
-      data: null == data
-          ? _self.data
-          : data // ignore: cast_nullable_to_non_nullable
-              as DateTime,
-      letto: null == letto
-          ? _self.letto
-          : letto // ignore: cast_nullable_to_non_nullable
-              as bool,
-      assessmentId: freezed == assessmentId
-          ? _self.assessmentId
-          : assessmentId // ignore: cast_nullable_to_non_nullable
-              as String?,
-      link: freezed == link
-          ? _self.link
-          : link // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ));
-  }
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$AlertItemImplCopyWith<_$AlertItemImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+TimeSeriesData _$TimeSeriesDataFromJson(Map<String, dynamic> json) {
+  return _TimeSeriesData.fromJson(json);
 }
 
 /// @nodoc
 mixin _$TimeSeriesData {
-  DateTime get date;
-  double get value;
-  String? get label;
+  DateTime get date => throw _privateConstructorUsedError;
+  double get value => throw _privateConstructorUsedError;
+  String? get label => throw _privateConstructorUsedError;
+
+  /// Serializes this TimeSeriesData to a JSON map.
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
 
   /// Create a copy of TimeSeriesData
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
   $TimeSeriesDataCopyWith<TimeSeriesData> get copyWith =>
-      _$TimeSeriesDataCopyWithImpl<TimeSeriesData>(
-          this as TimeSeriesData, _$identity);
-
-  /// Serializes this TimeSeriesData to a JSON map.
-  Map<String, dynamic> toJson();
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is TimeSeriesData &&
-            (identical(other.date, date) || other.date == date) &&
-            (identical(other.value, value) || other.value == value) &&
-            (identical(other.label, label) || other.label == label));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, date, value, label);
-
-  @override
-  String toString() {
-    return 'TimeSeriesData(date: $date, value: $value, label: $label)';
-  }
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract mixin class $TimeSeriesDataCopyWith<$Res> {
+abstract class $TimeSeriesDataCopyWith<$Res> {
   factory $TimeSeriesDataCopyWith(
-          TimeSeriesData value, $Res Function(TimeSeriesData) _then) =
-      _$TimeSeriesDataCopyWithImpl;
+          TimeSeriesData value, $Res Function(TimeSeriesData) then) =
+      _$TimeSeriesDataCopyWithImpl<$Res, TimeSeriesData>;
   @useResult
   $Res call({DateTime date, double value, String? label});
 }
 
 /// @nodoc
-class _$TimeSeriesDataCopyWithImpl<$Res>
+class _$TimeSeriesDataCopyWithImpl<$Res, $Val extends TimeSeriesData>
     implements $TimeSeriesDataCopyWith<$Res> {
-  _$TimeSeriesDataCopyWithImpl(this._self, this._then);
+  _$TimeSeriesDataCopyWithImpl(this._value, this._then);
 
-  final TimeSeriesData _self;
-  final $Res Function(TimeSeriesData) _then;
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
   /// Create a copy of TimeSeriesData
   /// with the given fields replaced by the non-null parameter values.
@@ -1783,187 +1148,77 @@ class _$TimeSeriesDataCopyWithImpl<$Res>
     Object? value = null,
     Object? label = freezed,
   }) {
-    return _then(_self.copyWith(
+    return _then(_value.copyWith(
       date: null == date
-          ? _self.date
+          ? _value.date
           : date // ignore: cast_nullable_to_non_nullable
               as DateTime,
       value: null == value
-          ? _self.value
+          ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as double,
       label: freezed == label
-          ? _self.label
+          ? _value.label
+          : label // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ) as $Val);
+  }
+}
+
+/// @nodoc
+abstract class _$$TimeSeriesDataImplCopyWith<$Res>
+    implements $TimeSeriesDataCopyWith<$Res> {
+  factory _$$TimeSeriesDataImplCopyWith(_$TimeSeriesDataImpl value,
+          $Res Function(_$TimeSeriesDataImpl) then) =
+      __$$TimeSeriesDataImplCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call({DateTime date, double value, String? label});
+}
+
+/// @nodoc
+class __$$TimeSeriesDataImplCopyWithImpl<$Res>
+    extends _$TimeSeriesDataCopyWithImpl<$Res, _$TimeSeriesDataImpl>
+    implements _$$TimeSeriesDataImplCopyWith<$Res> {
+  __$$TimeSeriesDataImplCopyWithImpl(
+      _$TimeSeriesDataImpl _value, $Res Function(_$TimeSeriesDataImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of TimeSeriesData
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? date = null,
+    Object? value = null,
+    Object? label = freezed,
+  }) {
+    return _then(_$TimeSeriesDataImpl(
+      date: null == date
+          ? _value.date
+          : date // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      value: null == value
+          ? _value.value
+          : value // ignore: cast_nullable_to_non_nullable
+              as double,
+      label: freezed == label
+          ? _value.label
           : label // ignore: cast_nullable_to_non_nullable
               as String?,
     ));
   }
 }
 
-/// Adds pattern-matching-related methods to [TimeSeriesData].
-extension TimeSeriesDataPatterns on TimeSeriesData {
-  /// A variant of `map` that fallback to returning `orElse`.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case _:
-  ///     return orElse();
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>(
-    TResult Function(_TimeSeriesData value)? $default, {
-    required TResult orElse(),
-  }) {
-    final _that = this;
-    switch (_that) {
-      case _TimeSeriesData() when $default != null:
-        return $default(_that);
-      case _:
-        return orElse();
-    }
-  }
-
-  /// A `switch`-like method, using callbacks.
-  ///
-  /// Callbacks receives the raw object, upcasted.
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case final Subclass2 value:
-  ///     return ...;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>(
-    TResult Function(_TimeSeriesData value) $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _TimeSeriesData():
-        return $default(_that);
-      case _:
-        throw StateError('Unexpected subclass');
-    }
-  }
-
-  /// A variant of `map` that fallback to returning `null`.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case _:
-  ///     return null;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>(
-    TResult? Function(_TimeSeriesData value)? $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _TimeSeriesData() when $default != null:
-        return $default(_that);
-      case _:
-        return null;
-    }
-  }
-
-  /// A variant of `when` that fallback to an `orElse` callback.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case _:
-  ///     return orElse();
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>(
-    TResult Function(DateTime date, double value, String? label)? $default, {
-    required TResult orElse(),
-  }) {
-    final _that = this;
-    switch (_that) {
-      case _TimeSeriesData() when $default != null:
-        return $default(_that.date, _that.value, _that.label);
-      case _:
-        return orElse();
-    }
-  }
-
-  /// A `switch`-like method, using callbacks.
-  ///
-  /// As opposed to `map`, this offers destructuring.
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case Subclass2(:final field2):
-  ///     return ...;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>(
-    TResult Function(DateTime date, double value, String? label) $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _TimeSeriesData():
-        return $default(_that.date, _that.value, _that.label);
-      case _:
-        throw StateError('Unexpected subclass');
-    }
-  }
-
-  /// A variant of `when` that fallback to returning `null`
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case _:
-  ///     return null;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>(
-    TResult? Function(DateTime date, double value, String? label)? $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _TimeSeriesData() when $default != null:
-        return $default(_that.date, _that.value, _that.label);
-      case _:
-        return null;
-    }
-  }
-}
-
 /// @nodoc
 @JsonSerializable()
-class _TimeSeriesData extends TimeSeriesData {
-  const _TimeSeriesData({required this.date, required this.value, this.label})
+class _$TimeSeriesDataImpl extends _TimeSeriesData {
+  const _$TimeSeriesDataImpl(
+      {required this.date, required this.value, this.label})
       : super._();
-  factory _TimeSeriesData.fromJson(Map<String, dynamic> json) =>
-      _$TimeSeriesDataFromJson(json);
+
+  factory _$TimeSeriesDataImpl.fromJson(Map<String, dynamic> json) =>
+      _$$TimeSeriesDataImplFromJson(json);
 
   @override
   final DateTime date;
@@ -1972,26 +1227,16 @@ class _TimeSeriesData extends TimeSeriesData {
   @override
   final String? label;
 
-  /// Create a copy of TimeSeriesData
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  _$TimeSeriesDataCopyWith<_TimeSeriesData> get copyWith =>
-      __$TimeSeriesDataCopyWithImpl<_TimeSeriesData>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$TimeSeriesDataToJson(
-      this,
-    );
+  String toString() {
+    return 'TimeSeriesData(date: $date, value: $value, label: $label)';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _TimeSeriesData &&
+            other is _$TimeSeriesDataImpl &&
             (identical(other.date, date) || other.date == date) &&
             (identical(other.value, value) || other.value == value) &&
             (identical(other.label, label) || other.label == label));
@@ -2001,100 +1246,73 @@ class _TimeSeriesData extends TimeSeriesData {
   @override
   int get hashCode => Object.hash(runtimeType, date, value, label);
 
+  /// Create a copy of TimeSeriesData
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  String toString() {
-    return 'TimeSeriesData(date: $date, value: $value, label: $label)';
+  @pragma('vm:prefer-inline')
+  _$$TimeSeriesDataImplCopyWith<_$TimeSeriesDataImpl> get copyWith =>
+      __$$TimeSeriesDataImplCopyWithImpl<_$TimeSeriesDataImpl>(
+          this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$TimeSeriesDataImplToJson(
+      this,
+    );
   }
 }
 
-/// @nodoc
-abstract mixin class _$TimeSeriesDataCopyWith<$Res>
-    implements $TimeSeriesDataCopyWith<$Res> {
-  factory _$TimeSeriesDataCopyWith(
-          _TimeSeriesData value, $Res Function(_TimeSeriesData) _then) =
-      __$TimeSeriesDataCopyWithImpl;
+abstract class _TimeSeriesData extends TimeSeriesData {
+  const factory _TimeSeriesData(
+      {required final DateTime date,
+      required final double value,
+      final String? label}) = _$TimeSeriesDataImpl;
+  const _TimeSeriesData._() : super._();
+
+  factory _TimeSeriesData.fromJson(Map<String, dynamic> json) =
+      _$TimeSeriesDataImpl.fromJson;
+
   @override
-  @useResult
-  $Res call({DateTime date, double value, String? label});
-}
-
-/// @nodoc
-class __$TimeSeriesDataCopyWithImpl<$Res>
-    implements _$TimeSeriesDataCopyWith<$Res> {
-  __$TimeSeriesDataCopyWithImpl(this._self, this._then);
-
-  final _TimeSeriesData _self;
-  final $Res Function(_TimeSeriesData) _then;
+  DateTime get date;
+  @override
+  double get value;
+  @override
+  String? get label;
 
   /// Create a copy of TimeSeriesData
   /// with the given fields replaced by the non-null parameter values.
   @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? date = null,
-    Object? value = null,
-    Object? label = freezed,
-  }) {
-    return _then(_TimeSeriesData(
-      date: null == date
-          ? _self.date
-          : date // ignore: cast_nullable_to_non_nullable
-              as DateTime,
-      value: null == value
-          ? _self.value
-          : value // ignore: cast_nullable_to_non_nullable
-              as double,
-      label: freezed == label
-          ? _self.label
-          : label // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ));
-  }
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$TimeSeriesDataImplCopyWith<_$TimeSeriesDataImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+ChartData _$ChartDataFromJson(Map<String, dynamic> json) {
+  return _ChartData.fromJson(json);
 }
 
 /// @nodoc
 mixin _$ChartData {
-  String get label;
-  double get value;
-  String? get color;
-  Map<String, dynamic>? get metadata;
+  String get label => throw _privateConstructorUsedError;
+  double get value => throw _privateConstructorUsedError;
+  String? get color => throw _privateConstructorUsedError;
+  Map<String, dynamic>? get metadata => throw _privateConstructorUsedError;
+
+  /// Serializes this ChartData to a JSON map.
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
 
   /// Create a copy of ChartData
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
   $ChartDataCopyWith<ChartData> get copyWith =>
-      _$ChartDataCopyWithImpl<ChartData>(this as ChartData, _$identity);
-
-  /// Serializes this ChartData to a JSON map.
-  Map<String, dynamic> toJson();
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is ChartData &&
-            (identical(other.label, label) || other.label == label) &&
-            (identical(other.value, value) || other.value == value) &&
-            (identical(other.color, color) || other.color == color) &&
-            const DeepCollectionEquality().equals(other.metadata, metadata));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, label, value, color,
-      const DeepCollectionEquality().hash(metadata));
-
-  @override
-  String toString() {
-    return 'ChartData(label: $label, value: $value, color: $color, metadata: $metadata)';
-  }
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract mixin class $ChartDataCopyWith<$Res> {
-  factory $ChartDataCopyWith(ChartData value, $Res Function(ChartData) _then) =
-      _$ChartDataCopyWithImpl;
+abstract class $ChartDataCopyWith<$Res> {
+  factory $ChartDataCopyWith(ChartData value, $Res Function(ChartData) then) =
+      _$ChartDataCopyWithImpl<$Res, ChartData>;
   @useResult
   $Res call(
       {String label,
@@ -2104,11 +1322,14 @@ abstract mixin class $ChartDataCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$ChartDataCopyWithImpl<$Res> implements $ChartDataCopyWith<$Res> {
-  _$ChartDataCopyWithImpl(this._self, this._then);
+class _$ChartDataCopyWithImpl<$Res, $Val extends ChartData>
+    implements $ChartDataCopyWith<$Res> {
+  _$ChartDataCopyWithImpl(this._value, this._then);
 
-  final ChartData _self;
-  final $Res Function(ChartData) _then;
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
   /// Create a copy of ChartData
   /// with the given fields replaced by the non-null parameter values.
@@ -2120,202 +1341,94 @@ class _$ChartDataCopyWithImpl<$Res> implements $ChartDataCopyWith<$Res> {
     Object? color = freezed,
     Object? metadata = freezed,
   }) {
-    return _then(_self.copyWith(
+    return _then(_value.copyWith(
       label: null == label
-          ? _self.label
+          ? _value.label
           : label // ignore: cast_nullable_to_non_nullable
               as String,
       value: null == value
-          ? _self.value
+          ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as double,
       color: freezed == color
-          ? _self.color
+          ? _value.color
           : color // ignore: cast_nullable_to_non_nullable
               as String?,
       metadata: freezed == metadata
-          ? _self.metadata
+          ? _value.metadata
+          : metadata // ignore: cast_nullable_to_non_nullable
+              as Map<String, dynamic>?,
+    ) as $Val);
+  }
+}
+
+/// @nodoc
+abstract class _$$ChartDataImplCopyWith<$Res>
+    implements $ChartDataCopyWith<$Res> {
+  factory _$$ChartDataImplCopyWith(
+          _$ChartDataImpl value, $Res Function(_$ChartDataImpl) then) =
+      __$$ChartDataImplCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call(
+      {String label,
+      double value,
+      String? color,
+      Map<String, dynamic>? metadata});
+}
+
+/// @nodoc
+class __$$ChartDataImplCopyWithImpl<$Res>
+    extends _$ChartDataCopyWithImpl<$Res, _$ChartDataImpl>
+    implements _$$ChartDataImplCopyWith<$Res> {
+  __$$ChartDataImplCopyWithImpl(
+      _$ChartDataImpl _value, $Res Function(_$ChartDataImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of ChartData
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? label = null,
+    Object? value = null,
+    Object? color = freezed,
+    Object? metadata = freezed,
+  }) {
+    return _then(_$ChartDataImpl(
+      label: null == label
+          ? _value.label
+          : label // ignore: cast_nullable_to_non_nullable
+              as String,
+      value: null == value
+          ? _value.value
+          : value // ignore: cast_nullable_to_non_nullable
+              as double,
+      color: freezed == color
+          ? _value.color
+          : color // ignore: cast_nullable_to_non_nullable
+              as String?,
+      metadata: freezed == metadata
+          ? _value._metadata
           : metadata // ignore: cast_nullable_to_non_nullable
               as Map<String, dynamic>?,
     ));
   }
 }
 
-/// Adds pattern-matching-related methods to [ChartData].
-extension ChartDataPatterns on ChartData {
-  /// A variant of `map` that fallback to returning `orElse`.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case _:
-  ///     return orElse();
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>(
-    TResult Function(_ChartData value)? $default, {
-    required TResult orElse(),
-  }) {
-    final _that = this;
-    switch (_that) {
-      case _ChartData() when $default != null:
-        return $default(_that);
-      case _:
-        return orElse();
-    }
-  }
-
-  /// A `switch`-like method, using callbacks.
-  ///
-  /// Callbacks receives the raw object, upcasted.
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case final Subclass2 value:
-  ///     return ...;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>(
-    TResult Function(_ChartData value) $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _ChartData():
-        return $default(_that);
-      case _:
-        throw StateError('Unexpected subclass');
-    }
-  }
-
-  /// A variant of `map` that fallback to returning `null`.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case _:
-  ///     return null;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>(
-    TResult? Function(_ChartData value)? $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _ChartData() when $default != null:
-        return $default(_that);
-      case _:
-        return null;
-    }
-  }
-
-  /// A variant of `when` that fallback to an `orElse` callback.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case _:
-  ///     return orElse();
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>(
-    TResult Function(String label, double value, String? color,
-            Map<String, dynamic>? metadata)?
-        $default, {
-    required TResult orElse(),
-  }) {
-    final _that = this;
-    switch (_that) {
-      case _ChartData() when $default != null:
-        return $default(_that.label, _that.value, _that.color, _that.metadata);
-      case _:
-        return orElse();
-    }
-  }
-
-  /// A `switch`-like method, using callbacks.
-  ///
-  /// As opposed to `map`, this offers destructuring.
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case Subclass2(:final field2):
-  ///     return ...;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>(
-    TResult Function(String label, double value, String? color,
-            Map<String, dynamic>? metadata)
-        $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _ChartData():
-        return $default(_that.label, _that.value, _that.color, _that.metadata);
-      case _:
-        throw StateError('Unexpected subclass');
-    }
-  }
-
-  /// A variant of `when` that fallback to returning `null`
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case _:
-  ///     return null;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>(
-    TResult? Function(String label, double value, String? color,
-            Map<String, dynamic>? metadata)?
-        $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _ChartData() when $default != null:
-        return $default(_that.label, _that.value, _that.color, _that.metadata);
-      case _:
-        return null;
-    }
-  }
-}
-
 /// @nodoc
 @JsonSerializable()
-class _ChartData extends ChartData {
-  const _ChartData(
+class _$ChartDataImpl extends _ChartData {
+  const _$ChartDataImpl(
       {required this.label,
       required this.value,
       this.color,
       final Map<String, dynamic>? metadata})
       : _metadata = metadata,
         super._();
-  factory _ChartData.fromJson(Map<String, dynamic> json) =>
-      _$ChartDataFromJson(json);
+
+  factory _$ChartDataImpl.fromJson(Map<String, dynamic> json) =>
+      _$$ChartDataImplFromJson(json);
 
   @override
   final String label;
@@ -2333,26 +1446,16 @@ class _ChartData extends ChartData {
     return EqualUnmodifiableMapView(value);
   }
 
-  /// Create a copy of ChartData
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  _$ChartDataCopyWith<_ChartData> get copyWith =>
-      __$ChartDataCopyWithImpl<_ChartData>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$ChartDataToJson(
-      this,
-    );
+  String toString() {
+    return 'ChartData(label: $label, value: $value, color: $color, metadata: $metadata)';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _ChartData &&
+            other is _$ChartDataImpl &&
             (identical(other.label, label) || other.label == label) &&
             (identical(other.value, value) || other.value == value) &&
             (identical(other.color, color) || other.color == color) &&
@@ -2364,63 +1467,46 @@ class _ChartData extends ChartData {
   int get hashCode => Object.hash(runtimeType, label, value, color,
       const DeepCollectionEquality().hash(_metadata));
 
+  /// Create a copy of ChartData
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  String toString() {
-    return 'ChartData(label: $label, value: $value, color: $color, metadata: $metadata)';
+  @pragma('vm:prefer-inline')
+  _$$ChartDataImplCopyWith<_$ChartDataImpl> get copyWith =>
+      __$$ChartDataImplCopyWithImpl<_$ChartDataImpl>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$ChartDataImplToJson(
+      this,
+    );
   }
 }
 
-/// @nodoc
-abstract mixin class _$ChartDataCopyWith<$Res>
-    implements $ChartDataCopyWith<$Res> {
-  factory _$ChartDataCopyWith(
-          _ChartData value, $Res Function(_ChartData) _then) =
-      __$ChartDataCopyWithImpl;
+abstract class _ChartData extends ChartData {
+  const factory _ChartData(
+      {required final String label,
+      required final double value,
+      final String? color,
+      final Map<String, dynamic>? metadata}) = _$ChartDataImpl;
+  const _ChartData._() : super._();
+
+  factory _ChartData.fromJson(Map<String, dynamic> json) =
+      _$ChartDataImpl.fromJson;
+
   @override
-  @useResult
-  $Res call(
-      {String label,
-      double value,
-      String? color,
-      Map<String, dynamic>? metadata});
-}
-
-/// @nodoc
-class __$ChartDataCopyWithImpl<$Res> implements _$ChartDataCopyWith<$Res> {
-  __$ChartDataCopyWithImpl(this._self, this._then);
-
-  final _ChartData _self;
-  final $Res Function(_ChartData) _then;
+  String get label;
+  @override
+  double get value;
+  @override
+  String? get color;
+  @override
+  Map<String, dynamic>? get metadata;
 
   /// Create a copy of ChartData
   /// with the given fields replaced by the non-null parameter values.
   @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? label = null,
-    Object? value = null,
-    Object? color = freezed,
-    Object? metadata = freezed,
-  }) {
-    return _then(_ChartData(
-      label: null == label
-          ? _self.label
-          : label // ignore: cast_nullable_to_non_nullable
-              as String,
-      value: null == value
-          ? _self.value
-          : value // ignore: cast_nullable_to_non_nullable
-              as double,
-      color: freezed == color
-          ? _self.color
-          : color // ignore: cast_nullable_to_non_nullable
-              as String?,
-      metadata: freezed == metadata
-          ? _self._metadata
-          : metadata // ignore: cast_nullable_to_non_nullable
-              as Map<String, dynamic>?,
-    ));
-  }
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$ChartDataImplCopyWith<_$ChartDataImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
-
-// dart format on

@@ -1,5 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
 // coverage:ignore-file
+// GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -9,107 +9,54 @@ part of 'assessment_model.dart';
 // FreezedGenerator
 // **************************************************************************
 
-// dart format off
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+
+AssessmentModel _$AssessmentModelFromJson(Map<String, dynamic> json) {
+  return _AssessmentModel.fromJson(json);
+}
 
 /// @nodoc
 mixin _$AssessmentModel {
-  String get id;
-  String get clienteId;
-  String get nomeAzienda;
-  AssessmentStatus get status;
-  DateTime get dataCreazione;
-  DateTime? get dataUltimaModifica;
-  DateTime? get dataCompletamento; // Informazioni azienda
-  CompanyInfo get companyInfo; // Sistema AI
-  AISystemInfo get aiSystemInfo; // Valutazioni
-  RiskAssessment? get riskAssessment;
-  ComplianceAssessment? get complianceAssessment; // Metadati
-  Map<String, dynamic> get metadata;
-  String? get assignedTo;
-  String? get reviewedBy; // Progress tracking
-  int get progressPercentage;
-  List<String> get completedSections;
+  String get id => throw _privateConstructorUsedError;
+  String get clienteId => throw _privateConstructorUsedError;
+  String get nomeAzienda => throw _privateConstructorUsedError;
+  AssessmentStatus get status => throw _privateConstructorUsedError;
+  DateTime get dataCreazione => throw _privateConstructorUsedError;
+  DateTime? get dataUltimaModifica => throw _privateConstructorUsedError;
+  DateTime? get dataCompletamento =>
+      throw _privateConstructorUsedError; // Informazioni azienda
+  CompanyInfo get companyInfo =>
+      throw _privateConstructorUsedError; // Sistema AI
+  AISystemInfo get aiSystemInfo =>
+      throw _privateConstructorUsedError; // Valutazioni
+  RiskAssessment? get riskAssessment => throw _privateConstructorUsedError;
+  ComplianceAssessment? get complianceAssessment =>
+      throw _privateConstructorUsedError; // Metadati
+  Map<String, dynamic> get metadata => throw _privateConstructorUsedError;
+  String? get assignedTo => throw _privateConstructorUsedError;
+  String? get reviewedBy =>
+      throw _privateConstructorUsedError; // Progress tracking
+  int get progressPercentage => throw _privateConstructorUsedError;
+  List<String> get completedSections => throw _privateConstructorUsedError;
+
+  /// Serializes this AssessmentModel to a JSON map.
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
 
   /// Create a copy of AssessmentModel
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
   $AssessmentModelCopyWith<AssessmentModel> get copyWith =>
-      _$AssessmentModelCopyWithImpl<AssessmentModel>(
-          this as AssessmentModel, _$identity);
-
-  /// Serializes this AssessmentModel to a JSON map.
-  Map<String, dynamic> toJson();
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is AssessmentModel &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.clienteId, clienteId) ||
-                other.clienteId == clienteId) &&
-            (identical(other.nomeAzienda, nomeAzienda) ||
-                other.nomeAzienda == nomeAzienda) &&
-            (identical(other.status, status) || other.status == status) &&
-            (identical(other.dataCreazione, dataCreazione) ||
-                other.dataCreazione == dataCreazione) &&
-            (identical(other.dataUltimaModifica, dataUltimaModifica) ||
-                other.dataUltimaModifica == dataUltimaModifica) &&
-            (identical(other.dataCompletamento, dataCompletamento) ||
-                other.dataCompletamento == dataCompletamento) &&
-            (identical(other.companyInfo, companyInfo) ||
-                other.companyInfo == companyInfo) &&
-            (identical(other.aiSystemInfo, aiSystemInfo) ||
-                other.aiSystemInfo == aiSystemInfo) &&
-            (identical(other.riskAssessment, riskAssessment) ||
-                other.riskAssessment == riskAssessment) &&
-            (identical(other.complianceAssessment, complianceAssessment) ||
-                other.complianceAssessment == complianceAssessment) &&
-            const DeepCollectionEquality().equals(other.metadata, metadata) &&
-            (identical(other.assignedTo, assignedTo) ||
-                other.assignedTo == assignedTo) &&
-            (identical(other.reviewedBy, reviewedBy) ||
-                other.reviewedBy == reviewedBy) &&
-            (identical(other.progressPercentage, progressPercentage) ||
-                other.progressPercentage == progressPercentage) &&
-            const DeepCollectionEquality()
-                .equals(other.completedSections, completedSections));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      id,
-      clienteId,
-      nomeAzienda,
-      status,
-      dataCreazione,
-      dataUltimaModifica,
-      dataCompletamento,
-      companyInfo,
-      aiSystemInfo,
-      riskAssessment,
-      complianceAssessment,
-      const DeepCollectionEquality().hash(metadata),
-      assignedTo,
-      reviewedBy,
-      progressPercentage,
-      const DeepCollectionEquality().hash(completedSections));
-
-  @override
-  String toString() {
-    return 'AssessmentModel(id: $id, clienteId: $clienteId, nomeAzienda: $nomeAzienda, status: $status, dataCreazione: $dataCreazione, dataUltimaModifica: $dataUltimaModifica, dataCompletamento: $dataCompletamento, companyInfo: $companyInfo, aiSystemInfo: $aiSystemInfo, riskAssessment: $riskAssessment, complianceAssessment: $complianceAssessment, metadata: $metadata, assignedTo: $assignedTo, reviewedBy: $reviewedBy, progressPercentage: $progressPercentage, completedSections: $completedSections)';
-  }
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract mixin class $AssessmentModelCopyWith<$Res> {
+abstract class $AssessmentModelCopyWith<$Res> {
   factory $AssessmentModelCopyWith(
-          AssessmentModel value, $Res Function(AssessmentModel) _then) =
-      _$AssessmentModelCopyWithImpl;
+          AssessmentModel value, $Res Function(AssessmentModel) then) =
+      _$AssessmentModelCopyWithImpl<$Res, AssessmentModel>;
   @useResult
   $Res call(
       {String id,
@@ -136,12 +83,14 @@ abstract mixin class $AssessmentModelCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$AssessmentModelCopyWithImpl<$Res>
+class _$AssessmentModelCopyWithImpl<$Res, $Val extends AssessmentModel>
     implements $AssessmentModelCopyWith<$Res> {
-  _$AssessmentModelCopyWithImpl(this._self, this._then);
+  _$AssessmentModelCopyWithImpl(this._value, this._then);
 
-  final AssessmentModel _self;
-  final $Res Function(AssessmentModel) _then;
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
   /// Create a copy of AssessmentModel
   /// with the given fields replaced by the non-null parameter values.
@@ -165,72 +114,72 @@ class _$AssessmentModelCopyWithImpl<$Res>
     Object? progressPercentage = null,
     Object? completedSections = null,
   }) {
-    return _then(_self.copyWith(
+    return _then(_value.copyWith(
       id: null == id
-          ? _self.id
+          ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
       clienteId: null == clienteId
-          ? _self.clienteId
+          ? _value.clienteId
           : clienteId // ignore: cast_nullable_to_non_nullable
               as String,
       nomeAzienda: null == nomeAzienda
-          ? _self.nomeAzienda
+          ? _value.nomeAzienda
           : nomeAzienda // ignore: cast_nullable_to_non_nullable
               as String,
       status: null == status
-          ? _self.status
+          ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
               as AssessmentStatus,
       dataCreazione: null == dataCreazione
-          ? _self.dataCreazione
+          ? _value.dataCreazione
           : dataCreazione // ignore: cast_nullable_to_non_nullable
               as DateTime,
       dataUltimaModifica: freezed == dataUltimaModifica
-          ? _self.dataUltimaModifica
+          ? _value.dataUltimaModifica
           : dataUltimaModifica // ignore: cast_nullable_to_non_nullable
               as DateTime?,
       dataCompletamento: freezed == dataCompletamento
-          ? _self.dataCompletamento
+          ? _value.dataCompletamento
           : dataCompletamento // ignore: cast_nullable_to_non_nullable
               as DateTime?,
       companyInfo: null == companyInfo
-          ? _self.companyInfo
+          ? _value.companyInfo
           : companyInfo // ignore: cast_nullable_to_non_nullable
               as CompanyInfo,
       aiSystemInfo: null == aiSystemInfo
-          ? _self.aiSystemInfo
+          ? _value.aiSystemInfo
           : aiSystemInfo // ignore: cast_nullable_to_non_nullable
               as AISystemInfo,
       riskAssessment: freezed == riskAssessment
-          ? _self.riskAssessment
+          ? _value.riskAssessment
           : riskAssessment // ignore: cast_nullable_to_non_nullable
               as RiskAssessment?,
       complianceAssessment: freezed == complianceAssessment
-          ? _self.complianceAssessment
+          ? _value.complianceAssessment
           : complianceAssessment // ignore: cast_nullable_to_non_nullable
               as ComplianceAssessment?,
       metadata: null == metadata
-          ? _self.metadata
+          ? _value.metadata
           : metadata // ignore: cast_nullable_to_non_nullable
               as Map<String, dynamic>,
       assignedTo: freezed == assignedTo
-          ? _self.assignedTo
+          ? _value.assignedTo
           : assignedTo // ignore: cast_nullable_to_non_nullable
               as String?,
       reviewedBy: freezed == reviewedBy
-          ? _self.reviewedBy
+          ? _value.reviewedBy
           : reviewedBy // ignore: cast_nullable_to_non_nullable
               as String?,
       progressPercentage: null == progressPercentage
-          ? _self.progressPercentage
+          ? _value.progressPercentage
           : progressPercentage // ignore: cast_nullable_to_non_nullable
               as int,
       completedSections: null == completedSections
-          ? _self.completedSections
+          ? _value.completedSections
           : completedSections // ignore: cast_nullable_to_non_nullable
               as List<String>,
-    ));
+    ) as $Val);
   }
 
   /// Create a copy of AssessmentModel
@@ -238,8 +187,8 @@ class _$AssessmentModelCopyWithImpl<$Res>
   @override
   @pragma('vm:prefer-inline')
   $CompanyInfoCopyWith<$Res> get companyInfo {
-    return $CompanyInfoCopyWith<$Res>(_self.companyInfo, (value) {
-      return _then(_self.copyWith(companyInfo: value));
+    return $CompanyInfoCopyWith<$Res>(_value.companyInfo, (value) {
+      return _then(_value.copyWith(companyInfo: value) as $Val);
     });
   }
 
@@ -248,8 +197,8 @@ class _$AssessmentModelCopyWithImpl<$Res>
   @override
   @pragma('vm:prefer-inline')
   $AISystemInfoCopyWith<$Res> get aiSystemInfo {
-    return $AISystemInfoCopyWith<$Res>(_self.aiSystemInfo, (value) {
-      return _then(_self.copyWith(aiSystemInfo: value));
+    return $AISystemInfoCopyWith<$Res>(_value.aiSystemInfo, (value) {
+      return _then(_value.copyWith(aiSystemInfo: value) as $Val);
     });
   }
 
@@ -258,12 +207,12 @@ class _$AssessmentModelCopyWithImpl<$Res>
   @override
   @pragma('vm:prefer-inline')
   $RiskAssessmentCopyWith<$Res>? get riskAssessment {
-    if (_self.riskAssessment == null) {
+    if (_value.riskAssessment == null) {
       return null;
     }
 
-    return $RiskAssessmentCopyWith<$Res>(_self.riskAssessment!, (value) {
-      return _then(_self.copyWith(riskAssessment: value));
+    return $RiskAssessmentCopyWith<$Res>(_value.riskAssessment!, (value) {
+      return _then(_value.copyWith(riskAssessment: value) as $Val);
     });
   }
 
@@ -272,277 +221,156 @@ class _$AssessmentModelCopyWithImpl<$Res>
   @override
   @pragma('vm:prefer-inline')
   $ComplianceAssessmentCopyWith<$Res>? get complianceAssessment {
-    if (_self.complianceAssessment == null) {
+    if (_value.complianceAssessment == null) {
       return null;
     }
 
-    return $ComplianceAssessmentCopyWith<$Res>(_self.complianceAssessment!,
+    return $ComplianceAssessmentCopyWith<$Res>(_value.complianceAssessment!,
         (value) {
-      return _then(_self.copyWith(complianceAssessment: value));
+      return _then(_value.copyWith(complianceAssessment: value) as $Val);
     });
   }
 }
 
-/// Adds pattern-matching-related methods to [AssessmentModel].
-extension AssessmentModelPatterns on AssessmentModel {
-  /// A variant of `map` that fallback to returning `orElse`.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case _:
-  ///     return orElse();
-  /// }
-  /// ```
+/// @nodoc
+abstract class _$$AssessmentModelImplCopyWith<$Res>
+    implements $AssessmentModelCopyWith<$Res> {
+  factory _$$AssessmentModelImplCopyWith(_$AssessmentModelImpl value,
+          $Res Function(_$AssessmentModelImpl) then) =
+      __$$AssessmentModelImplCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call(
+      {String id,
+      String clienteId,
+      String nomeAzienda,
+      AssessmentStatus status,
+      DateTime dataCreazione,
+      DateTime? dataUltimaModifica,
+      DateTime? dataCompletamento,
+      CompanyInfo companyInfo,
+      AISystemInfo aiSystemInfo,
+      RiskAssessment? riskAssessment,
+      ComplianceAssessment? complianceAssessment,
+      Map<String, dynamic> metadata,
+      String? assignedTo,
+      String? reviewedBy,
+      int progressPercentage,
+      List<String> completedSections});
 
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>(
-    TResult Function(_AssessmentModel value)? $default, {
-    required TResult orElse(),
+  @override
+  $CompanyInfoCopyWith<$Res> get companyInfo;
+  @override
+  $AISystemInfoCopyWith<$Res> get aiSystemInfo;
+  @override
+  $RiskAssessmentCopyWith<$Res>? get riskAssessment;
+  @override
+  $ComplianceAssessmentCopyWith<$Res>? get complianceAssessment;
+}
+
+/// @nodoc
+class __$$AssessmentModelImplCopyWithImpl<$Res>
+    extends _$AssessmentModelCopyWithImpl<$Res, _$AssessmentModelImpl>
+    implements _$$AssessmentModelImplCopyWith<$Res> {
+  __$$AssessmentModelImplCopyWithImpl(
+      _$AssessmentModelImpl _value, $Res Function(_$AssessmentModelImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of AssessmentModel
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? id = null,
+    Object? clienteId = null,
+    Object? nomeAzienda = null,
+    Object? status = null,
+    Object? dataCreazione = null,
+    Object? dataUltimaModifica = freezed,
+    Object? dataCompletamento = freezed,
+    Object? companyInfo = null,
+    Object? aiSystemInfo = null,
+    Object? riskAssessment = freezed,
+    Object? complianceAssessment = freezed,
+    Object? metadata = null,
+    Object? assignedTo = freezed,
+    Object? reviewedBy = freezed,
+    Object? progressPercentage = null,
+    Object? completedSections = null,
   }) {
-    final _that = this;
-    switch (_that) {
-      case _AssessmentModel() when $default != null:
-        return $default(_that);
-      case _:
-        return orElse();
-    }
-  }
-
-  /// A `switch`-like method, using callbacks.
-  ///
-  /// Callbacks receives the raw object, upcasted.
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case final Subclass2 value:
-  ///     return ...;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>(
-    TResult Function(_AssessmentModel value) $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _AssessmentModel():
-        return $default(_that);
-      case _:
-        throw StateError('Unexpected subclass');
-    }
-  }
-
-  /// A variant of `map` that fallback to returning `null`.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case _:
-  ///     return null;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>(
-    TResult? Function(_AssessmentModel value)? $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _AssessmentModel() when $default != null:
-        return $default(_that);
-      case _:
-        return null;
-    }
-  }
-
-  /// A variant of `when` that fallback to an `orElse` callback.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case _:
-  ///     return orElse();
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>(
-    TResult Function(
-            String id,
-            String clienteId,
-            String nomeAzienda,
-            AssessmentStatus status,
-            DateTime dataCreazione,
-            DateTime? dataUltimaModifica,
-            DateTime? dataCompletamento,
-            CompanyInfo companyInfo,
-            AISystemInfo aiSystemInfo,
-            RiskAssessment? riskAssessment,
-            ComplianceAssessment? complianceAssessment,
-            Map<String, dynamic> metadata,
-            String? assignedTo,
-            String? reviewedBy,
-            int progressPercentage,
-            List<String> completedSections)?
-        $default, {
-    required TResult orElse(),
-  }) {
-    final _that = this;
-    switch (_that) {
-      case _AssessmentModel() when $default != null:
-        return $default(
-            _that.id,
-            _that.clienteId,
-            _that.nomeAzienda,
-            _that.status,
-            _that.dataCreazione,
-            _that.dataUltimaModifica,
-            _that.dataCompletamento,
-            _that.companyInfo,
-            _that.aiSystemInfo,
-            _that.riskAssessment,
-            _that.complianceAssessment,
-            _that.metadata,
-            _that.assignedTo,
-            _that.reviewedBy,
-            _that.progressPercentage,
-            _that.completedSections);
-      case _:
-        return orElse();
-    }
-  }
-
-  /// A `switch`-like method, using callbacks.
-  ///
-  /// As opposed to `map`, this offers destructuring.
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case Subclass2(:final field2):
-  ///     return ...;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>(
-    TResult Function(
-            String id,
-            String clienteId,
-            String nomeAzienda,
-            AssessmentStatus status,
-            DateTime dataCreazione,
-            DateTime? dataUltimaModifica,
-            DateTime? dataCompletamento,
-            CompanyInfo companyInfo,
-            AISystemInfo aiSystemInfo,
-            RiskAssessment? riskAssessment,
-            ComplianceAssessment? complianceAssessment,
-            Map<String, dynamic> metadata,
-            String? assignedTo,
-            String? reviewedBy,
-            int progressPercentage,
-            List<String> completedSections)
-        $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _AssessmentModel():
-        return $default(
-            _that.id,
-            _that.clienteId,
-            _that.nomeAzienda,
-            _that.status,
-            _that.dataCreazione,
-            _that.dataUltimaModifica,
-            _that.dataCompletamento,
-            _that.companyInfo,
-            _that.aiSystemInfo,
-            _that.riskAssessment,
-            _that.complianceAssessment,
-            _that.metadata,
-            _that.assignedTo,
-            _that.reviewedBy,
-            _that.progressPercentage,
-            _that.completedSections);
-      case _:
-        throw StateError('Unexpected subclass');
-    }
-  }
-
-  /// A variant of `when` that fallback to returning `null`
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case _:
-  ///     return null;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>(
-    TResult? Function(
-            String id,
-            String clienteId,
-            String nomeAzienda,
-            AssessmentStatus status,
-            DateTime dataCreazione,
-            DateTime? dataUltimaModifica,
-            DateTime? dataCompletamento,
-            CompanyInfo companyInfo,
-            AISystemInfo aiSystemInfo,
-            RiskAssessment? riskAssessment,
-            ComplianceAssessment? complianceAssessment,
-            Map<String, dynamic> metadata,
-            String? assignedTo,
-            String? reviewedBy,
-            int progressPercentage,
-            List<String> completedSections)?
-        $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _AssessmentModel() when $default != null:
-        return $default(
-            _that.id,
-            _that.clienteId,
-            _that.nomeAzienda,
-            _that.status,
-            _that.dataCreazione,
-            _that.dataUltimaModifica,
-            _that.dataCompletamento,
-            _that.companyInfo,
-            _that.aiSystemInfo,
-            _that.riskAssessment,
-            _that.complianceAssessment,
-            _that.metadata,
-            _that.assignedTo,
-            _that.reviewedBy,
-            _that.progressPercentage,
-            _that.completedSections);
-      case _:
-        return null;
-    }
+    return _then(_$AssessmentModelImpl(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      clienteId: null == clienteId
+          ? _value.clienteId
+          : clienteId // ignore: cast_nullable_to_non_nullable
+              as String,
+      nomeAzienda: null == nomeAzienda
+          ? _value.nomeAzienda
+          : nomeAzienda // ignore: cast_nullable_to_non_nullable
+              as String,
+      status: null == status
+          ? _value.status
+          : status // ignore: cast_nullable_to_non_nullable
+              as AssessmentStatus,
+      dataCreazione: null == dataCreazione
+          ? _value.dataCreazione
+          : dataCreazione // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      dataUltimaModifica: freezed == dataUltimaModifica
+          ? _value.dataUltimaModifica
+          : dataUltimaModifica // ignore: cast_nullable_to_non_nullable
+              as DateTime?,
+      dataCompletamento: freezed == dataCompletamento
+          ? _value.dataCompletamento
+          : dataCompletamento // ignore: cast_nullable_to_non_nullable
+              as DateTime?,
+      companyInfo: null == companyInfo
+          ? _value.companyInfo
+          : companyInfo // ignore: cast_nullable_to_non_nullable
+              as CompanyInfo,
+      aiSystemInfo: null == aiSystemInfo
+          ? _value.aiSystemInfo
+          : aiSystemInfo // ignore: cast_nullable_to_non_nullable
+              as AISystemInfo,
+      riskAssessment: freezed == riskAssessment
+          ? _value.riskAssessment
+          : riskAssessment // ignore: cast_nullable_to_non_nullable
+              as RiskAssessment?,
+      complianceAssessment: freezed == complianceAssessment
+          ? _value.complianceAssessment
+          : complianceAssessment // ignore: cast_nullable_to_non_nullable
+              as ComplianceAssessment?,
+      metadata: null == metadata
+          ? _value._metadata
+          : metadata // ignore: cast_nullable_to_non_nullable
+              as Map<String, dynamic>,
+      assignedTo: freezed == assignedTo
+          ? _value.assignedTo
+          : assignedTo // ignore: cast_nullable_to_non_nullable
+              as String?,
+      reviewedBy: freezed == reviewedBy
+          ? _value.reviewedBy
+          : reviewedBy // ignore: cast_nullable_to_non_nullable
+              as String?,
+      progressPercentage: null == progressPercentage
+          ? _value.progressPercentage
+          : progressPercentage // ignore: cast_nullable_to_non_nullable
+              as int,
+      completedSections: null == completedSections
+          ? _value._completedSections
+          : completedSections // ignore: cast_nullable_to_non_nullable
+              as List<String>,
+    ));
   }
 }
 
 /// @nodoc
 @JsonSerializable()
-class _AssessmentModel extends AssessmentModel {
-  const _AssessmentModel(
+class _$AssessmentModelImpl extends _AssessmentModel {
+  const _$AssessmentModelImpl(
       {required this.id,
       required this.clienteId,
       required this.nomeAzienda,
@@ -562,8 +390,9 @@ class _AssessmentModel extends AssessmentModel {
       : _metadata = metadata,
         _completedSections = completedSections,
         super._();
-  factory _AssessmentModel.fromJson(Map<String, dynamic> json) =>
-      _$AssessmentModelFromJson(json);
+
+  factory _$AssessmentModelImpl.fromJson(Map<String, dynamic> json) =>
+      _$$AssessmentModelImplFromJson(json);
 
   @override
   final String id;
@@ -619,26 +448,16 @@ class _AssessmentModel extends AssessmentModel {
     return EqualUnmodifiableListView(_completedSections);
   }
 
-  /// Create a copy of AssessmentModel
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  _$AssessmentModelCopyWith<_AssessmentModel> get copyWith =>
-      __$AssessmentModelCopyWithImpl<_AssessmentModel>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$AssessmentModelToJson(
-      this,
-    );
+  String toString() {
+    return 'AssessmentModel(id: $id, clienteId: $clienteId, nomeAzienda: $nomeAzienda, status: $status, dataCreazione: $dataCreazione, dataUltimaModifica: $dataUltimaModifica, dataCompletamento: $dataCompletamento, companyInfo: $companyInfo, aiSystemInfo: $aiSystemInfo, riskAssessment: $riskAssessment, complianceAssessment: $complianceAssessment, metadata: $metadata, assignedTo: $assignedTo, reviewedBy: $reviewedBy, progressPercentage: $progressPercentage, completedSections: $completedSections)';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _AssessmentModel &&
+            other is _$AssessmentModelImpl &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.clienteId, clienteId) ||
                 other.clienteId == clienteId) &&
@@ -691,279 +510,122 @@ class _AssessmentModel extends AssessmentModel {
       progressPercentage,
       const DeepCollectionEquality().hash(_completedSections));
 
+  /// Create a copy of AssessmentModel
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  String toString() {
-    return 'AssessmentModel(id: $id, clienteId: $clienteId, nomeAzienda: $nomeAzienda, status: $status, dataCreazione: $dataCreazione, dataUltimaModifica: $dataUltimaModifica, dataCompletamento: $dataCompletamento, companyInfo: $companyInfo, aiSystemInfo: $aiSystemInfo, riskAssessment: $riskAssessment, complianceAssessment: $complianceAssessment, metadata: $metadata, assignedTo: $assignedTo, reviewedBy: $reviewedBy, progressPercentage: $progressPercentage, completedSections: $completedSections)';
+  @pragma('vm:prefer-inline')
+  _$$AssessmentModelImplCopyWith<_$AssessmentModelImpl> get copyWith =>
+      __$$AssessmentModelImplCopyWithImpl<_$AssessmentModelImpl>(
+          this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$AssessmentModelImplToJson(
+      this,
+    );
   }
 }
 
-/// @nodoc
-abstract mixin class _$AssessmentModelCopyWith<$Res>
-    implements $AssessmentModelCopyWith<$Res> {
-  factory _$AssessmentModelCopyWith(
-          _AssessmentModel value, $Res Function(_AssessmentModel) _then) =
-      __$AssessmentModelCopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String id,
-      String clienteId,
-      String nomeAzienda,
-      AssessmentStatus status,
-      DateTime dataCreazione,
-      DateTime? dataUltimaModifica,
-      DateTime? dataCompletamento,
-      CompanyInfo companyInfo,
-      AISystemInfo aiSystemInfo,
-      RiskAssessment? riskAssessment,
-      ComplianceAssessment? complianceAssessment,
-      Map<String, dynamic> metadata,
-      String? assignedTo,
-      String? reviewedBy,
-      int progressPercentage,
-      List<String> completedSections});
+abstract class _AssessmentModel extends AssessmentModel {
+  const factory _AssessmentModel(
+      {required final String id,
+      required final String clienteId,
+      required final String nomeAzienda,
+      required final AssessmentStatus status,
+      required final DateTime dataCreazione,
+      final DateTime? dataUltimaModifica,
+      final DateTime? dataCompletamento,
+      required final CompanyInfo companyInfo,
+      required final AISystemInfo aiSystemInfo,
+      final RiskAssessment? riskAssessment,
+      final ComplianceAssessment? complianceAssessment,
+      final Map<String, dynamic> metadata,
+      final String? assignedTo,
+      final String? reviewedBy,
+      final int progressPercentage,
+      final List<String> completedSections}) = _$AssessmentModelImpl;
+  const _AssessmentModel._() : super._();
+
+  factory _AssessmentModel.fromJson(Map<String, dynamic> json) =
+      _$AssessmentModelImpl.fromJson;
 
   @override
-  $CompanyInfoCopyWith<$Res> get companyInfo;
+  String get id;
   @override
-  $AISystemInfoCopyWith<$Res> get aiSystemInfo;
+  String get clienteId;
   @override
-  $RiskAssessmentCopyWith<$Res>? get riskAssessment;
+  String get nomeAzienda;
   @override
-  $ComplianceAssessmentCopyWith<$Res>? get complianceAssessment;
+  AssessmentStatus get status;
+  @override
+  DateTime get dataCreazione;
+  @override
+  DateTime? get dataUltimaModifica;
+  @override
+  DateTime? get dataCompletamento; // Informazioni azienda
+  @override
+  CompanyInfo get companyInfo; // Sistema AI
+  @override
+  AISystemInfo get aiSystemInfo; // Valutazioni
+  @override
+  RiskAssessment? get riskAssessment;
+  @override
+  ComplianceAssessment? get complianceAssessment; // Metadati
+  @override
+  Map<String, dynamic> get metadata;
+  @override
+  String? get assignedTo;
+  @override
+  String? get reviewedBy; // Progress tracking
+  @override
+  int get progressPercentage;
+  @override
+  List<String> get completedSections;
+
+  /// Create a copy of AssessmentModel
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$AssessmentModelImplCopyWith<_$AssessmentModelImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
-/// @nodoc
-class __$AssessmentModelCopyWithImpl<$Res>
-    implements _$AssessmentModelCopyWith<$Res> {
-  __$AssessmentModelCopyWithImpl(this._self, this._then);
-
-  final _AssessmentModel _self;
-  final $Res Function(_AssessmentModel) _then;
-
-  /// Create a copy of AssessmentModel
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = null,
-    Object? clienteId = null,
-    Object? nomeAzienda = null,
-    Object? status = null,
-    Object? dataCreazione = null,
-    Object? dataUltimaModifica = freezed,
-    Object? dataCompletamento = freezed,
-    Object? companyInfo = null,
-    Object? aiSystemInfo = null,
-    Object? riskAssessment = freezed,
-    Object? complianceAssessment = freezed,
-    Object? metadata = null,
-    Object? assignedTo = freezed,
-    Object? reviewedBy = freezed,
-    Object? progressPercentage = null,
-    Object? completedSections = null,
-  }) {
-    return _then(_AssessmentModel(
-      id: null == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
-      clienteId: null == clienteId
-          ? _self.clienteId
-          : clienteId // ignore: cast_nullable_to_non_nullable
-              as String,
-      nomeAzienda: null == nomeAzienda
-          ? _self.nomeAzienda
-          : nomeAzienda // ignore: cast_nullable_to_non_nullable
-              as String,
-      status: null == status
-          ? _self.status
-          : status // ignore: cast_nullable_to_non_nullable
-              as AssessmentStatus,
-      dataCreazione: null == dataCreazione
-          ? _self.dataCreazione
-          : dataCreazione // ignore: cast_nullable_to_non_nullable
-              as DateTime,
-      dataUltimaModifica: freezed == dataUltimaModifica
-          ? _self.dataUltimaModifica
-          : dataUltimaModifica // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      dataCompletamento: freezed == dataCompletamento
-          ? _self.dataCompletamento
-          : dataCompletamento // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      companyInfo: null == companyInfo
-          ? _self.companyInfo
-          : companyInfo // ignore: cast_nullable_to_non_nullable
-              as CompanyInfo,
-      aiSystemInfo: null == aiSystemInfo
-          ? _self.aiSystemInfo
-          : aiSystemInfo // ignore: cast_nullable_to_non_nullable
-              as AISystemInfo,
-      riskAssessment: freezed == riskAssessment
-          ? _self.riskAssessment
-          : riskAssessment // ignore: cast_nullable_to_non_nullable
-              as RiskAssessment?,
-      complianceAssessment: freezed == complianceAssessment
-          ? _self.complianceAssessment
-          : complianceAssessment // ignore: cast_nullable_to_non_nullable
-              as ComplianceAssessment?,
-      metadata: null == metadata
-          ? _self._metadata
-          : metadata // ignore: cast_nullable_to_non_nullable
-              as Map<String, dynamic>,
-      assignedTo: freezed == assignedTo
-          ? _self.assignedTo
-          : assignedTo // ignore: cast_nullable_to_non_nullable
-              as String?,
-      reviewedBy: freezed == reviewedBy
-          ? _self.reviewedBy
-          : reviewedBy // ignore: cast_nullable_to_non_nullable
-              as String?,
-      progressPercentage: null == progressPercentage
-          ? _self.progressPercentage
-          : progressPercentage // ignore: cast_nullable_to_non_nullable
-              as int,
-      completedSections: null == completedSections
-          ? _self._completedSections
-          : completedSections // ignore: cast_nullable_to_non_nullable
-              as List<String>,
-    ));
-  }
-
-  /// Create a copy of AssessmentModel
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $CompanyInfoCopyWith<$Res> get companyInfo {
-    return $CompanyInfoCopyWith<$Res>(_self.companyInfo, (value) {
-      return _then(_self.copyWith(companyInfo: value));
-    });
-  }
-
-  /// Create a copy of AssessmentModel
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $AISystemInfoCopyWith<$Res> get aiSystemInfo {
-    return $AISystemInfoCopyWith<$Res>(_self.aiSystemInfo, (value) {
-      return _then(_self.copyWith(aiSystemInfo: value));
-    });
-  }
-
-  /// Create a copy of AssessmentModel
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $RiskAssessmentCopyWith<$Res>? get riskAssessment {
-    if (_self.riskAssessment == null) {
-      return null;
-    }
-
-    return $RiskAssessmentCopyWith<$Res>(_self.riskAssessment!, (value) {
-      return _then(_self.copyWith(riskAssessment: value));
-    });
-  }
-
-  /// Create a copy of AssessmentModel
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $ComplianceAssessmentCopyWith<$Res>? get complianceAssessment {
-    if (_self.complianceAssessment == null) {
-      return null;
-    }
-
-    return $ComplianceAssessmentCopyWith<$Res>(_self.complianceAssessment!,
-        (value) {
-      return _then(_self.copyWith(complianceAssessment: value));
-    });
-  }
+CompanyInfo _$CompanyInfoFromJson(Map<String, dynamic> json) {
+  return _CompanyInfo.fromJson(json);
 }
 
 /// @nodoc
 mixin _$CompanyInfo {
-  String get ragioneSociale;
-  String get partitaIva;
-  String get codiceFiscale;
-  String get settore;
-  String get dimensione;
-  String? get pec;
-  String? get website;
-  String? get indirizzo;
-  String? get citta;
-  String? get cap;
-  String? get provincia;
-  int get numeroeDipendenti;
-  bool get isMultinazionale;
+  String get ragioneSociale => throw _privateConstructorUsedError;
+  String get partitaIva => throw _privateConstructorUsedError;
+  String get codiceFiscale => throw _privateConstructorUsedError;
+  String get settore => throw _privateConstructorUsedError;
+  String get dimensione => throw _privateConstructorUsedError;
+  String? get pec => throw _privateConstructorUsedError;
+  String? get website => throw _privateConstructorUsedError;
+  String? get indirizzo => throw _privateConstructorUsedError;
+  String? get citta => throw _privateConstructorUsedError;
+  String? get cap => throw _privateConstructorUsedError;
+  String? get provincia => throw _privateConstructorUsedError;
+  int get numeroDipendenti => throw _privateConstructorUsedError;
+  bool get isMultinazionale => throw _privateConstructorUsedError;
+
+  /// Serializes this CompanyInfo to a JSON map.
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
 
   /// Create a copy of CompanyInfo
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
   $CompanyInfoCopyWith<CompanyInfo> get copyWith =>
-      _$CompanyInfoCopyWithImpl<CompanyInfo>(this as CompanyInfo, _$identity);
-
-  /// Serializes this CompanyInfo to a JSON map.
-  Map<String, dynamic> toJson();
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is CompanyInfo &&
-            (identical(other.ragioneSociale, ragioneSociale) ||
-                other.ragioneSociale == ragioneSociale) &&
-            (identical(other.partitaIva, partitaIva) ||
-                other.partitaIva == partitaIva) &&
-            (identical(other.codiceFiscale, codiceFiscale) ||
-                other.codiceFiscale == codiceFiscale) &&
-            (identical(other.settore, settore) || other.settore == settore) &&
-            (identical(other.dimensione, dimensione) ||
-                other.dimensione == dimensione) &&
-            (identical(other.pec, pec) || other.pec == pec) &&
-            (identical(other.website, website) || other.website == website) &&
-            (identical(other.indirizzo, indirizzo) ||
-                other.indirizzo == indirizzo) &&
-            (identical(other.citta, citta) || other.citta == citta) &&
-            (identical(other.cap, cap) || other.cap == cap) &&
-            (identical(other.provincia, provincia) ||
-                other.provincia == provincia) &&
-            (identical(other.numeroeDipendenti, numeroeDipendenti) ||
-                other.numeroeDipendenti == numeroeDipendenti) &&
-            (identical(other.isMultinazionale, isMultinazionale) ||
-                other.isMultinazionale == isMultinazionale));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      ragioneSociale,
-      partitaIva,
-      codiceFiscale,
-      settore,
-      dimensione,
-      pec,
-      website,
-      indirizzo,
-      citta,
-      cap,
-      provincia,
-      numeroeDipendenti,
-      isMultinazionale);
-
-  @override
-  String toString() {
-    return 'CompanyInfo(ragioneSociale: $ragioneSociale, partitaIva: $partitaIva, codiceFiscale: $codiceFiscale, settore: $settore, dimensione: $dimensione, pec: $pec, website: $website, indirizzo: $indirizzo, citta: $citta, cap: $cap, provincia: $provincia, numeroeDipendenti: $numeroeDipendenti, isMultinazionale: $isMultinazionale)';
-  }
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract mixin class $CompanyInfoCopyWith<$Res> {
+abstract class $CompanyInfoCopyWith<$Res> {
   factory $CompanyInfoCopyWith(
-          CompanyInfo value, $Res Function(CompanyInfo) _then) =
-      _$CompanyInfoCopyWithImpl;
+          CompanyInfo value, $Res Function(CompanyInfo) then) =
+      _$CompanyInfoCopyWithImpl<$Res, CompanyInfo>;
   @useResult
   $Res call(
       {String ragioneSociale,
@@ -977,16 +639,19 @@ abstract mixin class $CompanyInfoCopyWith<$Res> {
       String? citta,
       String? cap,
       String? provincia,
-      int numeroeDipendenti,
+      int numeroDipendenti,
       bool isMultinazionale});
 }
 
 /// @nodoc
-class _$CompanyInfoCopyWithImpl<$Res> implements $CompanyInfoCopyWith<$Res> {
-  _$CompanyInfoCopyWithImpl(this._self, this._then);
+class _$CompanyInfoCopyWithImpl<$Res, $Val extends CompanyInfo>
+    implements $CompanyInfoCopyWith<$Res> {
+  _$CompanyInfoCopyWithImpl(this._value, this._then);
 
-  final CompanyInfo _self;
-  final $Res Function(CompanyInfo) _then;
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
   /// Create a copy of CompanyInfo
   /// with the given fields replaced by the non-null parameter values.
@@ -1004,308 +669,178 @@ class _$CompanyInfoCopyWithImpl<$Res> implements $CompanyInfoCopyWith<$Res> {
     Object? citta = freezed,
     Object? cap = freezed,
     Object? provincia = freezed,
-    Object? numeroeDipendenti = null,
+    Object? numeroDipendenti = null,
     Object? isMultinazionale = null,
   }) {
-    return _then(_self.copyWith(
+    return _then(_value.copyWith(
       ragioneSociale: null == ragioneSociale
-          ? _self.ragioneSociale
+          ? _value.ragioneSociale
           : ragioneSociale // ignore: cast_nullable_to_non_nullable
               as String,
       partitaIva: null == partitaIva
-          ? _self.partitaIva
+          ? _value.partitaIva
           : partitaIva // ignore: cast_nullable_to_non_nullable
               as String,
       codiceFiscale: null == codiceFiscale
-          ? _self.codiceFiscale
+          ? _value.codiceFiscale
           : codiceFiscale // ignore: cast_nullable_to_non_nullable
               as String,
       settore: null == settore
-          ? _self.settore
+          ? _value.settore
           : settore // ignore: cast_nullable_to_non_nullable
               as String,
       dimensione: null == dimensione
-          ? _self.dimensione
+          ? _value.dimensione
           : dimensione // ignore: cast_nullable_to_non_nullable
               as String,
       pec: freezed == pec
-          ? _self.pec
+          ? _value.pec
           : pec // ignore: cast_nullable_to_non_nullable
               as String?,
       website: freezed == website
-          ? _self.website
+          ? _value.website
           : website // ignore: cast_nullable_to_non_nullable
               as String?,
       indirizzo: freezed == indirizzo
-          ? _self.indirizzo
+          ? _value.indirizzo
           : indirizzo // ignore: cast_nullable_to_non_nullable
               as String?,
       citta: freezed == citta
-          ? _self.citta
+          ? _value.citta
           : citta // ignore: cast_nullable_to_non_nullable
               as String?,
       cap: freezed == cap
-          ? _self.cap
+          ? _value.cap
           : cap // ignore: cast_nullable_to_non_nullable
               as String?,
       provincia: freezed == provincia
-          ? _self.provincia
+          ? _value.provincia
           : provincia // ignore: cast_nullable_to_non_nullable
               as String?,
-      numeroeDipendenti: null == numeroeDipendenti
-          ? _self.numeroeDipendenti
-          : numeroeDipendenti // ignore: cast_nullable_to_non_nullable
+      numeroDipendenti: null == numeroDipendenti
+          ? _value.numeroDipendenti
+          : numeroDipendenti // ignore: cast_nullable_to_non_nullable
               as int,
       isMultinazionale: null == isMultinazionale
-          ? _self.isMultinazionale
+          ? _value.isMultinazionale
+          : isMultinazionale // ignore: cast_nullable_to_non_nullable
+              as bool,
+    ) as $Val);
+  }
+}
+
+/// @nodoc
+abstract class _$$CompanyInfoImplCopyWith<$Res>
+    implements $CompanyInfoCopyWith<$Res> {
+  factory _$$CompanyInfoImplCopyWith(
+          _$CompanyInfoImpl value, $Res Function(_$CompanyInfoImpl) then) =
+      __$$CompanyInfoImplCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call(
+      {String ragioneSociale,
+      String partitaIva,
+      String codiceFiscale,
+      String settore,
+      String dimensione,
+      String? pec,
+      String? website,
+      String? indirizzo,
+      String? citta,
+      String? cap,
+      String? provincia,
+      int numeroDipendenti,
+      bool isMultinazionale});
+}
+
+/// @nodoc
+class __$$CompanyInfoImplCopyWithImpl<$Res>
+    extends _$CompanyInfoCopyWithImpl<$Res, _$CompanyInfoImpl>
+    implements _$$CompanyInfoImplCopyWith<$Res> {
+  __$$CompanyInfoImplCopyWithImpl(
+      _$CompanyInfoImpl _value, $Res Function(_$CompanyInfoImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of CompanyInfo
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? ragioneSociale = null,
+    Object? partitaIva = null,
+    Object? codiceFiscale = null,
+    Object? settore = null,
+    Object? dimensione = null,
+    Object? pec = freezed,
+    Object? website = freezed,
+    Object? indirizzo = freezed,
+    Object? citta = freezed,
+    Object? cap = freezed,
+    Object? provincia = freezed,
+    Object? numeroDipendenti = null,
+    Object? isMultinazionale = null,
+  }) {
+    return _then(_$CompanyInfoImpl(
+      ragioneSociale: null == ragioneSociale
+          ? _value.ragioneSociale
+          : ragioneSociale // ignore: cast_nullable_to_non_nullable
+              as String,
+      partitaIva: null == partitaIva
+          ? _value.partitaIva
+          : partitaIva // ignore: cast_nullable_to_non_nullable
+              as String,
+      codiceFiscale: null == codiceFiscale
+          ? _value.codiceFiscale
+          : codiceFiscale // ignore: cast_nullable_to_non_nullable
+              as String,
+      settore: null == settore
+          ? _value.settore
+          : settore // ignore: cast_nullable_to_non_nullable
+              as String,
+      dimensione: null == dimensione
+          ? _value.dimensione
+          : dimensione // ignore: cast_nullable_to_non_nullable
+              as String,
+      pec: freezed == pec
+          ? _value.pec
+          : pec // ignore: cast_nullable_to_non_nullable
+              as String?,
+      website: freezed == website
+          ? _value.website
+          : website // ignore: cast_nullable_to_non_nullable
+              as String?,
+      indirizzo: freezed == indirizzo
+          ? _value.indirizzo
+          : indirizzo // ignore: cast_nullable_to_non_nullable
+              as String?,
+      citta: freezed == citta
+          ? _value.citta
+          : citta // ignore: cast_nullable_to_non_nullable
+              as String?,
+      cap: freezed == cap
+          ? _value.cap
+          : cap // ignore: cast_nullable_to_non_nullable
+              as String?,
+      provincia: freezed == provincia
+          ? _value.provincia
+          : provincia // ignore: cast_nullable_to_non_nullable
+              as String?,
+      numeroDipendenti: null == numeroDipendenti
+          ? _value.numeroDipendenti
+          : numeroDipendenti // ignore: cast_nullable_to_non_nullable
+              as int,
+      isMultinazionale: null == isMultinazionale
+          ? _value.isMultinazionale
           : isMultinazionale // ignore: cast_nullable_to_non_nullable
               as bool,
     ));
   }
 }
 
-/// Adds pattern-matching-related methods to [CompanyInfo].
-extension CompanyInfoPatterns on CompanyInfo {
-  /// A variant of `map` that fallback to returning `orElse`.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case _:
-  ///     return orElse();
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>(
-    TResult Function(_CompanyInfo value)? $default, {
-    required TResult orElse(),
-  }) {
-    final _that = this;
-    switch (_that) {
-      case _CompanyInfo() when $default != null:
-        return $default(_that);
-      case _:
-        return orElse();
-    }
-  }
-
-  /// A `switch`-like method, using callbacks.
-  ///
-  /// Callbacks receives the raw object, upcasted.
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case final Subclass2 value:
-  ///     return ...;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>(
-    TResult Function(_CompanyInfo value) $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _CompanyInfo():
-        return $default(_that);
-      case _:
-        throw StateError('Unexpected subclass');
-    }
-  }
-
-  /// A variant of `map` that fallback to returning `null`.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case _:
-  ///     return null;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>(
-    TResult? Function(_CompanyInfo value)? $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _CompanyInfo() when $default != null:
-        return $default(_that);
-      case _:
-        return null;
-    }
-  }
-
-  /// A variant of `when` that fallback to an `orElse` callback.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case _:
-  ///     return orElse();
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>(
-    TResult Function(
-            String ragioneSociale,
-            String partitaIva,
-            String codiceFiscale,
-            String settore,
-            String dimensione,
-            String? pec,
-            String? website,
-            String? indirizzo,
-            String? citta,
-            String? cap,
-            String? provincia,
-            int numeroeDipendenti,
-            bool isMultinazionale)?
-        $default, {
-    required TResult orElse(),
-  }) {
-    final _that = this;
-    switch (_that) {
-      case _CompanyInfo() when $default != null:
-        return $default(
-            _that.ragioneSociale,
-            _that.partitaIva,
-            _that.codiceFiscale,
-            _that.settore,
-            _that.dimensione,
-            _that.pec,
-            _that.website,
-            _that.indirizzo,
-            _that.citta,
-            _that.cap,
-            _that.provincia,
-            _that.numeroeDipendenti,
-            _that.isMultinazionale);
-      case _:
-        return orElse();
-    }
-  }
-
-  /// A `switch`-like method, using callbacks.
-  ///
-  /// As opposed to `map`, this offers destructuring.
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case Subclass2(:final field2):
-  ///     return ...;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>(
-    TResult Function(
-            String ragioneSociale,
-            String partitaIva,
-            String codiceFiscale,
-            String settore,
-            String dimensione,
-            String? pec,
-            String? website,
-            String? indirizzo,
-            String? citta,
-            String? cap,
-            String? provincia,
-            int numeroeDipendenti,
-            bool isMultinazionale)
-        $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _CompanyInfo():
-        return $default(
-            _that.ragioneSociale,
-            _that.partitaIva,
-            _that.codiceFiscale,
-            _that.settore,
-            _that.dimensione,
-            _that.pec,
-            _that.website,
-            _that.indirizzo,
-            _that.citta,
-            _that.cap,
-            _that.provincia,
-            _that.numeroeDipendenti,
-            _that.isMultinazionale);
-      case _:
-        throw StateError('Unexpected subclass');
-    }
-  }
-
-  /// A variant of `when` that fallback to returning `null`
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case _:
-  ///     return null;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>(
-    TResult? Function(
-            String ragioneSociale,
-            String partitaIva,
-            String codiceFiscale,
-            String settore,
-            String dimensione,
-            String? pec,
-            String? website,
-            String? indirizzo,
-            String? citta,
-            String? cap,
-            String? provincia,
-            int numeroeDipendenti,
-            bool isMultinazionale)?
-        $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _CompanyInfo() when $default != null:
-        return $default(
-            _that.ragioneSociale,
-            _that.partitaIva,
-            _that.codiceFiscale,
-            _that.settore,
-            _that.dimensione,
-            _that.pec,
-            _that.website,
-            _that.indirizzo,
-            _that.citta,
-            _that.cap,
-            _that.provincia,
-            _that.numeroeDipendenti,
-            _that.isMultinazionale);
-      case _:
-        return null;
-    }
-  }
-}
-
 /// @nodoc
 @JsonSerializable()
-class _CompanyInfo extends CompanyInfo {
-  const _CompanyInfo(
+class _$CompanyInfoImpl extends _CompanyInfo {
+  const _$CompanyInfoImpl(
       {required this.ragioneSociale,
       required this.partitaIva,
       required this.codiceFiscale,
@@ -1317,11 +852,12 @@ class _CompanyInfo extends CompanyInfo {
       this.citta,
       this.cap,
       this.provincia,
-      required this.numeroeDipendenti,
+      required this.numeroDipendenti,
       this.isMultinazionale = false})
       : super._();
-  factory _CompanyInfo.fromJson(Map<String, dynamic> json) =>
-      _$CompanyInfoFromJson(json);
+
+  factory _$CompanyInfoImpl.fromJson(Map<String, dynamic> json) =>
+      _$$CompanyInfoImplFromJson(json);
 
   @override
   final String ragioneSociale;
@@ -1346,31 +882,21 @@ class _CompanyInfo extends CompanyInfo {
   @override
   final String? provincia;
   @override
-  final int numeroeDipendenti;
+  final int numeroDipendenti;
   @override
   @JsonKey()
   final bool isMultinazionale;
 
-  /// Create a copy of CompanyInfo
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  _$CompanyInfoCopyWith<_CompanyInfo> get copyWith =>
-      __$CompanyInfoCopyWithImpl<_CompanyInfo>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$CompanyInfoToJson(
-      this,
-    );
+  String toString() {
+    return 'CompanyInfo(ragioneSociale: $ragioneSociale, partitaIva: $partitaIva, codiceFiscale: $codiceFiscale, settore: $settore, dimensione: $dimensione, pec: $pec, website: $website, indirizzo: $indirizzo, citta: $citta, cap: $cap, provincia: $provincia, numeroDipendenti: $numeroDipendenti, isMultinazionale: $isMultinazionale)';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _CompanyInfo &&
+            other is _$CompanyInfoImpl &&
             (identical(other.ragioneSociale, ragioneSociale) ||
                 other.ragioneSociale == ragioneSociale) &&
             (identical(other.partitaIva, partitaIva) ||
@@ -1388,8 +914,8 @@ class _CompanyInfo extends CompanyInfo {
             (identical(other.cap, cap) || other.cap == cap) &&
             (identical(other.provincia, provincia) ||
                 other.provincia == provincia) &&
-            (identical(other.numeroeDipendenti, numeroeDipendenti) ||
-                other.numeroeDipendenti == numeroeDipendenti) &&
+            (identical(other.numeroDipendenti, numeroDipendenti) ||
+                other.numeroDipendenti == numeroDipendenti) &&
             (identical(other.isMultinazionale, isMultinazionale) ||
                 other.isMultinazionale == isMultinazionale));
   }
@@ -1409,204 +935,115 @@ class _CompanyInfo extends CompanyInfo {
       citta,
       cap,
       provincia,
-      numeroeDipendenti,
+      numeroDipendenti,
       isMultinazionale);
 
+  /// Create a copy of CompanyInfo
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  String toString() {
-    return 'CompanyInfo(ragioneSociale: $ragioneSociale, partitaIva: $partitaIva, codiceFiscale: $codiceFiscale, settore: $settore, dimensione: $dimensione, pec: $pec, website: $website, indirizzo: $indirizzo, citta: $citta, cap: $cap, provincia: $provincia, numeroeDipendenti: $numeroeDipendenti, isMultinazionale: $isMultinazionale)';
+  @pragma('vm:prefer-inline')
+  _$$CompanyInfoImplCopyWith<_$CompanyInfoImpl> get copyWith =>
+      __$$CompanyInfoImplCopyWithImpl<_$CompanyInfoImpl>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$CompanyInfoImplToJson(
+      this,
+    );
   }
 }
 
-/// @nodoc
-abstract mixin class _$CompanyInfoCopyWith<$Res>
-    implements $CompanyInfoCopyWith<$Res> {
-  factory _$CompanyInfoCopyWith(
-          _CompanyInfo value, $Res Function(_CompanyInfo) _then) =
-      __$CompanyInfoCopyWithImpl;
+abstract class _CompanyInfo extends CompanyInfo {
+  const factory _CompanyInfo(
+      {required final String ragioneSociale,
+      required final String partitaIva,
+      required final String codiceFiscale,
+      required final String settore,
+      required final String dimensione,
+      final String? pec,
+      final String? website,
+      final String? indirizzo,
+      final String? citta,
+      final String? cap,
+      final String? provincia,
+      required final int numeroDipendenti,
+      final bool isMultinazionale}) = _$CompanyInfoImpl;
+  const _CompanyInfo._() : super._();
+
+  factory _CompanyInfo.fromJson(Map<String, dynamic> json) =
+      _$CompanyInfoImpl.fromJson;
+
   @override
-  @useResult
-  $Res call(
-      {String ragioneSociale,
-      String partitaIva,
-      String codiceFiscale,
-      String settore,
-      String dimensione,
-      String? pec,
-      String? website,
-      String? indirizzo,
-      String? citta,
-      String? cap,
-      String? provincia,
-      int numeroeDipendenti,
-      bool isMultinazionale});
-}
-
-/// @nodoc
-class __$CompanyInfoCopyWithImpl<$Res> implements _$CompanyInfoCopyWith<$Res> {
-  __$CompanyInfoCopyWithImpl(this._self, this._then);
-
-  final _CompanyInfo _self;
-  final $Res Function(_CompanyInfo) _then;
+  String get ragioneSociale;
+  @override
+  String get partitaIva;
+  @override
+  String get codiceFiscale;
+  @override
+  String get settore;
+  @override
+  String get dimensione;
+  @override
+  String? get pec;
+  @override
+  String? get website;
+  @override
+  String? get indirizzo;
+  @override
+  String? get citta;
+  @override
+  String? get cap;
+  @override
+  String? get provincia;
+  @override
+  int get numeroDipendenti;
+  @override
+  bool get isMultinazionale;
 
   /// Create a copy of CompanyInfo
   /// with the given fields replaced by the non-null parameter values.
   @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? ragioneSociale = null,
-    Object? partitaIva = null,
-    Object? codiceFiscale = null,
-    Object? settore = null,
-    Object? dimensione = null,
-    Object? pec = freezed,
-    Object? website = freezed,
-    Object? indirizzo = freezed,
-    Object? citta = freezed,
-    Object? cap = freezed,
-    Object? provincia = freezed,
-    Object? numeroeDipendenti = null,
-    Object? isMultinazionale = null,
-  }) {
-    return _then(_CompanyInfo(
-      ragioneSociale: null == ragioneSociale
-          ? _self.ragioneSociale
-          : ragioneSociale // ignore: cast_nullable_to_non_nullable
-              as String,
-      partitaIva: null == partitaIva
-          ? _self.partitaIva
-          : partitaIva // ignore: cast_nullable_to_non_nullable
-              as String,
-      codiceFiscale: null == codiceFiscale
-          ? _self.codiceFiscale
-          : codiceFiscale // ignore: cast_nullable_to_non_nullable
-              as String,
-      settore: null == settore
-          ? _self.settore
-          : settore // ignore: cast_nullable_to_non_nullable
-              as String,
-      dimensione: null == dimensione
-          ? _self.dimensione
-          : dimensione // ignore: cast_nullable_to_non_nullable
-              as String,
-      pec: freezed == pec
-          ? _self.pec
-          : pec // ignore: cast_nullable_to_non_nullable
-              as String?,
-      website: freezed == website
-          ? _self.website
-          : website // ignore: cast_nullable_to_non_nullable
-              as String?,
-      indirizzo: freezed == indirizzo
-          ? _self.indirizzo
-          : indirizzo // ignore: cast_nullable_to_non_nullable
-              as String?,
-      citta: freezed == citta
-          ? _self.citta
-          : citta // ignore: cast_nullable_to_non_nullable
-              as String?,
-      cap: freezed == cap
-          ? _self.cap
-          : cap // ignore: cast_nullable_to_non_nullable
-              as String?,
-      provincia: freezed == provincia
-          ? _self.provincia
-          : provincia // ignore: cast_nullable_to_non_nullable
-              as String?,
-      numeroeDipendenti: null == numeroeDipendenti
-          ? _self.numeroeDipendenti
-          : numeroeDipendenti // ignore: cast_nullable_to_non_nullable
-              as int,
-      isMultinazionale: null == isMultinazionale
-          ? _self.isMultinazionale
-          : isMultinazionale // ignore: cast_nullable_to_non_nullable
-              as bool,
-    ));
-  }
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$CompanyInfoImplCopyWith<_$CompanyInfoImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+AISystemInfo _$AISystemInfoFromJson(Map<String, dynamic> json) {
+  return _AISystemInfo.fromJson(json);
 }
 
 /// @nodoc
 mixin _$AISystemInfo {
-  String get nome;
-  String get descrizione;
-  AISystemType get tipo;
-  AIRiskLevel get livelloRischio;
-  List<String> get finalita;
-  List<String> get categorieDati;
-  bool get coinvolgeMinori;
-  bool get decisoniAutomatizzate;
-  bool get profilazione;
-  String? get fornitore;
-  String? get versione;
-  List<String> get certificazioni;
+  String get nome => throw _privateConstructorUsedError;
+  String get descrizione => throw _privateConstructorUsedError;
+  AISystemType get tipo => throw _privateConstructorUsedError;
+  AIRiskLevel get livelloRischio => throw _privateConstructorUsedError;
+  List<String> get finalita => throw _privateConstructorUsedError;
+  List<String> get categorieDati => throw _privateConstructorUsedError;
+  bool get coinvolgeMinori => throw _privateConstructorUsedError;
+  bool get decisioniAutomatizzate => throw _privateConstructorUsedError;
+  bool get profilazione => throw _privateConstructorUsedError;
+  String? get fornitore => throw _privateConstructorUsedError;
+  String? get versione => throw _privateConstructorUsedError;
+  DateTime? get dataDeployment => throw _privateConstructorUsedError;
+  List<String> get paesiOperativi => throw _privateConstructorUsedError;
+
+  /// Serializes this AISystemInfo to a JSON map.
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
 
   /// Create a copy of AISystemInfo
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
   $AISystemInfoCopyWith<AISystemInfo> get copyWith =>
-      _$AISystemInfoCopyWithImpl<AISystemInfo>(
-          this as AISystemInfo, _$identity);
-
-  /// Serializes this AISystemInfo to a JSON map.
-  Map<String, dynamic> toJson();
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is AISystemInfo &&
-            (identical(other.nome, nome) || other.nome == nome) &&
-            (identical(other.descrizione, descrizione) ||
-                other.descrizione == descrizione) &&
-            (identical(other.tipo, tipo) || other.tipo == tipo) &&
-            (identical(other.livelloRischio, livelloRischio) ||
-                other.livelloRischio == livelloRischio) &&
-            const DeepCollectionEquality().equals(other.finalita, finalita) &&
-            const DeepCollectionEquality()
-                .equals(other.categorieDati, categorieDati) &&
-            (identical(other.coinvolgeMinori, coinvolgeMinori) ||
-                other.coinvolgeMinori == coinvolgeMinori) &&
-            (identical(other.decisoniAutomatizzate, decisoniAutomatizzate) ||
-                other.decisoniAutomatizzate == decisoniAutomatizzate) &&
-            (identical(other.profilazione, profilazione) ||
-                other.profilazione == profilazione) &&
-            (identical(other.fornitore, fornitore) ||
-                other.fornitore == fornitore) &&
-            (identical(other.versione, versione) ||
-                other.versione == versione) &&
-            const DeepCollectionEquality()
-                .equals(other.certificazioni, certificazioni));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      nome,
-      descrizione,
-      tipo,
-      livelloRischio,
-      const DeepCollectionEquality().hash(finalita),
-      const DeepCollectionEquality().hash(categorieDati),
-      coinvolgeMinori,
-      decisoniAutomatizzate,
-      profilazione,
-      fornitore,
-      versione,
-      const DeepCollectionEquality().hash(certificazioni));
-
-  @override
-  String toString() {
-    return 'AISystemInfo(nome: $nome, descrizione: $descrizione, tipo: $tipo, livelloRischio: $livelloRischio, finalita: $finalita, categorieDati: $categorieDati, coinvolgeMinori: $coinvolgeMinori, decisoniAutomatizzate: $decisoniAutomatizzate, profilazione: $profilazione, fornitore: $fornitore, versione: $versione, certificazioni: $certificazioni)';
-  }
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract mixin class $AISystemInfoCopyWith<$Res> {
+abstract class $AISystemInfoCopyWith<$Res> {
   factory $AISystemInfoCopyWith(
-          AISystemInfo value, $Res Function(AISystemInfo) _then) =
-      _$AISystemInfoCopyWithImpl;
+          AISystemInfo value, $Res Function(AISystemInfo) then) =
+      _$AISystemInfoCopyWithImpl<$Res, AISystemInfo>;
   @useResult
   $Res call(
       {String nome,
@@ -1616,19 +1053,23 @@ abstract mixin class $AISystemInfoCopyWith<$Res> {
       List<String> finalita,
       List<String> categorieDati,
       bool coinvolgeMinori,
-      bool decisoniAutomatizzate,
+      bool decisioniAutomatizzate,
       bool profilazione,
       String? fornitore,
       String? versione,
-      List<String> certificazioni});
+      DateTime? dataDeployment,
+      List<String> paesiOperativi});
 }
 
 /// @nodoc
-class _$AISystemInfoCopyWithImpl<$Res> implements $AISystemInfoCopyWith<$Res> {
-  _$AISystemInfoCopyWithImpl(this._self, this._then);
+class _$AISystemInfoCopyWithImpl<$Res, $Val extends AISystemInfo>
+    implements $AISystemInfoCopyWith<$Res> {
+  _$AISystemInfoCopyWithImpl(this._value, this._then);
 
-  final AISystemInfo _self;
-  final $Res Function(AISystemInfo) _then;
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
   /// Create a copy of AISystemInfo
   /// with the given fields replaced by the non-null parameter values.
@@ -1642,301 +1083,182 @@ class _$AISystemInfoCopyWithImpl<$Res> implements $AISystemInfoCopyWith<$Res> {
     Object? finalita = null,
     Object? categorieDati = null,
     Object? coinvolgeMinori = null,
-    Object? decisoniAutomatizzate = null,
+    Object? decisioniAutomatizzate = null,
     Object? profilazione = null,
     Object? fornitore = freezed,
     Object? versione = freezed,
-    Object? certificazioni = null,
+    Object? dataDeployment = freezed,
+    Object? paesiOperativi = null,
   }) {
-    return _then(_self.copyWith(
+    return _then(_value.copyWith(
       nome: null == nome
-          ? _self.nome
+          ? _value.nome
           : nome // ignore: cast_nullable_to_non_nullable
               as String,
       descrizione: null == descrizione
-          ? _self.descrizione
+          ? _value.descrizione
           : descrizione // ignore: cast_nullable_to_non_nullable
               as String,
       tipo: null == tipo
-          ? _self.tipo
+          ? _value.tipo
           : tipo // ignore: cast_nullable_to_non_nullable
               as AISystemType,
       livelloRischio: null == livelloRischio
-          ? _self.livelloRischio
+          ? _value.livelloRischio
           : livelloRischio // ignore: cast_nullable_to_non_nullable
               as AIRiskLevel,
       finalita: null == finalita
-          ? _self.finalita
+          ? _value.finalita
           : finalita // ignore: cast_nullable_to_non_nullable
               as List<String>,
       categorieDati: null == categorieDati
-          ? _self.categorieDati
+          ? _value.categorieDati
           : categorieDati // ignore: cast_nullable_to_non_nullable
               as List<String>,
       coinvolgeMinori: null == coinvolgeMinori
-          ? _self.coinvolgeMinori
+          ? _value.coinvolgeMinori
           : coinvolgeMinori // ignore: cast_nullable_to_non_nullable
               as bool,
-      decisoniAutomatizzate: null == decisoniAutomatizzate
-          ? _self.decisoniAutomatizzate
-          : decisoniAutomatizzate // ignore: cast_nullable_to_non_nullable
+      decisioniAutomatizzate: null == decisioniAutomatizzate
+          ? _value.decisioniAutomatizzate
+          : decisioniAutomatizzate // ignore: cast_nullable_to_non_nullable
               as bool,
       profilazione: null == profilazione
-          ? _self.profilazione
+          ? _value.profilazione
           : profilazione // ignore: cast_nullable_to_non_nullable
               as bool,
       fornitore: freezed == fornitore
-          ? _self.fornitore
+          ? _value.fornitore
           : fornitore // ignore: cast_nullable_to_non_nullable
               as String?,
       versione: freezed == versione
-          ? _self.versione
+          ? _value.versione
           : versione // ignore: cast_nullable_to_non_nullable
               as String?,
-      certificazioni: null == certificazioni
-          ? _self.certificazioni
-          : certificazioni // ignore: cast_nullable_to_non_nullable
+      dataDeployment: freezed == dataDeployment
+          ? _value.dataDeployment
+          : dataDeployment // ignore: cast_nullable_to_non_nullable
+              as DateTime?,
+      paesiOperativi: null == paesiOperativi
+          ? _value.paesiOperativi
+          : paesiOperativi // ignore: cast_nullable_to_non_nullable
+              as List<String>,
+    ) as $Val);
+  }
+}
+
+/// @nodoc
+abstract class _$$AISystemInfoImplCopyWith<$Res>
+    implements $AISystemInfoCopyWith<$Res> {
+  factory _$$AISystemInfoImplCopyWith(
+          _$AISystemInfoImpl value, $Res Function(_$AISystemInfoImpl) then) =
+      __$$AISystemInfoImplCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call(
+      {String nome,
+      String descrizione,
+      AISystemType tipo,
+      AIRiskLevel livelloRischio,
+      List<String> finalita,
+      List<String> categorieDati,
+      bool coinvolgeMinori,
+      bool decisioniAutomatizzate,
+      bool profilazione,
+      String? fornitore,
+      String? versione,
+      DateTime? dataDeployment,
+      List<String> paesiOperativi});
+}
+
+/// @nodoc
+class __$$AISystemInfoImplCopyWithImpl<$Res>
+    extends _$AISystemInfoCopyWithImpl<$Res, _$AISystemInfoImpl>
+    implements _$$AISystemInfoImplCopyWith<$Res> {
+  __$$AISystemInfoImplCopyWithImpl(
+      _$AISystemInfoImpl _value, $Res Function(_$AISystemInfoImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of AISystemInfo
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? nome = null,
+    Object? descrizione = null,
+    Object? tipo = null,
+    Object? livelloRischio = null,
+    Object? finalita = null,
+    Object? categorieDati = null,
+    Object? coinvolgeMinori = null,
+    Object? decisioniAutomatizzate = null,
+    Object? profilazione = null,
+    Object? fornitore = freezed,
+    Object? versione = freezed,
+    Object? dataDeployment = freezed,
+    Object? paesiOperativi = null,
+  }) {
+    return _then(_$AISystemInfoImpl(
+      nome: null == nome
+          ? _value.nome
+          : nome // ignore: cast_nullable_to_non_nullable
+              as String,
+      descrizione: null == descrizione
+          ? _value.descrizione
+          : descrizione // ignore: cast_nullable_to_non_nullable
+              as String,
+      tipo: null == tipo
+          ? _value.tipo
+          : tipo // ignore: cast_nullable_to_non_nullable
+              as AISystemType,
+      livelloRischio: null == livelloRischio
+          ? _value.livelloRischio
+          : livelloRischio // ignore: cast_nullable_to_non_nullable
+              as AIRiskLevel,
+      finalita: null == finalita
+          ? _value._finalita
+          : finalita // ignore: cast_nullable_to_non_nullable
+              as List<String>,
+      categorieDati: null == categorieDati
+          ? _value._categorieDati
+          : categorieDati // ignore: cast_nullable_to_non_nullable
+              as List<String>,
+      coinvolgeMinori: null == coinvolgeMinori
+          ? _value.coinvolgeMinori
+          : coinvolgeMinori // ignore: cast_nullable_to_non_nullable
+              as bool,
+      decisioniAutomatizzate: null == decisioniAutomatizzate
+          ? _value.decisioniAutomatizzate
+          : decisioniAutomatizzate // ignore: cast_nullable_to_non_nullable
+              as bool,
+      profilazione: null == profilazione
+          ? _value.profilazione
+          : profilazione // ignore: cast_nullable_to_non_nullable
+              as bool,
+      fornitore: freezed == fornitore
+          ? _value.fornitore
+          : fornitore // ignore: cast_nullable_to_non_nullable
+              as String?,
+      versione: freezed == versione
+          ? _value.versione
+          : versione // ignore: cast_nullable_to_non_nullable
+              as String?,
+      dataDeployment: freezed == dataDeployment
+          ? _value.dataDeployment
+          : dataDeployment // ignore: cast_nullable_to_non_nullable
+              as DateTime?,
+      paesiOperativi: null == paesiOperativi
+          ? _value._paesiOperativi
+          : paesiOperativi // ignore: cast_nullable_to_non_nullable
               as List<String>,
     ));
   }
 }
 
-/// Adds pattern-matching-related methods to [AISystemInfo].
-extension AISystemInfoPatterns on AISystemInfo {
-  /// A variant of `map` that fallback to returning `orElse`.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case _:
-  ///     return orElse();
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>(
-    TResult Function(_AISystemInfo value)? $default, {
-    required TResult orElse(),
-  }) {
-    final _that = this;
-    switch (_that) {
-      case _AISystemInfo() when $default != null:
-        return $default(_that);
-      case _:
-        return orElse();
-    }
-  }
-
-  /// A `switch`-like method, using callbacks.
-  ///
-  /// Callbacks receives the raw object, upcasted.
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case final Subclass2 value:
-  ///     return ...;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>(
-    TResult Function(_AISystemInfo value) $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _AISystemInfo():
-        return $default(_that);
-      case _:
-        throw StateError('Unexpected subclass');
-    }
-  }
-
-  /// A variant of `map` that fallback to returning `null`.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case _:
-  ///     return null;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>(
-    TResult? Function(_AISystemInfo value)? $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _AISystemInfo() when $default != null:
-        return $default(_that);
-      case _:
-        return null;
-    }
-  }
-
-  /// A variant of `when` that fallback to an `orElse` callback.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case _:
-  ///     return orElse();
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>(
-    TResult Function(
-            String nome,
-            String descrizione,
-            AISystemType tipo,
-            AIRiskLevel livelloRischio,
-            List<String> finalita,
-            List<String> categorieDati,
-            bool coinvolgeMinori,
-            bool decisoniAutomatizzate,
-            bool profilazione,
-            String? fornitore,
-            String? versione,
-            List<String> certificazioni)?
-        $default, {
-    required TResult orElse(),
-  }) {
-    final _that = this;
-    switch (_that) {
-      case _AISystemInfo() when $default != null:
-        return $default(
-            _that.nome,
-            _that.descrizione,
-            _that.tipo,
-            _that.livelloRischio,
-            _that.finalita,
-            _that.categorieDati,
-            _that.coinvolgeMinori,
-            _that.decisoniAutomatizzate,
-            _that.profilazione,
-            _that.fornitore,
-            _that.versione,
-            _that.certificazioni);
-      case _:
-        return orElse();
-    }
-  }
-
-  /// A `switch`-like method, using callbacks.
-  ///
-  /// As opposed to `map`, this offers destructuring.
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case Subclass2(:final field2):
-  ///     return ...;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>(
-    TResult Function(
-            String nome,
-            String descrizione,
-            AISystemType tipo,
-            AIRiskLevel livelloRischio,
-            List<String> finalita,
-            List<String> categorieDati,
-            bool coinvolgeMinori,
-            bool decisoniAutomatizzate,
-            bool profilazione,
-            String? fornitore,
-            String? versione,
-            List<String> certificazioni)
-        $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _AISystemInfo():
-        return $default(
-            _that.nome,
-            _that.descrizione,
-            _that.tipo,
-            _that.livelloRischio,
-            _that.finalita,
-            _that.categorieDati,
-            _that.coinvolgeMinori,
-            _that.decisoniAutomatizzate,
-            _that.profilazione,
-            _that.fornitore,
-            _that.versione,
-            _that.certificazioni);
-      case _:
-        throw StateError('Unexpected subclass');
-    }
-  }
-
-  /// A variant of `when` that fallback to returning `null`
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case _:
-  ///     return null;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>(
-    TResult? Function(
-            String nome,
-            String descrizione,
-            AISystemType tipo,
-            AIRiskLevel livelloRischio,
-            List<String> finalita,
-            List<String> categorieDati,
-            bool coinvolgeMinori,
-            bool decisoniAutomatizzate,
-            bool profilazione,
-            String? fornitore,
-            String? versione,
-            List<String> certificazioni)?
-        $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _AISystemInfo() when $default != null:
-        return $default(
-            _that.nome,
-            _that.descrizione,
-            _that.tipo,
-            _that.livelloRischio,
-            _that.finalita,
-            _that.categorieDati,
-            _that.coinvolgeMinori,
-            _that.decisoniAutomatizzate,
-            _that.profilazione,
-            _that.fornitore,
-            _that.versione,
-            _that.certificazioni);
-      case _:
-        return null;
-    }
-  }
-}
-
 /// @nodoc
 @JsonSerializable()
-class _AISystemInfo extends AISystemInfo {
-  const _AISystemInfo(
+class _$AISystemInfoImpl extends _AISystemInfo {
+  const _$AISystemInfoImpl(
       {required this.nome,
       required this.descrizione,
       required this.tipo,
@@ -1944,17 +1266,19 @@ class _AISystemInfo extends AISystemInfo {
       required final List<String> finalita,
       required final List<String> categorieDati,
       required this.coinvolgeMinori,
-      required this.decisoniAutomatizzate,
+      required this.decisioniAutomatizzate,
       required this.profilazione,
       this.fornitore,
       this.versione,
-      final List<String> certificazioni = const []})
+      this.dataDeployment,
+      final List<String> paesiOperativi = const []})
       : _finalita = finalita,
         _categorieDati = categorieDati,
-        _certificazioni = certificazioni,
+        _paesiOperativi = paesiOperativi,
         super._();
-  factory _AISystemInfo.fromJson(Map<String, dynamic> json) =>
-      _$AISystemInfoFromJson(json);
+
+  factory _$AISystemInfoImpl.fromJson(Map<String, dynamic> json) =>
+      _$$AISystemInfoImplFromJson(json);
 
   @override
   final String nome;
@@ -1983,42 +1307,34 @@ class _AISystemInfo extends AISystemInfo {
   @override
   final bool coinvolgeMinori;
   @override
-  final bool decisoniAutomatizzate;
+  final bool decisioniAutomatizzate;
   @override
   final bool profilazione;
   @override
   final String? fornitore;
   @override
   final String? versione;
-  final List<String> _certificazioni;
+  @override
+  final DateTime? dataDeployment;
+  final List<String> _paesiOperativi;
   @override
   @JsonKey()
-  List<String> get certificazioni {
-    if (_certificazioni is EqualUnmodifiableListView) return _certificazioni;
+  List<String> get paesiOperativi {
+    if (_paesiOperativi is EqualUnmodifiableListView) return _paesiOperativi;
     // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_certificazioni);
+    return EqualUnmodifiableListView(_paesiOperativi);
   }
 
-  /// Create a copy of AISystemInfo
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  _$AISystemInfoCopyWith<_AISystemInfo> get copyWith =>
-      __$AISystemInfoCopyWithImpl<_AISystemInfo>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$AISystemInfoToJson(
-      this,
-    );
+  String toString() {
+    return 'AISystemInfo(nome: $nome, descrizione: $descrizione, tipo: $tipo, livelloRischio: $livelloRischio, finalita: $finalita, categorieDati: $categorieDati, coinvolgeMinori: $coinvolgeMinori, decisioniAutomatizzate: $decisioniAutomatizzate, profilazione: $profilazione, fornitore: $fornitore, versione: $versione, dataDeployment: $dataDeployment, paesiOperativi: $paesiOperativi)';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _AISystemInfo &&
+            other is _$AISystemInfoImpl &&
             (identical(other.nome, nome) || other.nome == nome) &&
             (identical(other.descrizione, descrizione) ||
                 other.descrizione == descrizione) &&
@@ -2030,16 +1346,18 @@ class _AISystemInfo extends AISystemInfo {
                 .equals(other._categorieDati, _categorieDati) &&
             (identical(other.coinvolgeMinori, coinvolgeMinori) ||
                 other.coinvolgeMinori == coinvolgeMinori) &&
-            (identical(other.decisoniAutomatizzate, decisoniAutomatizzate) ||
-                other.decisoniAutomatizzate == decisoniAutomatizzate) &&
+            (identical(other.decisioniAutomatizzate, decisioniAutomatizzate) ||
+                other.decisioniAutomatizzate == decisioniAutomatizzate) &&
             (identical(other.profilazione, profilazione) ||
                 other.profilazione == profilazione) &&
             (identical(other.fornitore, fornitore) ||
                 other.fornitore == fornitore) &&
             (identical(other.versione, versione) ||
                 other.versione == versione) &&
+            (identical(other.dataDeployment, dataDeployment) ||
+                other.dataDeployment == dataDeployment) &&
             const DeepCollectionEquality()
-                .equals(other._certificazioni, _certificazioni));
+                .equals(other._paesiOperativi, _paesiOperativi));
   }
 
   @JsonKey(includeFromJson: false, includeToJson: false)
@@ -2053,202 +1371,135 @@ class _AISystemInfo extends AISystemInfo {
       const DeepCollectionEquality().hash(_finalita),
       const DeepCollectionEquality().hash(_categorieDati),
       coinvolgeMinori,
-      decisoniAutomatizzate,
+      decisioniAutomatizzate,
       profilazione,
       fornitore,
       versione,
-      const DeepCollectionEquality().hash(_certificazioni));
+      dataDeployment,
+      const DeepCollectionEquality().hash(_paesiOperativi));
+
+  /// Create a copy of AISystemInfo
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$AISystemInfoImplCopyWith<_$AISystemInfoImpl> get copyWith =>
+      __$$AISystemInfoImplCopyWithImpl<_$AISystemInfoImpl>(this, _$identity);
 
   @override
-  String toString() {
-    return 'AISystemInfo(nome: $nome, descrizione: $descrizione, tipo: $tipo, livelloRischio: $livelloRischio, finalita: $finalita, categorieDati: $categorieDati, coinvolgeMinori: $coinvolgeMinori, decisoniAutomatizzate: $decisoniAutomatizzate, profilazione: $profilazione, fornitore: $fornitore, versione: $versione, certificazioni: $certificazioni)';
+  Map<String, dynamic> toJson() {
+    return _$$AISystemInfoImplToJson(
+      this,
+    );
   }
 }
 
-/// @nodoc
-abstract mixin class _$AISystemInfoCopyWith<$Res>
-    implements $AISystemInfoCopyWith<$Res> {
-  factory _$AISystemInfoCopyWith(
-          _AISystemInfo value, $Res Function(_AISystemInfo) _then) =
-      __$AISystemInfoCopyWithImpl;
+abstract class _AISystemInfo extends AISystemInfo {
+  const factory _AISystemInfo(
+      {required final String nome,
+      required final String descrizione,
+      required final AISystemType tipo,
+      required final AIRiskLevel livelloRischio,
+      required final List<String> finalita,
+      required final List<String> categorieDati,
+      required final bool coinvolgeMinori,
+      required final bool decisioniAutomatizzate,
+      required final bool profilazione,
+      final String? fornitore,
+      final String? versione,
+      final DateTime? dataDeployment,
+      final List<String> paesiOperativi}) = _$AISystemInfoImpl;
+  const _AISystemInfo._() : super._();
+
+  factory _AISystemInfo.fromJson(Map<String, dynamic> json) =
+      _$AISystemInfoImpl.fromJson;
+
   @override
-  @useResult
-  $Res call(
-      {String nome,
-      String descrizione,
-      AISystemType tipo,
-      AIRiskLevel livelloRischio,
-      List<String> finalita,
-      List<String> categorieDati,
-      bool coinvolgeMinori,
-      bool decisoniAutomatizzate,
-      bool profilazione,
-      String? fornitore,
-      String? versione,
-      List<String> certificazioni});
-}
-
-/// @nodoc
-class __$AISystemInfoCopyWithImpl<$Res>
-    implements _$AISystemInfoCopyWith<$Res> {
-  __$AISystemInfoCopyWithImpl(this._self, this._then);
-
-  final _AISystemInfo _self;
-  final $Res Function(_AISystemInfo) _then;
+  String get nome;
+  @override
+  String get descrizione;
+  @override
+  AISystemType get tipo;
+  @override
+  AIRiskLevel get livelloRischio;
+  @override
+  List<String> get finalita;
+  @override
+  List<String> get categorieDati;
+  @override
+  bool get coinvolgeMinori;
+  @override
+  bool get decisioniAutomatizzate;
+  @override
+  bool get profilazione;
+  @override
+  String? get fornitore;
+  @override
+  String? get versione;
+  @override
+  DateTime? get dataDeployment;
+  @override
+  List<String> get paesiOperativi;
 
   /// Create a copy of AISystemInfo
   /// with the given fields replaced by the non-null parameter values.
   @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? nome = null,
-    Object? descrizione = null,
-    Object? tipo = null,
-    Object? livelloRischio = null,
-    Object? finalita = null,
-    Object? categorieDati = null,
-    Object? coinvolgeMinori = null,
-    Object? decisoniAutomatizzate = null,
-    Object? profilazione = null,
-    Object? fornitore = freezed,
-    Object? versione = freezed,
-    Object? certificazioni = null,
-  }) {
-    return _then(_AISystemInfo(
-      nome: null == nome
-          ? _self.nome
-          : nome // ignore: cast_nullable_to_non_nullable
-              as String,
-      descrizione: null == descrizione
-          ? _self.descrizione
-          : descrizione // ignore: cast_nullable_to_non_nullable
-              as String,
-      tipo: null == tipo
-          ? _self.tipo
-          : tipo // ignore: cast_nullable_to_non_nullable
-              as AISystemType,
-      livelloRischio: null == livelloRischio
-          ? _self.livelloRischio
-          : livelloRischio // ignore: cast_nullable_to_non_nullable
-              as AIRiskLevel,
-      finalita: null == finalita
-          ? _self._finalita
-          : finalita // ignore: cast_nullable_to_non_nullable
-              as List<String>,
-      categorieDati: null == categorieDati
-          ? _self._categorieDati
-          : categorieDati // ignore: cast_nullable_to_non_nullable
-              as List<String>,
-      coinvolgeMinori: null == coinvolgeMinori
-          ? _self.coinvolgeMinori
-          : coinvolgeMinori // ignore: cast_nullable_to_non_nullable
-              as bool,
-      decisoniAutomatizzate: null == decisoniAutomatizzate
-          ? _self.decisoniAutomatizzate
-          : decisoniAutomatizzate // ignore: cast_nullable_to_non_nullable
-              as bool,
-      profilazione: null == profilazione
-          ? _self.profilazione
-          : profilazione // ignore: cast_nullable_to_non_nullable
-              as bool,
-      fornitore: freezed == fornitore
-          ? _self.fornitore
-          : fornitore // ignore: cast_nullable_to_non_nullable
-              as String?,
-      versione: freezed == versione
-          ? _self.versione
-          : versione // ignore: cast_nullable_to_non_nullable
-              as String?,
-      certificazioni: null == certificazioni
-          ? _self._certificazioni
-          : certificazioni // ignore: cast_nullable_to_non_nullable
-              as List<String>,
-    ));
-  }
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$AISystemInfoImplCopyWith<_$AISystemInfoImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+RiskAssessment _$RiskAssessmentFromJson(Map<String, dynamic> json) {
+  return _RiskAssessment.fromJson(json);
 }
 
 /// @nodoc
 mixin _$RiskAssessment {
-  double get scoreComplessivo;
-  RiskLevel get livello;
-  Map<String, double> get dimensioni;
-  List<RiskItem> get rischiIdentificati;
-  List<Mitigation> get mitigazioni;
-  DateTime? get dataValutazione;
-  String? get valutatore;
+  double get scoreComplessivo => throw _privateConstructorUsedError;
+  RiskLevel get livelloRischio => throw _privateConstructorUsedError;
+  DateTime get dataValutazione => throw _privateConstructorUsedError;
+  Map<String, RiskCategory> get categorie => throw _privateConstructorUsedError;
+  List<RiskItem> get rischiIdentificati => throw _privateConstructorUsedError;
+  List<Mitigation> get mitigazioni => throw _privateConstructorUsedError;
+  String? get note => throw _privateConstructorUsedError;
+  String? get valutatore => throw _privateConstructorUsedError;
+
+  /// Serializes this RiskAssessment to a JSON map.
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
 
   /// Create a copy of RiskAssessment
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
   $RiskAssessmentCopyWith<RiskAssessment> get copyWith =>
-      _$RiskAssessmentCopyWithImpl<RiskAssessment>(
-          this as RiskAssessment, _$identity);
-
-  /// Serializes this RiskAssessment to a JSON map.
-  Map<String, dynamic> toJson();
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is RiskAssessment &&
-            (identical(other.scoreComplessivo, scoreComplessivo) ||
-                other.scoreComplessivo == scoreComplessivo) &&
-            (identical(other.livello, livello) || other.livello == livello) &&
-            const DeepCollectionEquality()
-                .equals(other.dimensioni, dimensioni) &&
-            const DeepCollectionEquality()
-                .equals(other.rischiIdentificati, rischiIdentificati) &&
-            const DeepCollectionEquality()
-                .equals(other.mitigazioni, mitigazioni) &&
-            (identical(other.dataValutazione, dataValutazione) ||
-                other.dataValutazione == dataValutazione) &&
-            (identical(other.valutatore, valutatore) ||
-                other.valutatore == valutatore));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      scoreComplessivo,
-      livello,
-      const DeepCollectionEquality().hash(dimensioni),
-      const DeepCollectionEquality().hash(rischiIdentificati),
-      const DeepCollectionEquality().hash(mitigazioni),
-      dataValutazione,
-      valutatore);
-
-  @override
-  String toString() {
-    return 'RiskAssessment(scoreComplessivo: $scoreComplessivo, livello: $livello, dimensioni: $dimensioni, rischiIdentificati: $rischiIdentificati, mitigazioni: $mitigazioni, dataValutazione: $dataValutazione, valutatore: $valutatore)';
-  }
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract mixin class $RiskAssessmentCopyWith<$Res> {
+abstract class $RiskAssessmentCopyWith<$Res> {
   factory $RiskAssessmentCopyWith(
-          RiskAssessment value, $Res Function(RiskAssessment) _then) =
-      _$RiskAssessmentCopyWithImpl;
+          RiskAssessment value, $Res Function(RiskAssessment) then) =
+      _$RiskAssessmentCopyWithImpl<$Res, RiskAssessment>;
   @useResult
   $Res call(
       {double scoreComplessivo,
-      RiskLevel livello,
-      Map<String, double> dimensioni,
+      RiskLevel livelloRischio,
+      DateTime dataValutazione,
+      Map<String, RiskCategory> categorie,
       List<RiskItem> rischiIdentificati,
       List<Mitigation> mitigazioni,
-      DateTime? dataValutazione,
+      String? note,
       String? valutatore});
 }
 
 /// @nodoc
-class _$RiskAssessmentCopyWithImpl<$Res>
+class _$RiskAssessmentCopyWithImpl<$Res, $Val extends RiskAssessment>
     implements $RiskAssessmentCopyWith<$Res> {
-  _$RiskAssessmentCopyWithImpl(this._self, this._then);
+  _$RiskAssessmentCopyWithImpl(this._value, this._then);
 
-  final RiskAssessment _self;
-  final $Res Function(RiskAssessment) _then;
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
   /// Create a copy of RiskAssessment
   /// with the given fields replaced by the non-null parameter values.
@@ -2256,276 +1507,161 @@ class _$RiskAssessmentCopyWithImpl<$Res>
   @override
   $Res call({
     Object? scoreComplessivo = null,
-    Object? livello = null,
-    Object? dimensioni = null,
+    Object? livelloRischio = null,
+    Object? dataValutazione = null,
+    Object? categorie = null,
     Object? rischiIdentificati = null,
     Object? mitigazioni = null,
-    Object? dataValutazione = freezed,
+    Object? note = freezed,
     Object? valutatore = freezed,
   }) {
-    return _then(_self.copyWith(
+    return _then(_value.copyWith(
       scoreComplessivo: null == scoreComplessivo
-          ? _self.scoreComplessivo
+          ? _value.scoreComplessivo
           : scoreComplessivo // ignore: cast_nullable_to_non_nullable
               as double,
-      livello: null == livello
-          ? _self.livello
-          : livello // ignore: cast_nullable_to_non_nullable
+      livelloRischio: null == livelloRischio
+          ? _value.livelloRischio
+          : livelloRischio // ignore: cast_nullable_to_non_nullable
               as RiskLevel,
-      dimensioni: null == dimensioni
-          ? _self.dimensioni
-          : dimensioni // ignore: cast_nullable_to_non_nullable
-              as Map<String, double>,
+      dataValutazione: null == dataValutazione
+          ? _value.dataValutazione
+          : dataValutazione // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      categorie: null == categorie
+          ? _value.categorie
+          : categorie // ignore: cast_nullable_to_non_nullable
+              as Map<String, RiskCategory>,
       rischiIdentificati: null == rischiIdentificati
-          ? _self.rischiIdentificati
+          ? _value.rischiIdentificati
           : rischiIdentificati // ignore: cast_nullable_to_non_nullable
               as List<RiskItem>,
       mitigazioni: null == mitigazioni
-          ? _self.mitigazioni
+          ? _value.mitigazioni
           : mitigazioni // ignore: cast_nullable_to_non_nullable
               as List<Mitigation>,
-      dataValutazione: freezed == dataValutazione
-          ? _self.dataValutazione
-          : dataValutazione // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
+      note: freezed == note
+          ? _value.note
+          : note // ignore: cast_nullable_to_non_nullable
+              as String?,
       valutatore: freezed == valutatore
-          ? _self.valutatore
+          ? _value.valutatore
+          : valutatore // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ) as $Val);
+  }
+}
+
+/// @nodoc
+abstract class _$$RiskAssessmentImplCopyWith<$Res>
+    implements $RiskAssessmentCopyWith<$Res> {
+  factory _$$RiskAssessmentImplCopyWith(_$RiskAssessmentImpl value,
+          $Res Function(_$RiskAssessmentImpl) then) =
+      __$$RiskAssessmentImplCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call(
+      {double scoreComplessivo,
+      RiskLevel livelloRischio,
+      DateTime dataValutazione,
+      Map<String, RiskCategory> categorie,
+      List<RiskItem> rischiIdentificati,
+      List<Mitigation> mitigazioni,
+      String? note,
+      String? valutatore});
+}
+
+/// @nodoc
+class __$$RiskAssessmentImplCopyWithImpl<$Res>
+    extends _$RiskAssessmentCopyWithImpl<$Res, _$RiskAssessmentImpl>
+    implements _$$RiskAssessmentImplCopyWith<$Res> {
+  __$$RiskAssessmentImplCopyWithImpl(
+      _$RiskAssessmentImpl _value, $Res Function(_$RiskAssessmentImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of RiskAssessment
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? scoreComplessivo = null,
+    Object? livelloRischio = null,
+    Object? dataValutazione = null,
+    Object? categorie = null,
+    Object? rischiIdentificati = null,
+    Object? mitigazioni = null,
+    Object? note = freezed,
+    Object? valutatore = freezed,
+  }) {
+    return _then(_$RiskAssessmentImpl(
+      scoreComplessivo: null == scoreComplessivo
+          ? _value.scoreComplessivo
+          : scoreComplessivo // ignore: cast_nullable_to_non_nullable
+              as double,
+      livelloRischio: null == livelloRischio
+          ? _value.livelloRischio
+          : livelloRischio // ignore: cast_nullable_to_non_nullable
+              as RiskLevel,
+      dataValutazione: null == dataValutazione
+          ? _value.dataValutazione
+          : dataValutazione // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      categorie: null == categorie
+          ? _value._categorie
+          : categorie // ignore: cast_nullable_to_non_nullable
+              as Map<String, RiskCategory>,
+      rischiIdentificati: null == rischiIdentificati
+          ? _value._rischiIdentificati
+          : rischiIdentificati // ignore: cast_nullable_to_non_nullable
+              as List<RiskItem>,
+      mitigazioni: null == mitigazioni
+          ? _value._mitigazioni
+          : mitigazioni // ignore: cast_nullable_to_non_nullable
+              as List<Mitigation>,
+      note: freezed == note
+          ? _value.note
+          : note // ignore: cast_nullable_to_non_nullable
+              as String?,
+      valutatore: freezed == valutatore
+          ? _value.valutatore
           : valutatore // ignore: cast_nullable_to_non_nullable
               as String?,
     ));
   }
 }
 
-/// Adds pattern-matching-related methods to [RiskAssessment].
-extension RiskAssessmentPatterns on RiskAssessment {
-  /// A variant of `map` that fallback to returning `orElse`.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case _:
-  ///     return orElse();
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>(
-    TResult Function(_RiskAssessment value)? $default, {
-    required TResult orElse(),
-  }) {
-    final _that = this;
-    switch (_that) {
-      case _RiskAssessment() when $default != null:
-        return $default(_that);
-      case _:
-        return orElse();
-    }
-  }
-
-  /// A `switch`-like method, using callbacks.
-  ///
-  /// Callbacks receives the raw object, upcasted.
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case final Subclass2 value:
-  ///     return ...;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>(
-    TResult Function(_RiskAssessment value) $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _RiskAssessment():
-        return $default(_that);
-      case _:
-        throw StateError('Unexpected subclass');
-    }
-  }
-
-  /// A variant of `map` that fallback to returning `null`.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case _:
-  ///     return null;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>(
-    TResult? Function(_RiskAssessment value)? $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _RiskAssessment() when $default != null:
-        return $default(_that);
-      case _:
-        return null;
-    }
-  }
-
-  /// A variant of `when` that fallback to an `orElse` callback.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case _:
-  ///     return orElse();
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>(
-    TResult Function(
-            double scoreComplessivo,
-            RiskLevel livello,
-            Map<String, double> dimensioni,
-            List<RiskItem> rischiIdentificati,
-            List<Mitigation> mitigazioni,
-            DateTime? dataValutazione,
-            String? valutatore)?
-        $default, {
-    required TResult orElse(),
-  }) {
-    final _that = this;
-    switch (_that) {
-      case _RiskAssessment() when $default != null:
-        return $default(
-            _that.scoreComplessivo,
-            _that.livello,
-            _that.dimensioni,
-            _that.rischiIdentificati,
-            _that.mitigazioni,
-            _that.dataValutazione,
-            _that.valutatore);
-      case _:
-        return orElse();
-    }
-  }
-
-  /// A `switch`-like method, using callbacks.
-  ///
-  /// As opposed to `map`, this offers destructuring.
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case Subclass2(:final field2):
-  ///     return ...;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>(
-    TResult Function(
-            double scoreComplessivo,
-            RiskLevel livello,
-            Map<String, double> dimensioni,
-            List<RiskItem> rischiIdentificati,
-            List<Mitigation> mitigazioni,
-            DateTime? dataValutazione,
-            String? valutatore)
-        $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _RiskAssessment():
-        return $default(
-            _that.scoreComplessivo,
-            _that.livello,
-            _that.dimensioni,
-            _that.rischiIdentificati,
-            _that.mitigazioni,
-            _that.dataValutazione,
-            _that.valutatore);
-      case _:
-        throw StateError('Unexpected subclass');
-    }
-  }
-
-  /// A variant of `when` that fallback to returning `null`
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case _:
-  ///     return null;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>(
-    TResult? Function(
-            double scoreComplessivo,
-            RiskLevel livello,
-            Map<String, double> dimensioni,
-            List<RiskItem> rischiIdentificati,
-            List<Mitigation> mitigazioni,
-            DateTime? dataValutazione,
-            String? valutatore)?
-        $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _RiskAssessment() when $default != null:
-        return $default(
-            _that.scoreComplessivo,
-            _that.livello,
-            _that.dimensioni,
-            _that.rischiIdentificati,
-            _that.mitigazioni,
-            _that.dataValutazione,
-            _that.valutatore);
-      case _:
-        return null;
-    }
-  }
-}
-
 /// @nodoc
 @JsonSerializable()
-class _RiskAssessment extends RiskAssessment {
-  const _RiskAssessment(
+class _$RiskAssessmentImpl extends _RiskAssessment {
+  const _$RiskAssessmentImpl(
       {required this.scoreComplessivo,
-      required this.livello,
-      required final Map<String, double> dimensioni,
+      required this.livelloRischio,
+      required this.dataValutazione,
+      required final Map<String, RiskCategory> categorie,
       required final List<RiskItem> rischiIdentificati,
       required final List<Mitigation> mitigazioni,
-      this.dataValutazione,
+      this.note,
       this.valutatore})
-      : _dimensioni = dimensioni,
+      : _categorie = categorie,
         _rischiIdentificati = rischiIdentificati,
         _mitigazioni = mitigazioni,
         super._();
-  factory _RiskAssessment.fromJson(Map<String, dynamic> json) =>
-      _$RiskAssessmentFromJson(json);
+
+  factory _$RiskAssessmentImpl.fromJson(Map<String, dynamic> json) =>
+      _$$RiskAssessmentImplFromJson(json);
 
   @override
   final double scoreComplessivo;
   @override
-  final RiskLevel livello;
-  final Map<String, double> _dimensioni;
+  final RiskLevel livelloRischio;
   @override
-  Map<String, double> get dimensioni {
-    if (_dimensioni is EqualUnmodifiableMapView) return _dimensioni;
+  final DateTime dataValutazione;
+  final Map<String, RiskCategory> _categorie;
+  @override
+  Map<String, RiskCategory> get categorie {
+    if (_categorie is EqualUnmodifiableMapView) return _categorie;
     // ignore: implicit_dynamic_type
-    return EqualUnmodifiableMapView(_dimensioni);
+    return EqualUnmodifiableMapView(_categorie);
   }
 
   final List<RiskItem> _rischiIdentificati;
@@ -2546,41 +1682,33 @@ class _RiskAssessment extends RiskAssessment {
   }
 
   @override
-  final DateTime? dataValutazione;
+  final String? note;
   @override
   final String? valutatore;
 
-  /// Create a copy of RiskAssessment
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  _$RiskAssessmentCopyWith<_RiskAssessment> get copyWith =>
-      __$RiskAssessmentCopyWithImpl<_RiskAssessment>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$RiskAssessmentToJson(
-      this,
-    );
+  String toString() {
+    return 'RiskAssessment(scoreComplessivo: $scoreComplessivo, livelloRischio: $livelloRischio, dataValutazione: $dataValutazione, categorie: $categorie, rischiIdentificati: $rischiIdentificati, mitigazioni: $mitigazioni, note: $note, valutatore: $valutatore)';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _RiskAssessment &&
+            other is _$RiskAssessmentImpl &&
             (identical(other.scoreComplessivo, scoreComplessivo) ||
                 other.scoreComplessivo == scoreComplessivo) &&
-            (identical(other.livello, livello) || other.livello == livello) &&
+            (identical(other.livelloRischio, livelloRischio) ||
+                other.livelloRischio == livelloRischio) &&
+            (identical(other.dataValutazione, dataValutazione) ||
+                other.dataValutazione == dataValutazione) &&
             const DeepCollectionEquality()
-                .equals(other._dimensioni, _dimensioni) &&
+                .equals(other._categorie, _categorie) &&
             const DeepCollectionEquality()
                 .equals(other._rischiIdentificati, _rischiIdentificati) &&
             const DeepCollectionEquality()
                 .equals(other._mitigazioni, _mitigazioni) &&
-            (identical(other.dataValutazione, dataValutazione) ||
-                other.dataValutazione == dataValutazione) &&
+            (identical(other.note, note) || other.note == note) &&
             (identical(other.valutatore, valutatore) ||
                 other.valutatore == valutatore));
   }
@@ -2590,172 +1718,392 @@ class _RiskAssessment extends RiskAssessment {
   int get hashCode => Object.hash(
       runtimeType,
       scoreComplessivo,
-      livello,
-      const DeepCollectionEquality().hash(_dimensioni),
+      livelloRischio,
+      dataValutazione,
+      const DeepCollectionEquality().hash(_categorie),
       const DeepCollectionEquality().hash(_rischiIdentificati),
       const DeepCollectionEquality().hash(_mitigazioni),
-      dataValutazione,
+      note,
       valutatore);
 
+  /// Create a copy of RiskAssessment
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  String toString() {
-    return 'RiskAssessment(scoreComplessivo: $scoreComplessivo, livello: $livello, dimensioni: $dimensioni, rischiIdentificati: $rischiIdentificati, mitigazioni: $mitigazioni, dataValutazione: $dataValutazione, valutatore: $valutatore)';
+  @pragma('vm:prefer-inline')
+  _$$RiskAssessmentImplCopyWith<_$RiskAssessmentImpl> get copyWith =>
+      __$$RiskAssessmentImplCopyWithImpl<_$RiskAssessmentImpl>(
+          this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$RiskAssessmentImplToJson(
+      this,
+    );
   }
 }
 
-/// @nodoc
-abstract mixin class _$RiskAssessmentCopyWith<$Res>
-    implements $RiskAssessmentCopyWith<$Res> {
-  factory _$RiskAssessmentCopyWith(
-          _RiskAssessment value, $Res Function(_RiskAssessment) _then) =
-      __$RiskAssessmentCopyWithImpl;
+abstract class _RiskAssessment extends RiskAssessment {
+  const factory _RiskAssessment(
+      {required final double scoreComplessivo,
+      required final RiskLevel livelloRischio,
+      required final DateTime dataValutazione,
+      required final Map<String, RiskCategory> categorie,
+      required final List<RiskItem> rischiIdentificati,
+      required final List<Mitigation> mitigazioni,
+      final String? note,
+      final String? valutatore}) = _$RiskAssessmentImpl;
+  const _RiskAssessment._() : super._();
+
+  factory _RiskAssessment.fromJson(Map<String, dynamic> json) =
+      _$RiskAssessmentImpl.fromJson;
+
   @override
-  @useResult
-  $Res call(
-      {double scoreComplessivo,
-      RiskLevel livello,
-      Map<String, double> dimensioni,
-      List<RiskItem> rischiIdentificati,
-      List<Mitigation> mitigazioni,
-      DateTime? dataValutazione,
-      String? valutatore});
-}
-
-/// @nodoc
-class __$RiskAssessmentCopyWithImpl<$Res>
-    implements _$RiskAssessmentCopyWith<$Res> {
-  __$RiskAssessmentCopyWithImpl(this._self, this._then);
-
-  final _RiskAssessment _self;
-  final $Res Function(_RiskAssessment) _then;
+  double get scoreComplessivo;
+  @override
+  RiskLevel get livelloRischio;
+  @override
+  DateTime get dataValutazione;
+  @override
+  Map<String, RiskCategory> get categorie;
+  @override
+  List<RiskItem> get rischiIdentificati;
+  @override
+  List<Mitigation> get mitigazioni;
+  @override
+  String? get note;
+  @override
+  String? get valutatore;
 
   /// Create a copy of RiskAssessment
   /// with the given fields replaced by the non-null parameter values.
   @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$RiskAssessmentImplCopyWith<_$RiskAssessmentImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+RiskCategory _$RiskCategoryFromJson(Map<String, dynamic> json) {
+  return _RiskCategory.fromJson(json);
+}
+
+/// @nodoc
+mixin _$RiskCategory {
+  String get id => throw _privateConstructorUsedError;
+  String get nome => throw _privateConstructorUsedError;
+  double get score => throw _privateConstructorUsedError;
+  RiskLevel get livello => throw _privateConstructorUsedError;
+  String get descrizione => throw _privateConstructorUsedError;
+  List<String> get raccomandazioni => throw _privateConstructorUsedError;
+
+  /// Serializes this RiskCategory to a JSON map.
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of RiskCategory
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  $RiskCategoryCopyWith<RiskCategory> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $RiskCategoryCopyWith<$Res> {
+  factory $RiskCategoryCopyWith(
+          RiskCategory value, $Res Function(RiskCategory) then) =
+      _$RiskCategoryCopyWithImpl<$Res, RiskCategory>;
+  @useResult
+  $Res call(
+      {String id,
+      String nome,
+      double score,
+      RiskLevel livello,
+      String descrizione,
+      List<String> raccomandazioni});
+}
+
+/// @nodoc
+class _$RiskCategoryCopyWithImpl<$Res, $Val extends RiskCategory>
+    implements $RiskCategoryCopyWith<$Res> {
+  _$RiskCategoryCopyWithImpl(this._value, this._then);
+
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
+
+  /// Create a copy of RiskCategory
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
+  @override
   $Res call({
-    Object? scoreComplessivo = null,
+    Object? id = null,
+    Object? nome = null,
+    Object? score = null,
     Object? livello = null,
-    Object? dimensioni = null,
-    Object? rischiIdentificati = null,
-    Object? mitigazioni = null,
-    Object? dataValutazione = freezed,
-    Object? valutatore = freezed,
+    Object? descrizione = null,
+    Object? raccomandazioni = null,
   }) {
-    return _then(_RiskAssessment(
-      scoreComplessivo: null == scoreComplessivo
-          ? _self.scoreComplessivo
-          : scoreComplessivo // ignore: cast_nullable_to_non_nullable
+    return _then(_value.copyWith(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      nome: null == nome
+          ? _value.nome
+          : nome // ignore: cast_nullable_to_non_nullable
+              as String,
+      score: null == score
+          ? _value.score
+          : score // ignore: cast_nullable_to_non_nullable
               as double,
       livello: null == livello
-          ? _self.livello
+          ? _value.livello
           : livello // ignore: cast_nullable_to_non_nullable
               as RiskLevel,
-      dimensioni: null == dimensioni
-          ? _self._dimensioni
-          : dimensioni // ignore: cast_nullable_to_non_nullable
-              as Map<String, double>,
-      rischiIdentificati: null == rischiIdentificati
-          ? _self._rischiIdentificati
-          : rischiIdentificati // ignore: cast_nullable_to_non_nullable
-              as List<RiskItem>,
-      mitigazioni: null == mitigazioni
-          ? _self._mitigazioni
-          : mitigazioni // ignore: cast_nullable_to_non_nullable
-              as List<Mitigation>,
-      dataValutazione: freezed == dataValutazione
-          ? _self.dataValutazione
-          : dataValutazione // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      valutatore: freezed == valutatore
-          ? _self.valutatore
-          : valutatore // ignore: cast_nullable_to_non_nullable
-              as String?,
+      descrizione: null == descrizione
+          ? _value.descrizione
+          : descrizione // ignore: cast_nullable_to_non_nullable
+              as String,
+      raccomandazioni: null == raccomandazioni
+          ? _value.raccomandazioni
+          : raccomandazioni // ignore: cast_nullable_to_non_nullable
+              as List<String>,
+    ) as $Val);
+  }
+}
+
+/// @nodoc
+abstract class _$$RiskCategoryImplCopyWith<$Res>
+    implements $RiskCategoryCopyWith<$Res> {
+  factory _$$RiskCategoryImplCopyWith(
+          _$RiskCategoryImpl value, $Res Function(_$RiskCategoryImpl) then) =
+      __$$RiskCategoryImplCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call(
+      {String id,
+      String nome,
+      double score,
+      RiskLevel livello,
+      String descrizione,
+      List<String> raccomandazioni});
+}
+
+/// @nodoc
+class __$$RiskCategoryImplCopyWithImpl<$Res>
+    extends _$RiskCategoryCopyWithImpl<$Res, _$RiskCategoryImpl>
+    implements _$$RiskCategoryImplCopyWith<$Res> {
+  __$$RiskCategoryImplCopyWithImpl(
+      _$RiskCategoryImpl _value, $Res Function(_$RiskCategoryImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of RiskCategory
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? id = null,
+    Object? nome = null,
+    Object? score = null,
+    Object? livello = null,
+    Object? descrizione = null,
+    Object? raccomandazioni = null,
+  }) {
+    return _then(_$RiskCategoryImpl(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      nome: null == nome
+          ? _value.nome
+          : nome // ignore: cast_nullable_to_non_nullable
+              as String,
+      score: null == score
+          ? _value.score
+          : score // ignore: cast_nullable_to_non_nullable
+              as double,
+      livello: null == livello
+          ? _value.livello
+          : livello // ignore: cast_nullable_to_non_nullable
+              as RiskLevel,
+      descrizione: null == descrizione
+          ? _value.descrizione
+          : descrizione // ignore: cast_nullable_to_non_nullable
+              as String,
+      raccomandazioni: null == raccomandazioni
+          ? _value._raccomandazioni
+          : raccomandazioni // ignore: cast_nullable_to_non_nullable
+              as List<String>,
     ));
   }
 }
 
 /// @nodoc
-mixin _$RiskItem {
-  String get id;
-  String get categoria;
-  String get descrizione;
-  double get probabilita;
-  double get impatto;
-  double get score;
-  RiskLevel get livello;
-  List<String> get normativeViolate;
+@JsonSerializable()
+class _$RiskCategoryImpl extends _RiskCategory {
+  const _$RiskCategoryImpl(
+      {required this.id,
+      required this.nome,
+      required this.score,
+      required this.livello,
+      required this.descrizione,
+      final List<String> raccomandazioni = const []})
+      : _raccomandazioni = raccomandazioni,
+        super._();
 
-  /// Create a copy of RiskItem
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $RiskItemCopyWith<RiskItem> get copyWith =>
-      _$RiskItemCopyWithImpl<RiskItem>(this as RiskItem, _$identity);
+  factory _$RiskCategoryImpl.fromJson(Map<String, dynamic> json) =>
+      _$$RiskCategoryImplFromJson(json);
 
-  /// Serializes this RiskItem to a JSON map.
-  Map<String, dynamic> toJson();
+  @override
+  final String id;
+  @override
+  final String nome;
+  @override
+  final double score;
+  @override
+  final RiskLevel livello;
+  @override
+  final String descrizione;
+  final List<String> _raccomandazioni;
+  @override
+  @JsonKey()
+  List<String> get raccomandazioni {
+    if (_raccomandazioni is EqualUnmodifiableListView) return _raccomandazioni;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_raccomandazioni);
+  }
+
+  @override
+  String toString() {
+    return 'RiskCategory(id: $id, nome: $nome, score: $score, livello: $livello, descrizione: $descrizione, raccomandazioni: $raccomandazioni)';
+  }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is RiskItem &&
+            other is _$RiskCategoryImpl &&
             (identical(other.id, id) || other.id == id) &&
-            (identical(other.categoria, categoria) ||
-                other.categoria == categoria) &&
-            (identical(other.descrizione, descrizione) ||
-                other.descrizione == descrizione) &&
-            (identical(other.probabilita, probabilita) ||
-                other.probabilita == probabilita) &&
-            (identical(other.impatto, impatto) || other.impatto == impatto) &&
+            (identical(other.nome, nome) || other.nome == nome) &&
             (identical(other.score, score) || other.score == score) &&
             (identical(other.livello, livello) || other.livello == livello) &&
+            (identical(other.descrizione, descrizione) ||
+                other.descrizione == descrizione) &&
             const DeepCollectionEquality()
-                .equals(other.normativeViolate, normativeViolate));
+                .equals(other._raccomandazioni, _raccomandazioni));
   }
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      id,
-      categoria,
-      descrizione,
-      probabilita,
-      impatto,
-      score,
-      livello,
-      const DeepCollectionEquality().hash(normativeViolate));
+  int get hashCode => Object.hash(runtimeType, id, nome, score, livello,
+      descrizione, const DeepCollectionEquality().hash(_raccomandazioni));
+
+  /// Create a copy of RiskCategory
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$RiskCategoryImplCopyWith<_$RiskCategoryImpl> get copyWith =>
+      __$$RiskCategoryImplCopyWithImpl<_$RiskCategoryImpl>(this, _$identity);
 
   @override
-  String toString() {
-    return 'RiskItem(id: $id, categoria: $categoria, descrizione: $descrizione, probabilita: $probabilita, impatto: $impatto, score: $score, livello: $livello, normativeViolate: $normativeViolate)';
+  Map<String, dynamic> toJson() {
+    return _$$RiskCategoryImplToJson(
+      this,
+    );
   }
 }
 
+abstract class _RiskCategory extends RiskCategory {
+  const factory _RiskCategory(
+      {required final String id,
+      required final String nome,
+      required final double score,
+      required final RiskLevel livello,
+      required final String descrizione,
+      final List<String> raccomandazioni}) = _$RiskCategoryImpl;
+  const _RiskCategory._() : super._();
+
+  factory _RiskCategory.fromJson(Map<String, dynamic> json) =
+      _$RiskCategoryImpl.fromJson;
+
+  @override
+  String get id;
+  @override
+  String get nome;
+  @override
+  double get score;
+  @override
+  RiskLevel get livello;
+  @override
+  String get descrizione;
+  @override
+  List<String> get raccomandazioni;
+
+  /// Create a copy of RiskCategory
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$RiskCategoryImplCopyWith<_$RiskCategoryImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+RiskItem _$RiskItemFromJson(Map<String, dynamic> json) {
+  return _RiskItem.fromJson(json);
+}
+
 /// @nodoc
-abstract mixin class $RiskItemCopyWith<$Res> {
-  factory $RiskItemCopyWith(RiskItem value, $Res Function(RiskItem) _then) =
-      _$RiskItemCopyWithImpl;
+mixin _$RiskItem {
+  String get id => throw _privateConstructorUsedError;
+  String get categoria => throw _privateConstructorUsedError;
+  String get titolo => throw _privateConstructorUsedError;
+  String get descrizione => throw _privateConstructorUsedError;
+  double get probabilita => throw _privateConstructorUsedError;
+  double get impatto => throw _privateConstructorUsedError;
+  double get scoreRischio => throw _privateConstructorUsedError;
+  RiskLevel get livello => throw _privateConstructorUsedError;
+  MitigationStatus get statoMitigazione => throw _privateConstructorUsedError;
+  DateTime? get dataIdentificazione => throw _privateConstructorUsedError;
+  String? get responsabile => throw _privateConstructorUsedError;
+
+  /// Serializes this RiskItem to a JSON map.
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of RiskItem
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  $RiskItemCopyWith<RiskItem> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $RiskItemCopyWith<$Res> {
+  factory $RiskItemCopyWith(RiskItem value, $Res Function(RiskItem) then) =
+      _$RiskItemCopyWithImpl<$Res, RiskItem>;
   @useResult
   $Res call(
       {String id,
       String categoria,
+      String titolo,
       String descrizione,
       double probabilita,
       double impatto,
-      double score,
+      double scoreRischio,
       RiskLevel livello,
-      List<String> normativeViolate});
+      MitigationStatus statoMitigazione,
+      DateTime? dataIdentificazione,
+      String? responsabile});
 }
 
 /// @nodoc
-class _$RiskItemCopyWithImpl<$Res> implements $RiskItemCopyWith<$Res> {
-  _$RiskItemCopyWithImpl(this._self, this._then);
+class _$RiskItemCopyWithImpl<$Res, $Val extends RiskItem>
+    implements $RiskItemCopyWith<$Res> {
+  _$RiskItemCopyWithImpl(this._value, this._then);
 
-  final RiskItem _self;
-  final $Res Function(RiskItem) _then;
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
   /// Create a copy of RiskItem
   /// with the given fields replaced by the non-null parameter values.
@@ -2764,279 +2112,187 @@ class _$RiskItemCopyWithImpl<$Res> implements $RiskItemCopyWith<$Res> {
   $Res call({
     Object? id = null,
     Object? categoria = null,
+    Object? titolo = null,
     Object? descrizione = null,
     Object? probabilita = null,
     Object? impatto = null,
-    Object? score = null,
+    Object? scoreRischio = null,
     Object? livello = null,
-    Object? normativeViolate = null,
+    Object? statoMitigazione = null,
+    Object? dataIdentificazione = freezed,
+    Object? responsabile = freezed,
   }) {
-    return _then(_self.copyWith(
+    return _then(_value.copyWith(
       id: null == id
-          ? _self.id
+          ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
       categoria: null == categoria
-          ? _self.categoria
+          ? _value.categoria
           : categoria // ignore: cast_nullable_to_non_nullable
               as String,
+      titolo: null == titolo
+          ? _value.titolo
+          : titolo // ignore: cast_nullable_to_non_nullable
+              as String,
       descrizione: null == descrizione
-          ? _self.descrizione
+          ? _value.descrizione
           : descrizione // ignore: cast_nullable_to_non_nullable
               as String,
       probabilita: null == probabilita
-          ? _self.probabilita
+          ? _value.probabilita
           : probabilita // ignore: cast_nullable_to_non_nullable
               as double,
       impatto: null == impatto
-          ? _self.impatto
+          ? _value.impatto
           : impatto // ignore: cast_nullable_to_non_nullable
               as double,
-      score: null == score
-          ? _self.score
-          : score // ignore: cast_nullable_to_non_nullable
+      scoreRischio: null == scoreRischio
+          ? _value.scoreRischio
+          : scoreRischio // ignore: cast_nullable_to_non_nullable
               as double,
       livello: null == livello
-          ? _self.livello
+          ? _value.livello
           : livello // ignore: cast_nullable_to_non_nullable
               as RiskLevel,
-      normativeViolate: null == normativeViolate
-          ? _self.normativeViolate
-          : normativeViolate // ignore: cast_nullable_to_non_nullable
-              as List<String>,
-    ));
+      statoMitigazione: null == statoMitigazione
+          ? _value.statoMitigazione
+          : statoMitigazione // ignore: cast_nullable_to_non_nullable
+              as MitigationStatus,
+      dataIdentificazione: freezed == dataIdentificazione
+          ? _value.dataIdentificazione
+          : dataIdentificazione // ignore: cast_nullable_to_non_nullable
+              as DateTime?,
+      responsabile: freezed == responsabile
+          ? _value.responsabile
+          : responsabile // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ) as $Val);
   }
 }
 
-/// Adds pattern-matching-related methods to [RiskItem].
-extension RiskItemPatterns on RiskItem {
-  /// A variant of `map` that fallback to returning `orElse`.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case _:
-  ///     return orElse();
-  /// }
-  /// ```
+/// @nodoc
+abstract class _$$RiskItemImplCopyWith<$Res>
+    implements $RiskItemCopyWith<$Res> {
+  factory _$$RiskItemImplCopyWith(
+          _$RiskItemImpl value, $Res Function(_$RiskItemImpl) then) =
+      __$$RiskItemImplCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call(
+      {String id,
+      String categoria,
+      String titolo,
+      String descrizione,
+      double probabilita,
+      double impatto,
+      double scoreRischio,
+      RiskLevel livello,
+      MitigationStatus statoMitigazione,
+      DateTime? dataIdentificazione,
+      String? responsabile});
+}
 
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>(
-    TResult Function(_RiskItem value)? $default, {
-    required TResult orElse(),
+/// @nodoc
+class __$$RiskItemImplCopyWithImpl<$Res>
+    extends _$RiskItemCopyWithImpl<$Res, _$RiskItemImpl>
+    implements _$$RiskItemImplCopyWith<$Res> {
+  __$$RiskItemImplCopyWithImpl(
+      _$RiskItemImpl _value, $Res Function(_$RiskItemImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of RiskItem
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? id = null,
+    Object? categoria = null,
+    Object? titolo = null,
+    Object? descrizione = null,
+    Object? probabilita = null,
+    Object? impatto = null,
+    Object? scoreRischio = null,
+    Object? livello = null,
+    Object? statoMitigazione = null,
+    Object? dataIdentificazione = freezed,
+    Object? responsabile = freezed,
   }) {
-    final _that = this;
-    switch (_that) {
-      case _RiskItem() when $default != null:
-        return $default(_that);
-      case _:
-        return orElse();
-    }
-  }
-
-  /// A `switch`-like method, using callbacks.
-  ///
-  /// Callbacks receives the raw object, upcasted.
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case final Subclass2 value:
-  ///     return ...;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>(
-    TResult Function(_RiskItem value) $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _RiskItem():
-        return $default(_that);
-      case _:
-        throw StateError('Unexpected subclass');
-    }
-  }
-
-  /// A variant of `map` that fallback to returning `null`.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case _:
-  ///     return null;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>(
-    TResult? Function(_RiskItem value)? $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _RiskItem() when $default != null:
-        return $default(_that);
-      case _:
-        return null;
-    }
-  }
-
-  /// A variant of `when` that fallback to an `orElse` callback.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case _:
-  ///     return orElse();
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>(
-    TResult Function(
-            String id,
-            String categoria,
-            String descrizione,
-            double probabilita,
-            double impatto,
-            double score,
-            RiskLevel livello,
-            List<String> normativeViolate)?
-        $default, {
-    required TResult orElse(),
-  }) {
-    final _that = this;
-    switch (_that) {
-      case _RiskItem() when $default != null:
-        return $default(
-            _that.id,
-            _that.categoria,
-            _that.descrizione,
-            _that.probabilita,
-            _that.impatto,
-            _that.score,
-            _that.livello,
-            _that.normativeViolate);
-      case _:
-        return orElse();
-    }
-  }
-
-  /// A `switch`-like method, using callbacks.
-  ///
-  /// As opposed to `map`, this offers destructuring.
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case Subclass2(:final field2):
-  ///     return ...;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>(
-    TResult Function(
-            String id,
-            String categoria,
-            String descrizione,
-            double probabilita,
-            double impatto,
-            double score,
-            RiskLevel livello,
-            List<String> normativeViolate)
-        $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _RiskItem():
-        return $default(
-            _that.id,
-            _that.categoria,
-            _that.descrizione,
-            _that.probabilita,
-            _that.impatto,
-            _that.score,
-            _that.livello,
-            _that.normativeViolate);
-      case _:
-        throw StateError('Unexpected subclass');
-    }
-  }
-
-  /// A variant of `when` that fallback to returning `null`
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case _:
-  ///     return null;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>(
-    TResult? Function(
-            String id,
-            String categoria,
-            String descrizione,
-            double probabilita,
-            double impatto,
-            double score,
-            RiskLevel livello,
-            List<String> normativeViolate)?
-        $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _RiskItem() when $default != null:
-        return $default(
-            _that.id,
-            _that.categoria,
-            _that.descrizione,
-            _that.probabilita,
-            _that.impatto,
-            _that.score,
-            _that.livello,
-            _that.normativeViolate);
-      case _:
-        return null;
-    }
+    return _then(_$RiskItemImpl(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      categoria: null == categoria
+          ? _value.categoria
+          : categoria // ignore: cast_nullable_to_non_nullable
+              as String,
+      titolo: null == titolo
+          ? _value.titolo
+          : titolo // ignore: cast_nullable_to_non_nullable
+              as String,
+      descrizione: null == descrizione
+          ? _value.descrizione
+          : descrizione // ignore: cast_nullable_to_non_nullable
+              as String,
+      probabilita: null == probabilita
+          ? _value.probabilita
+          : probabilita // ignore: cast_nullable_to_non_nullable
+              as double,
+      impatto: null == impatto
+          ? _value.impatto
+          : impatto // ignore: cast_nullable_to_non_nullable
+              as double,
+      scoreRischio: null == scoreRischio
+          ? _value.scoreRischio
+          : scoreRischio // ignore: cast_nullable_to_non_nullable
+              as double,
+      livello: null == livello
+          ? _value.livello
+          : livello // ignore: cast_nullable_to_non_nullable
+              as RiskLevel,
+      statoMitigazione: null == statoMitigazione
+          ? _value.statoMitigazione
+          : statoMitigazione // ignore: cast_nullable_to_non_nullable
+              as MitigationStatus,
+      dataIdentificazione: freezed == dataIdentificazione
+          ? _value.dataIdentificazione
+          : dataIdentificazione // ignore: cast_nullable_to_non_nullable
+              as DateTime?,
+      responsabile: freezed == responsabile
+          ? _value.responsabile
+          : responsabile // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
   }
 }
 
 /// @nodoc
 @JsonSerializable()
-class _RiskItem extends RiskItem {
-  const _RiskItem(
+class _$RiskItemImpl extends _RiskItem {
+  const _$RiskItemImpl(
       {required this.id,
       required this.categoria,
+      required this.titolo,
       required this.descrizione,
       required this.probabilita,
       required this.impatto,
-      required this.score,
+      required this.scoreRischio,
       required this.livello,
-      final List<String> normativeViolate = const []})
-      : _normativeViolate = normativeViolate,
-        super._();
-  factory _RiskItem.fromJson(Map<String, dynamic> json) =>
-      _$RiskItemFromJson(json);
+      required this.statoMitigazione,
+      this.dataIdentificazione,
+      this.responsabile})
+      : super._();
+
+  factory _$RiskItemImpl.fromJson(Map<String, dynamic> json) =>
+      _$$RiskItemImplFromJson(json);
 
   @override
   final String id;
   @override
   final String categoria;
+  @override
+  final String titolo;
   @override
   final String descrizione;
   @override
@@ -3044,51 +2300,44 @@ class _RiskItem extends RiskItem {
   @override
   final double impatto;
   @override
-  final double score;
+  final double scoreRischio;
   @override
   final RiskLevel livello;
-  final List<String> _normativeViolate;
   @override
-  @JsonKey()
-  List<String> get normativeViolate {
-    if (_normativeViolate is EqualUnmodifiableListView)
-      return _normativeViolate;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_normativeViolate);
-  }
-
-  /// Create a copy of RiskItem
-  /// with the given fields replaced by the non-null parameter values.
+  final MitigationStatus statoMitigazione;
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  _$RiskItemCopyWith<_RiskItem> get copyWith =>
-      __$RiskItemCopyWithImpl<_RiskItem>(this, _$identity);
+  final DateTime? dataIdentificazione;
+  @override
+  final String? responsabile;
 
   @override
-  Map<String, dynamic> toJson() {
-    return _$RiskItemToJson(
-      this,
-    );
+  String toString() {
+    return 'RiskItem(id: $id, categoria: $categoria, titolo: $titolo, descrizione: $descrizione, probabilita: $probabilita, impatto: $impatto, scoreRischio: $scoreRischio, livello: $livello, statoMitigazione: $statoMitigazione, dataIdentificazione: $dataIdentificazione, responsabile: $responsabile)';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _RiskItem &&
+            other is _$RiskItemImpl &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.categoria, categoria) ||
                 other.categoria == categoria) &&
+            (identical(other.titolo, titolo) || other.titolo == titolo) &&
             (identical(other.descrizione, descrizione) ||
                 other.descrizione == descrizione) &&
             (identical(other.probabilita, probabilita) ||
                 other.probabilita == probabilita) &&
             (identical(other.impatto, impatto) || other.impatto == impatto) &&
-            (identical(other.score, score) || other.score == score) &&
+            (identical(other.scoreRischio, scoreRischio) ||
+                other.scoreRischio == scoreRischio) &&
             (identical(other.livello, livello) || other.livello == livello) &&
-            const DeepCollectionEquality()
-                .equals(other._normativeViolate, _normativeViolate));
+            (identical(other.statoMitigazione, statoMitigazione) ||
+                other.statoMitigazione == statoMitigazione) &&
+            (identical(other.dataIdentificazione, dataIdentificazione) ||
+                other.dataIdentificazione == dataIdentificazione) &&
+            (identical(other.responsabile, responsabile) ||
+                other.responsabile == responsabile));
   }
 
   @JsonKey(includeFromJson: false, includeToJson: false)
@@ -3097,171 +2346,140 @@ class _RiskItem extends RiskItem {
       runtimeType,
       id,
       categoria,
+      titolo,
       descrizione,
       probabilita,
       impatto,
-      score,
+      scoreRischio,
       livello,
-      const DeepCollectionEquality().hash(_normativeViolate));
+      statoMitigazione,
+      dataIdentificazione,
+      responsabile);
+
+  /// Create a copy of RiskItem
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$RiskItemImplCopyWith<_$RiskItemImpl> get copyWith =>
+      __$$RiskItemImplCopyWithImpl<_$RiskItemImpl>(this, _$identity);
 
   @override
-  String toString() {
-    return 'RiskItem(id: $id, categoria: $categoria, descrizione: $descrizione, probabilita: $probabilita, impatto: $impatto, score: $score, livello: $livello, normativeViolate: $normativeViolate)';
+  Map<String, dynamic> toJson() {
+    return _$$RiskItemImplToJson(
+      this,
+    );
   }
 }
 
-/// @nodoc
-abstract mixin class _$RiskItemCopyWith<$Res>
-    implements $RiskItemCopyWith<$Res> {
-  factory _$RiskItemCopyWith(_RiskItem value, $Res Function(_RiskItem) _then) =
-      __$RiskItemCopyWithImpl;
+abstract class _RiskItem extends RiskItem {
+  const factory _RiskItem(
+      {required final String id,
+      required final String categoria,
+      required final String titolo,
+      required final String descrizione,
+      required final double probabilita,
+      required final double impatto,
+      required final double scoreRischio,
+      required final RiskLevel livello,
+      required final MitigationStatus statoMitigazione,
+      final DateTime? dataIdentificazione,
+      final String? responsabile}) = _$RiskItemImpl;
+  const _RiskItem._() : super._();
+
+  factory _RiskItem.fromJson(Map<String, dynamic> json) =
+      _$RiskItemImpl.fromJson;
+
   @override
-  @useResult
-  $Res call(
-      {String id,
-      String categoria,
-      String descrizione,
-      double probabilita,
-      double impatto,
-      double score,
-      RiskLevel livello,
-      List<String> normativeViolate});
-}
-
-/// @nodoc
-class __$RiskItemCopyWithImpl<$Res> implements _$RiskItemCopyWith<$Res> {
-  __$RiskItemCopyWithImpl(this._self, this._then);
-
-  final _RiskItem _self;
-  final $Res Function(_RiskItem) _then;
+  String get id;
+  @override
+  String get categoria;
+  @override
+  String get titolo;
+  @override
+  String get descrizione;
+  @override
+  double get probabilita;
+  @override
+  double get impatto;
+  @override
+  double get scoreRischio;
+  @override
+  RiskLevel get livello;
+  @override
+  MitigationStatus get statoMitigazione;
+  @override
+  DateTime? get dataIdentificazione;
+  @override
+  String? get responsabile;
 
   /// Create a copy of RiskItem
   /// with the given fields replaced by the non-null parameter values.
   @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = null,
-    Object? categoria = null,
-    Object? descrizione = null,
-    Object? probabilita = null,
-    Object? impatto = null,
-    Object? score = null,
-    Object? livello = null,
-    Object? normativeViolate = null,
-  }) {
-    return _then(_RiskItem(
-      id: null == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
-      categoria: null == categoria
-          ? _self.categoria
-          : categoria // ignore: cast_nullable_to_non_nullable
-              as String,
-      descrizione: null == descrizione
-          ? _self.descrizione
-          : descrizione // ignore: cast_nullable_to_non_nullable
-              as String,
-      probabilita: null == probabilita
-          ? _self.probabilita
-          : probabilita // ignore: cast_nullable_to_non_nullable
-              as double,
-      impatto: null == impatto
-          ? _self.impatto
-          : impatto // ignore: cast_nullable_to_non_nullable
-              as double,
-      score: null == score
-          ? _self.score
-          : score // ignore: cast_nullable_to_non_nullable
-              as double,
-      livello: null == livello
-          ? _self.livello
-          : livello // ignore: cast_nullable_to_non_nullable
-              as RiskLevel,
-      normativeViolate: null == normativeViolate
-          ? _self._normativeViolate
-          : normativeViolate // ignore: cast_nullable_to_non_nullable
-              as List<String>,
-    ));
-  }
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$RiskItemImplCopyWith<_$RiskItemImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+Mitigation _$MitigationFromJson(Map<String, dynamic> json) {
+  return _Mitigation.fromJson(json);
 }
 
 /// @nodoc
 mixin _$Mitigation {
-  String get id;
-  String get rischioId;
-  String get descrizione;
-  MitigationPriority get priorita;
-  MitigationStatus get status;
-  String? get responsabile;
-  DateTime? get dataScadenza;
-  double get costoStimato;
+  String get id => throw _privateConstructorUsedError;
+  String get rischioId => throw _privateConstructorUsedError;
+  String get titolo => throw _privateConstructorUsedError;
+  String get descrizione => throw _privateConstructorUsedError;
+  MitigationStatus get stato => throw _privateConstructorUsedError;
+  Priority get priorita => throw _privateConstructorUsedError;
+  DateTime? get dataScadenza => throw _privateConstructorUsedError;
+  DateTime? get dataCompletamento => throw _privateConstructorUsedError;
+  String? get responsabile => throw _privateConstructorUsedError;
+  List<String> get azioni => throw _privateConstructorUsedError;
+  double? get costoStimato => throw _privateConstructorUsedError;
+  double? get efficaciaAttesa => throw _privateConstructorUsedError;
+
+  /// Serializes this Mitigation to a JSON map.
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
 
   /// Create a copy of Mitigation
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
   $MitigationCopyWith<Mitigation> get copyWith =>
-      _$MitigationCopyWithImpl<Mitigation>(this as Mitigation, _$identity);
-
-  /// Serializes this Mitigation to a JSON map.
-  Map<String, dynamic> toJson();
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is Mitigation &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.rischioId, rischioId) ||
-                other.rischioId == rischioId) &&
-            (identical(other.descrizione, descrizione) ||
-                other.descrizione == descrizione) &&
-            (identical(other.priorita, priorita) ||
-                other.priorita == priorita) &&
-            (identical(other.status, status) || other.status == status) &&
-            (identical(other.responsabile, responsabile) ||
-                other.responsabile == responsabile) &&
-            (identical(other.dataScadenza, dataScadenza) ||
-                other.dataScadenza == dataScadenza) &&
-            (identical(other.costoStimato, costoStimato) ||
-                other.costoStimato == costoStimato));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, id, rischioId, descrizione,
-      priorita, status, responsabile, dataScadenza, costoStimato);
-
-  @override
-  String toString() {
-    return 'Mitigation(id: $id, rischioId: $rischioId, descrizione: $descrizione, priorita: $priorita, status: $status, responsabile: $responsabile, dataScadenza: $dataScadenza, costoStimato: $costoStimato)';
-  }
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract mixin class $MitigationCopyWith<$Res> {
+abstract class $MitigationCopyWith<$Res> {
   factory $MitigationCopyWith(
-          Mitigation value, $Res Function(Mitigation) _then) =
-      _$MitigationCopyWithImpl;
+          Mitigation value, $Res Function(Mitigation) then) =
+      _$MitigationCopyWithImpl<$Res, Mitigation>;
   @useResult
   $Res call(
       {String id,
       String rischioId,
+      String titolo,
       String descrizione,
-      MitigationPriority priorita,
-      MitigationStatus status,
-      String? responsabile,
+      MitigationStatus stato,
+      Priority priorita,
       DateTime? dataScadenza,
-      double costoStimato});
+      DateTime? dataCompletamento,
+      String? responsabile,
+      List<String> azioni,
+      double? costoStimato,
+      double? efficaciaAttesa});
 }
 
 /// @nodoc
-class _$MitigationCopyWithImpl<$Res> implements $MitigationCopyWith<$Res> {
-  _$MitigationCopyWithImpl(this._self, this._then);
+class _$MitigationCopyWithImpl<$Res, $Val extends Mitigation>
+    implements $MitigationCopyWith<$Res> {
+  _$MitigationCopyWithImpl(this._value, this._then);
 
-  final Mitigation _self;
-  final $Res Function(Mitigation) _then;
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
   /// Create a copy of Mitigation
   /// with the given fields replaced by the non-null parameter values.
@@ -3270,807 +2488,645 @@ class _$MitigationCopyWithImpl<$Res> implements $MitigationCopyWith<$Res> {
   $Res call({
     Object? id = null,
     Object? rischioId = null,
+    Object? titolo = null,
     Object? descrizione = null,
+    Object? stato = null,
     Object? priorita = null,
-    Object? status = null,
-    Object? responsabile = freezed,
     Object? dataScadenza = freezed,
-    Object? costoStimato = null,
+    Object? dataCompletamento = freezed,
+    Object? responsabile = freezed,
+    Object? azioni = null,
+    Object? costoStimato = freezed,
+    Object? efficaciaAttesa = freezed,
   }) {
-    return _then(_self.copyWith(
+    return _then(_value.copyWith(
       id: null == id
-          ? _self.id
+          ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
       rischioId: null == rischioId
-          ? _self.rischioId
+          ? _value.rischioId
           : rischioId // ignore: cast_nullable_to_non_nullable
               as String,
+      titolo: null == titolo
+          ? _value.titolo
+          : titolo // ignore: cast_nullable_to_non_nullable
+              as String,
       descrizione: null == descrizione
-          ? _self.descrizione
+          ? _value.descrizione
           : descrizione // ignore: cast_nullable_to_non_nullable
               as String,
-      priorita: null == priorita
-          ? _self.priorita
-          : priorita // ignore: cast_nullable_to_non_nullable
-              as MitigationPriority,
-      status: null == status
-          ? _self.status
-          : status // ignore: cast_nullable_to_non_nullable
+      stato: null == stato
+          ? _value.stato
+          : stato // ignore: cast_nullable_to_non_nullable
               as MitigationStatus,
-      responsabile: freezed == responsabile
-          ? _self.responsabile
-          : responsabile // ignore: cast_nullable_to_non_nullable
-              as String?,
+      priorita: null == priorita
+          ? _value.priorita
+          : priorita // ignore: cast_nullable_to_non_nullable
+              as Priority,
       dataScadenza: freezed == dataScadenza
-          ? _self.dataScadenza
+          ? _value.dataScadenza
           : dataScadenza // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      costoStimato: null == costoStimato
-          ? _self.costoStimato
+      dataCompletamento: freezed == dataCompletamento
+          ? _value.dataCompletamento
+          : dataCompletamento // ignore: cast_nullable_to_non_nullable
+              as DateTime?,
+      responsabile: freezed == responsabile
+          ? _value.responsabile
+          : responsabile // ignore: cast_nullable_to_non_nullable
+              as String?,
+      azioni: null == azioni
+          ? _value.azioni
+          : azioni // ignore: cast_nullable_to_non_nullable
+              as List<String>,
+      costoStimato: freezed == costoStimato
+          ? _value.costoStimato
           : costoStimato // ignore: cast_nullable_to_non_nullable
-              as double,
-    ));
+              as double?,
+      efficaciaAttesa: freezed == efficaciaAttesa
+          ? _value.efficaciaAttesa
+          : efficaciaAttesa // ignore: cast_nullable_to_non_nullable
+              as double?,
+    ) as $Val);
   }
 }
 
-/// Adds pattern-matching-related methods to [Mitigation].
-extension MitigationPatterns on Mitigation {
-  /// A variant of `map` that fallback to returning `orElse`.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case _:
-  ///     return orElse();
-  /// }
-  /// ```
+/// @nodoc
+abstract class _$$MitigationImplCopyWith<$Res>
+    implements $MitigationCopyWith<$Res> {
+  factory _$$MitigationImplCopyWith(
+          _$MitigationImpl value, $Res Function(_$MitigationImpl) then) =
+      __$$MitigationImplCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call(
+      {String id,
+      String rischioId,
+      String titolo,
+      String descrizione,
+      MitigationStatus stato,
+      Priority priorita,
+      DateTime? dataScadenza,
+      DateTime? dataCompletamento,
+      String? responsabile,
+      List<String> azioni,
+      double? costoStimato,
+      double? efficaciaAttesa});
+}
 
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>(
-    TResult Function(_Mitigation value)? $default, {
-    required TResult orElse(),
+/// @nodoc
+class __$$MitigationImplCopyWithImpl<$Res>
+    extends _$MitigationCopyWithImpl<$Res, _$MitigationImpl>
+    implements _$$MitigationImplCopyWith<$Res> {
+  __$$MitigationImplCopyWithImpl(
+      _$MitigationImpl _value, $Res Function(_$MitigationImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of Mitigation
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? id = null,
+    Object? rischioId = null,
+    Object? titolo = null,
+    Object? descrizione = null,
+    Object? stato = null,
+    Object? priorita = null,
+    Object? dataScadenza = freezed,
+    Object? dataCompletamento = freezed,
+    Object? responsabile = freezed,
+    Object? azioni = null,
+    Object? costoStimato = freezed,
+    Object? efficaciaAttesa = freezed,
   }) {
-    final _that = this;
-    switch (_that) {
-      case _Mitigation() when $default != null:
-        return $default(_that);
-      case _:
-        return orElse();
-    }
-  }
-
-  /// A `switch`-like method, using callbacks.
-  ///
-  /// Callbacks receives the raw object, upcasted.
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case final Subclass2 value:
-  ///     return ...;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>(
-    TResult Function(_Mitigation value) $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _Mitigation():
-        return $default(_that);
-      case _:
-        throw StateError('Unexpected subclass');
-    }
-  }
-
-  /// A variant of `map` that fallback to returning `null`.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case _:
-  ///     return null;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>(
-    TResult? Function(_Mitigation value)? $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _Mitigation() when $default != null:
-        return $default(_that);
-      case _:
-        return null;
-    }
-  }
-
-  /// A variant of `when` that fallback to an `orElse` callback.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case _:
-  ///     return orElse();
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>(
-    TResult Function(
-            String id,
-            String rischioId,
-            String descrizione,
-            MitigationPriority priorita,
-            MitigationStatus status,
-            String? responsabile,
-            DateTime? dataScadenza,
-            double costoStimato)?
-        $default, {
-    required TResult orElse(),
-  }) {
-    final _that = this;
-    switch (_that) {
-      case _Mitigation() when $default != null:
-        return $default(
-            _that.id,
-            _that.rischioId,
-            _that.descrizione,
-            _that.priorita,
-            _that.status,
-            _that.responsabile,
-            _that.dataScadenza,
-            _that.costoStimato);
-      case _:
-        return orElse();
-    }
-  }
-
-  /// A `switch`-like method, using callbacks.
-  ///
-  /// As opposed to `map`, this offers destructuring.
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case Subclass2(:final field2):
-  ///     return ...;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>(
-    TResult Function(
-            String id,
-            String rischioId,
-            String descrizione,
-            MitigationPriority priorita,
-            MitigationStatus status,
-            String? responsabile,
-            DateTime? dataScadenza,
-            double costoStimato)
-        $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _Mitigation():
-        return $default(
-            _that.id,
-            _that.rischioId,
-            _that.descrizione,
-            _that.priorita,
-            _that.status,
-            _that.responsabile,
-            _that.dataScadenza,
-            _that.costoStimato);
-      case _:
-        throw StateError('Unexpected subclass');
-    }
-  }
-
-  /// A variant of `when` that fallback to returning `null`
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case _:
-  ///     return null;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>(
-    TResult? Function(
-            String id,
-            String rischioId,
-            String descrizione,
-            MitigationPriority priorita,
-            MitigationStatus status,
-            String? responsabile,
-            DateTime? dataScadenza,
-            double costoStimato)?
-        $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _Mitigation() when $default != null:
-        return $default(
-            _that.id,
-            _that.rischioId,
-            _that.descrizione,
-            _that.priorita,
-            _that.status,
-            _that.responsabile,
-            _that.dataScadenza,
-            _that.costoStimato);
-      case _:
-        return null;
-    }
+    return _then(_$MitigationImpl(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      rischioId: null == rischioId
+          ? _value.rischioId
+          : rischioId // ignore: cast_nullable_to_non_nullable
+              as String,
+      titolo: null == titolo
+          ? _value.titolo
+          : titolo // ignore: cast_nullable_to_non_nullable
+              as String,
+      descrizione: null == descrizione
+          ? _value.descrizione
+          : descrizione // ignore: cast_nullable_to_non_nullable
+              as String,
+      stato: null == stato
+          ? _value.stato
+          : stato // ignore: cast_nullable_to_non_nullable
+              as MitigationStatus,
+      priorita: null == priorita
+          ? _value.priorita
+          : priorita // ignore: cast_nullable_to_non_nullable
+              as Priority,
+      dataScadenza: freezed == dataScadenza
+          ? _value.dataScadenza
+          : dataScadenza // ignore: cast_nullable_to_non_nullable
+              as DateTime?,
+      dataCompletamento: freezed == dataCompletamento
+          ? _value.dataCompletamento
+          : dataCompletamento // ignore: cast_nullable_to_non_nullable
+              as DateTime?,
+      responsabile: freezed == responsabile
+          ? _value.responsabile
+          : responsabile // ignore: cast_nullable_to_non_nullable
+              as String?,
+      azioni: null == azioni
+          ? _value._azioni
+          : azioni // ignore: cast_nullable_to_non_nullable
+              as List<String>,
+      costoStimato: freezed == costoStimato
+          ? _value.costoStimato
+          : costoStimato // ignore: cast_nullable_to_non_nullable
+              as double?,
+      efficaciaAttesa: freezed == efficaciaAttesa
+          ? _value.efficaciaAttesa
+          : efficaciaAttesa // ignore: cast_nullable_to_non_nullable
+              as double?,
+    ));
   }
 }
 
 /// @nodoc
 @JsonSerializable()
-class _Mitigation extends Mitigation {
-  const _Mitigation(
+class _$MitigationImpl extends _Mitigation {
+  const _$MitigationImpl(
       {required this.id,
       required this.rischioId,
+      required this.titolo,
       required this.descrizione,
+      required this.stato,
       required this.priorita,
-      required this.status,
-      this.responsabile,
       this.dataScadenza,
-      this.costoStimato = 0})
-      : super._();
-  factory _Mitigation.fromJson(Map<String, dynamic> json) =>
-      _$MitigationFromJson(json);
+      this.dataCompletamento,
+      this.responsabile,
+      final List<String> azioni = const [],
+      this.costoStimato,
+      this.efficaciaAttesa})
+      : _azioni = azioni,
+        super._();
+
+  factory _$MitigationImpl.fromJson(Map<String, dynamic> json) =>
+      _$$MitigationImplFromJson(json);
 
   @override
   final String id;
   @override
   final String rischioId;
   @override
+  final String titolo;
+  @override
   final String descrizione;
   @override
-  final MitigationPriority priorita;
+  final MitigationStatus stato;
   @override
-  final MitigationStatus status;
-  @override
-  final String? responsabile;
+  final Priority priorita;
   @override
   final DateTime? dataScadenza;
   @override
+  final DateTime? dataCompletamento;
+  @override
+  final String? responsabile;
+  final List<String> _azioni;
+  @override
   @JsonKey()
-  final double costoStimato;
-
-  /// Create a copy of Mitigation
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  _$MitigationCopyWith<_Mitigation> get copyWith =>
-      __$MitigationCopyWithImpl<_Mitigation>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$MitigationToJson(
-      this,
-    );
+  List<String> get azioni {
+    if (_azioni is EqualUnmodifiableListView) return _azioni;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_azioni);
   }
 
   @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _Mitigation &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.rischioId, rischioId) ||
-                other.rischioId == rischioId) &&
-            (identical(other.descrizione, descrizione) ||
-                other.descrizione == descrizione) &&
-            (identical(other.priorita, priorita) ||
-                other.priorita == priorita) &&
-            (identical(other.status, status) || other.status == status) &&
-            (identical(other.responsabile, responsabile) ||
-                other.responsabile == responsabile) &&
-            (identical(other.dataScadenza, dataScadenza) ||
-                other.dataScadenza == dataScadenza) &&
-            (identical(other.costoStimato, costoStimato) ||
-                other.costoStimato == costoStimato));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  final double? costoStimato;
   @override
-  int get hashCode => Object.hash(runtimeType, id, rischioId, descrizione,
-      priorita, status, responsabile, dataScadenza, costoStimato);
+  final double? efficaciaAttesa;
 
   @override
   String toString() {
-    return 'Mitigation(id: $id, rischioId: $rischioId, descrizione: $descrizione, priorita: $priorita, status: $status, responsabile: $responsabile, dataScadenza: $dataScadenza, costoStimato: $costoStimato)';
+    return 'Mitigation(id: $id, rischioId: $rischioId, titolo: $titolo, descrizione: $descrizione, stato: $stato, priorita: $priorita, dataScadenza: $dataScadenza, dataCompletamento: $dataCompletamento, responsabile: $responsabile, azioni: $azioni, costoStimato: $costoStimato, efficaciaAttesa: $efficaciaAttesa)';
   }
-}
-
-/// @nodoc
-abstract mixin class _$MitigationCopyWith<$Res>
-    implements $MitigationCopyWith<$Res> {
-  factory _$MitigationCopyWith(
-          _Mitigation value, $Res Function(_Mitigation) _then) =
-      __$MitigationCopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String id,
-      String rischioId,
-      String descrizione,
-      MitigationPriority priorita,
-      MitigationStatus status,
-      String? responsabile,
-      DateTime? dataScadenza,
-      double costoStimato});
-}
-
-/// @nodoc
-class __$MitigationCopyWithImpl<$Res> implements _$MitigationCopyWith<$Res> {
-  __$MitigationCopyWithImpl(this._self, this._then);
-
-  final _Mitigation _self;
-  final $Res Function(_Mitigation) _then;
-
-  /// Create a copy of Mitigation
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = null,
-    Object? rischioId = null,
-    Object? descrizione = null,
-    Object? priorita = null,
-    Object? status = null,
-    Object? responsabile = freezed,
-    Object? dataScadenza = freezed,
-    Object? costoStimato = null,
-  }) {
-    return _then(_Mitigation(
-      id: null == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
-      rischioId: null == rischioId
-          ? _self.rischioId
-          : rischioId // ignore: cast_nullable_to_non_nullable
-              as String,
-      descrizione: null == descrizione
-          ? _self.descrizione
-          : descrizione // ignore: cast_nullable_to_non_nullable
-              as String,
-      priorita: null == priorita
-          ? _self.priorita
-          : priorita // ignore: cast_nullable_to_non_nullable
-              as MitigationPriority,
-      status: null == status
-          ? _self.status
-          : status // ignore: cast_nullable_to_non_nullable
-              as MitigationStatus,
-      responsabile: freezed == responsabile
-          ? _self.responsabile
-          : responsabile // ignore: cast_nullable_to_non_nullable
-              as String?,
-      dataScadenza: freezed == dataScadenza
-          ? _self.dataScadenza
-          : dataScadenza // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      costoStimato: null == costoStimato
-          ? _self.costoStimato
-          : costoStimato // ignore: cast_nullable_to_non_nullable
-              as double,
-    ));
-  }
-}
-
-/// @nodoc
-mixin _$ComplianceAssessment {
-  Map<String, ComplianceStatus> get normative;
-  double get percentualeConformita;
-  List<ComplianceGap> get gaps;
-  List<ComplianceRequirement> get requisiti;
-  DateTime? get dataValutazione;
-  String? get valutatore;
-
-  /// Create a copy of ComplianceAssessment
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $ComplianceAssessmentCopyWith<ComplianceAssessment> get copyWith =>
-      _$ComplianceAssessmentCopyWithImpl<ComplianceAssessment>(
-          this as ComplianceAssessment, _$identity);
-
-  /// Serializes this ComplianceAssessment to a JSON map.
-  Map<String, dynamic> toJson();
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is ComplianceAssessment &&
-            const DeepCollectionEquality().equals(other.normative, normative) &&
-            (identical(other.percentualeConformita, percentualeConformita) ||
-                other.percentualeConformita == percentualeConformita) &&
-            const DeepCollectionEquality().equals(other.gaps, gaps) &&
-            const DeepCollectionEquality().equals(other.requisiti, requisiti) &&
-            (identical(other.dataValutazione, dataValutazione) ||
-                other.dataValutazione == dataValutazione) &&
-            (identical(other.valutatore, valutatore) ||
-                other.valutatore == valutatore));
+            other is _$MitigationImpl &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.rischioId, rischioId) ||
+                other.rischioId == rischioId) &&
+            (identical(other.titolo, titolo) || other.titolo == titolo) &&
+            (identical(other.descrizione, descrizione) ||
+                other.descrizione == descrizione) &&
+            (identical(other.stato, stato) || other.stato == stato) &&
+            (identical(other.priorita, priorita) ||
+                other.priorita == priorita) &&
+            (identical(other.dataScadenza, dataScadenza) ||
+                other.dataScadenza == dataScadenza) &&
+            (identical(other.dataCompletamento, dataCompletamento) ||
+                other.dataCompletamento == dataCompletamento) &&
+            (identical(other.responsabile, responsabile) ||
+                other.responsabile == responsabile) &&
+            const DeepCollectionEquality().equals(other._azioni, _azioni) &&
+            (identical(other.costoStimato, costoStimato) ||
+                other.costoStimato == costoStimato) &&
+            (identical(other.efficaciaAttesa, efficaciaAttesa) ||
+                other.efficaciaAttesa == efficaciaAttesa));
   }
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(normative),
-      percentualeConformita,
-      const DeepCollectionEquality().hash(gaps),
-      const DeepCollectionEquality().hash(requisiti),
-      dataValutazione,
-      valutatore);
+      id,
+      rischioId,
+      titolo,
+      descrizione,
+      stato,
+      priorita,
+      dataScadenza,
+      dataCompletamento,
+      responsabile,
+      const DeepCollectionEquality().hash(_azioni),
+      costoStimato,
+      efficaciaAttesa);
+
+  /// Create a copy of Mitigation
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$MitigationImplCopyWith<_$MitigationImpl> get copyWith =>
+      __$$MitigationImplCopyWithImpl<_$MitigationImpl>(this, _$identity);
 
   @override
-  String toString() {
-    return 'ComplianceAssessment(normative: $normative, percentualeConformita: $percentualeConformita, gaps: $gaps, requisiti: $requisiti, dataValutazione: $dataValutazione, valutatore: $valutatore)';
+  Map<String, dynamic> toJson() {
+    return _$$MitigationImplToJson(
+      this,
+    );
   }
 }
 
-/// @nodoc
-abstract mixin class $ComplianceAssessmentCopyWith<$Res> {
-  factory $ComplianceAssessmentCopyWith(ComplianceAssessment value,
-          $Res Function(ComplianceAssessment) _then) =
-      _$ComplianceAssessmentCopyWithImpl;
-  @useResult
-  $Res call(
-      {Map<String, ComplianceStatus> normative,
-      double percentualeConformita,
-      List<ComplianceGap> gaps,
-      List<ComplianceRequirement> requisiti,
-      DateTime? dataValutazione,
-      String? valutatore});
+abstract class _Mitigation extends Mitigation {
+  const factory _Mitigation(
+      {required final String id,
+      required final String rischioId,
+      required final String titolo,
+      required final String descrizione,
+      required final MitigationStatus stato,
+      required final Priority priorita,
+      final DateTime? dataScadenza,
+      final DateTime? dataCompletamento,
+      final String? responsabile,
+      final List<String> azioni,
+      final double? costoStimato,
+      final double? efficaciaAttesa}) = _$MitigationImpl;
+  const _Mitigation._() : super._();
+
+  factory _Mitigation.fromJson(Map<String, dynamic> json) =
+      _$MitigationImpl.fromJson;
+
+  @override
+  String get id;
+  @override
+  String get rischioId;
+  @override
+  String get titolo;
+  @override
+  String get descrizione;
+  @override
+  MitigationStatus get stato;
+  @override
+  Priority get priorita;
+  @override
+  DateTime? get dataScadenza;
+  @override
+  DateTime? get dataCompletamento;
+  @override
+  String? get responsabile;
+  @override
+  List<String> get azioni;
+  @override
+  double? get costoStimato;
+  @override
+  double? get efficaciaAttesa;
+
+  /// Create a copy of Mitigation
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$MitigationImplCopyWith<_$MitigationImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+ComplianceAssessment _$ComplianceAssessmentFromJson(Map<String, dynamic> json) {
+  return _ComplianceAssessment.fromJson(json);
 }
 
 /// @nodoc
-class _$ComplianceAssessmentCopyWithImpl<$Res>
-    implements $ComplianceAssessmentCopyWith<$Res> {
-  _$ComplianceAssessmentCopyWithImpl(this._self, this._then);
+mixin _$ComplianceAssessment {
+  double get scoreComplessivo => throw _privateConstructorUsedError;
+  ComplianceLevel get livelloCompliance => throw _privateConstructorUsedError;
+  DateTime get dataValutazione => throw _privateConstructorUsedError;
+  ComplianceGap get complianceGap => throw _privateConstructorUsedError;
+  ComplianceRequirement get complianceRequirement =>
+      throw _privateConstructorUsedError;
+  List<ComplianceItem> get items => throw _privateConstructorUsedError;
+  List<ComplianceAction> get azioniCorrettive =>
+      throw _privateConstructorUsedError;
+  String? get note => throw _privateConstructorUsedError;
+  String? get valutatore => throw _privateConstructorUsedError;
 
-  final ComplianceAssessment _self;
-  final $Res Function(ComplianceAssessment) _then;
+  /// Serializes this ComplianceAssessment to a JSON map.
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of ComplianceAssessment
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  $ComplianceAssessmentCopyWith<ComplianceAssessment> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $ComplianceAssessmentCopyWith<$Res> {
+  factory $ComplianceAssessmentCopyWith(ComplianceAssessment value,
+          $Res Function(ComplianceAssessment) then) =
+      _$ComplianceAssessmentCopyWithImpl<$Res, ComplianceAssessment>;
+  @useResult
+  $Res call(
+      {double scoreComplessivo,
+      ComplianceLevel livelloCompliance,
+      DateTime dataValutazione,
+      ComplianceGap complianceGap,
+      ComplianceRequirement complianceRequirement,
+      List<ComplianceItem> items,
+      List<ComplianceAction> azioniCorrettive,
+      String? note,
+      String? valutatore});
+
+  $ComplianceGapCopyWith<$Res> get complianceGap;
+  $ComplianceRequirementCopyWith<$Res> get complianceRequirement;
+}
+
+/// @nodoc
+class _$ComplianceAssessmentCopyWithImpl<$Res,
+        $Val extends ComplianceAssessment>
+    implements $ComplianceAssessmentCopyWith<$Res> {
+  _$ComplianceAssessmentCopyWithImpl(this._value, this._then);
+
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
   /// Create a copy of ComplianceAssessment
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? normative = null,
-    Object? percentualeConformita = null,
-    Object? gaps = null,
-    Object? requisiti = null,
-    Object? dataValutazione = freezed,
+    Object? scoreComplessivo = null,
+    Object? livelloCompliance = null,
+    Object? dataValutazione = null,
+    Object? complianceGap = null,
+    Object? complianceRequirement = null,
+    Object? items = null,
+    Object? azioniCorrettive = null,
+    Object? note = freezed,
     Object? valutatore = freezed,
   }) {
-    return _then(_self.copyWith(
-      normative: null == normative
-          ? _self.normative
-          : normative // ignore: cast_nullable_to_non_nullable
-              as Map<String, ComplianceStatus>,
-      percentualeConformita: null == percentualeConformita
-          ? _self.percentualeConformita
-          : percentualeConformita // ignore: cast_nullable_to_non_nullable
+    return _then(_value.copyWith(
+      scoreComplessivo: null == scoreComplessivo
+          ? _value.scoreComplessivo
+          : scoreComplessivo // ignore: cast_nullable_to_non_nullable
               as double,
-      gaps: null == gaps
-          ? _self.gaps
-          : gaps // ignore: cast_nullable_to_non_nullable
-              as List<ComplianceGap>,
-      requisiti: null == requisiti
-          ? _self.requisiti
-          : requisiti // ignore: cast_nullable_to_non_nullable
-              as List<ComplianceRequirement>,
-      dataValutazione: freezed == dataValutazione
-          ? _self.dataValutazione
+      livelloCompliance: null == livelloCompliance
+          ? _value.livelloCompliance
+          : livelloCompliance // ignore: cast_nullable_to_non_nullable
+              as ComplianceLevel,
+      dataValutazione: null == dataValutazione
+          ? _value.dataValutazione
           : dataValutazione // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
+              as DateTime,
+      complianceGap: null == complianceGap
+          ? _value.complianceGap
+          : complianceGap // ignore: cast_nullable_to_non_nullable
+              as ComplianceGap,
+      complianceRequirement: null == complianceRequirement
+          ? _value.complianceRequirement
+          : complianceRequirement // ignore: cast_nullable_to_non_nullable
+              as ComplianceRequirement,
+      items: null == items
+          ? _value.items
+          : items // ignore: cast_nullable_to_non_nullable
+              as List<ComplianceItem>,
+      azioniCorrettive: null == azioniCorrettive
+          ? _value.azioniCorrettive
+          : azioniCorrettive // ignore: cast_nullable_to_non_nullable
+              as List<ComplianceAction>,
+      note: freezed == note
+          ? _value.note
+          : note // ignore: cast_nullable_to_non_nullable
+              as String?,
       valutatore: freezed == valutatore
-          ? _self.valutatore
+          ? _value.valutatore
           : valutatore // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
+  }
+
+  /// Create a copy of ComplianceAssessment
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @pragma('vm:prefer-inline')
+  $ComplianceGapCopyWith<$Res> get complianceGap {
+    return $ComplianceGapCopyWith<$Res>(_value.complianceGap, (value) {
+      return _then(_value.copyWith(complianceGap: value) as $Val);
+    });
+  }
+
+  /// Create a copy of ComplianceAssessment
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @pragma('vm:prefer-inline')
+  $ComplianceRequirementCopyWith<$Res> get complianceRequirement {
+    return $ComplianceRequirementCopyWith<$Res>(_value.complianceRequirement,
+        (value) {
+      return _then(_value.copyWith(complianceRequirement: value) as $Val);
+    });
   }
 }
 
-/// Adds pattern-matching-related methods to [ComplianceAssessment].
-extension ComplianceAssessmentPatterns on ComplianceAssessment {
-  /// A variant of `map` that fallback to returning `orElse`.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case _:
-  ///     return orElse();
-  /// }
-  /// ```
+/// @nodoc
+abstract class _$$ComplianceAssessmentImplCopyWith<$Res>
+    implements $ComplianceAssessmentCopyWith<$Res> {
+  factory _$$ComplianceAssessmentImplCopyWith(_$ComplianceAssessmentImpl value,
+          $Res Function(_$ComplianceAssessmentImpl) then) =
+      __$$ComplianceAssessmentImplCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call(
+      {double scoreComplessivo,
+      ComplianceLevel livelloCompliance,
+      DateTime dataValutazione,
+      ComplianceGap complianceGap,
+      ComplianceRequirement complianceRequirement,
+      List<ComplianceItem> items,
+      List<ComplianceAction> azioniCorrettive,
+      String? note,
+      String? valutatore});
 
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>(
-    TResult Function(_ComplianceAssessment value)? $default, {
-    required TResult orElse(),
+  @override
+  $ComplianceGapCopyWith<$Res> get complianceGap;
+  @override
+  $ComplianceRequirementCopyWith<$Res> get complianceRequirement;
+}
+
+/// @nodoc
+class __$$ComplianceAssessmentImplCopyWithImpl<$Res>
+    extends _$ComplianceAssessmentCopyWithImpl<$Res, _$ComplianceAssessmentImpl>
+    implements _$$ComplianceAssessmentImplCopyWith<$Res> {
+  __$$ComplianceAssessmentImplCopyWithImpl(_$ComplianceAssessmentImpl _value,
+      $Res Function(_$ComplianceAssessmentImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of ComplianceAssessment
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? scoreComplessivo = null,
+    Object? livelloCompliance = null,
+    Object? dataValutazione = null,
+    Object? complianceGap = null,
+    Object? complianceRequirement = null,
+    Object? items = null,
+    Object? azioniCorrettive = null,
+    Object? note = freezed,
+    Object? valutatore = freezed,
   }) {
-    final _that = this;
-    switch (_that) {
-      case _ComplianceAssessment() when $default != null:
-        return $default(_that);
-      case _:
-        return orElse();
-    }
-  }
-
-  /// A `switch`-like method, using callbacks.
-  ///
-  /// Callbacks receives the raw object, upcasted.
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case final Subclass2 value:
-  ///     return ...;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>(
-    TResult Function(_ComplianceAssessment value) $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _ComplianceAssessment():
-        return $default(_that);
-      case _:
-        throw StateError('Unexpected subclass');
-    }
-  }
-
-  /// A variant of `map` that fallback to returning `null`.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case _:
-  ///     return null;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>(
-    TResult? Function(_ComplianceAssessment value)? $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _ComplianceAssessment() when $default != null:
-        return $default(_that);
-      case _:
-        return null;
-    }
-  }
-
-  /// A variant of `when` that fallback to an `orElse` callback.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case _:
-  ///     return orElse();
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>(
-    TResult Function(
-            Map<String, ComplianceStatus> normative,
-            double percentualeConformita,
-            List<ComplianceGap> gaps,
-            List<ComplianceRequirement> requisiti,
-            DateTime? dataValutazione,
-            String? valutatore)?
-        $default, {
-    required TResult orElse(),
-  }) {
-    final _that = this;
-    switch (_that) {
-      case _ComplianceAssessment() when $default != null:
-        return $default(
-            _that.normative,
-            _that.percentualeConformita,
-            _that.gaps,
-            _that.requisiti,
-            _that.dataValutazione,
-            _that.valutatore);
-      case _:
-        return orElse();
-    }
-  }
-
-  /// A `switch`-like method, using callbacks.
-  ///
-  /// As opposed to `map`, this offers destructuring.
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case Subclass2(:final field2):
-  ///     return ...;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>(
-    TResult Function(
-            Map<String, ComplianceStatus> normative,
-            double percentualeConformita,
-            List<ComplianceGap> gaps,
-            List<ComplianceRequirement> requisiti,
-            DateTime? dataValutazione,
-            String? valutatore)
-        $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _ComplianceAssessment():
-        return $default(
-            _that.normative,
-            _that.percentualeConformita,
-            _that.gaps,
-            _that.requisiti,
-            _that.dataValutazione,
-            _that.valutatore);
-      case _:
-        throw StateError('Unexpected subclass');
-    }
-  }
-
-  /// A variant of `when` that fallback to returning `null`
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case _:
-  ///     return null;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>(
-    TResult? Function(
-            Map<String, ComplianceStatus> normative,
-            double percentualeConformita,
-            List<ComplianceGap> gaps,
-            List<ComplianceRequirement> requisiti,
-            DateTime? dataValutazione,
-            String? valutatore)?
-        $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _ComplianceAssessment() when $default != null:
-        return $default(
-            _that.normative,
-            _that.percentualeConformita,
-            _that.gaps,
-            _that.requisiti,
-            _that.dataValutazione,
-            _that.valutatore);
-      case _:
-        return null;
-    }
+    return _then(_$ComplianceAssessmentImpl(
+      scoreComplessivo: null == scoreComplessivo
+          ? _value.scoreComplessivo
+          : scoreComplessivo // ignore: cast_nullable_to_non_nullable
+              as double,
+      livelloCompliance: null == livelloCompliance
+          ? _value.livelloCompliance
+          : livelloCompliance // ignore: cast_nullable_to_non_nullable
+              as ComplianceLevel,
+      dataValutazione: null == dataValutazione
+          ? _value.dataValutazione
+          : dataValutazione // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      complianceGap: null == complianceGap
+          ? _value.complianceGap
+          : complianceGap // ignore: cast_nullable_to_non_nullable
+              as ComplianceGap,
+      complianceRequirement: null == complianceRequirement
+          ? _value.complianceRequirement
+          : complianceRequirement // ignore: cast_nullable_to_non_nullable
+              as ComplianceRequirement,
+      items: null == items
+          ? _value._items
+          : items // ignore: cast_nullable_to_non_nullable
+              as List<ComplianceItem>,
+      azioniCorrettive: null == azioniCorrettive
+          ? _value._azioniCorrettive
+          : azioniCorrettive // ignore: cast_nullable_to_non_nullable
+              as List<ComplianceAction>,
+      note: freezed == note
+          ? _value.note
+          : note // ignore: cast_nullable_to_non_nullable
+              as String?,
+      valutatore: freezed == valutatore
+          ? _value.valutatore
+          : valutatore // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
   }
 }
 
 /// @nodoc
 @JsonSerializable()
-class _ComplianceAssessment extends ComplianceAssessment {
-  const _ComplianceAssessment(
-      {required final Map<String, ComplianceStatus> normative,
-      required this.percentualeConformita,
-      required final List<ComplianceGap> gaps,
-      required final List<ComplianceRequirement> requisiti,
-      this.dataValutazione,
+class _$ComplianceAssessmentImpl extends _ComplianceAssessment {
+  const _$ComplianceAssessmentImpl(
+      {required this.scoreComplessivo,
+      required this.livelloCompliance,
+      required this.dataValutazione,
+      required this.complianceGap,
+      required this.complianceRequirement,
+      required final List<ComplianceItem> items,
+      required final List<ComplianceAction> azioniCorrettive,
+      this.note,
       this.valutatore})
-      : _normative = normative,
-        _gaps = gaps,
-        _requisiti = requisiti,
+      : _items = items,
+        _azioniCorrettive = azioniCorrettive,
         super._();
-  factory _ComplianceAssessment.fromJson(Map<String, dynamic> json) =>
-      _$ComplianceAssessmentFromJson(json);
 
-  final Map<String, ComplianceStatus> _normative;
+  factory _$ComplianceAssessmentImpl.fromJson(Map<String, dynamic> json) =>
+      _$$ComplianceAssessmentImplFromJson(json);
+
   @override
-  Map<String, ComplianceStatus> get normative {
-    if (_normative is EqualUnmodifiableMapView) return _normative;
+  final double scoreComplessivo;
+  @override
+  final ComplianceLevel livelloCompliance;
+  @override
+  final DateTime dataValutazione;
+  @override
+  final ComplianceGap complianceGap;
+  @override
+  final ComplianceRequirement complianceRequirement;
+  final List<ComplianceItem> _items;
+  @override
+  List<ComplianceItem> get items {
+    if (_items is EqualUnmodifiableListView) return _items;
     // ignore: implicit_dynamic_type
-    return EqualUnmodifiableMapView(_normative);
+    return EqualUnmodifiableListView(_items);
+  }
+
+  final List<ComplianceAction> _azioniCorrettive;
+  @override
+  List<ComplianceAction> get azioniCorrettive {
+    if (_azioniCorrettive is EqualUnmodifiableListView)
+      return _azioniCorrettive;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_azioniCorrettive);
   }
 
   @override
-  final double percentualeConformita;
-  final List<ComplianceGap> _gaps;
-  @override
-  List<ComplianceGap> get gaps {
-    if (_gaps is EqualUnmodifiableListView) return _gaps;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_gaps);
-  }
-
-  final List<ComplianceRequirement> _requisiti;
-  @override
-  List<ComplianceRequirement> get requisiti {
-    if (_requisiti is EqualUnmodifiableListView) return _requisiti;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_requisiti);
-  }
-
-  @override
-  final DateTime? dataValutazione;
+  final String? note;
   @override
   final String? valutatore;
 
-  /// Create a copy of ComplianceAssessment
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  _$ComplianceAssessmentCopyWith<_ComplianceAssessment> get copyWith =>
-      __$ComplianceAssessmentCopyWithImpl<_ComplianceAssessment>(
-          this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$ComplianceAssessmentToJson(
-      this,
-    );
+  String toString() {
+    return 'ComplianceAssessment(scoreComplessivo: $scoreComplessivo, livelloCompliance: $livelloCompliance, dataValutazione: $dataValutazione, complianceGap: $complianceGap, complianceRequirement: $complianceRequirement, items: $items, azioniCorrettive: $azioniCorrettive, note: $note, valutatore: $valutatore)';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _ComplianceAssessment &&
-            const DeepCollectionEquality()
-                .equals(other._normative, _normative) &&
-            (identical(other.percentualeConformita, percentualeConformita) ||
-                other.percentualeConformita == percentualeConformita) &&
-            const DeepCollectionEquality().equals(other._gaps, _gaps) &&
-            const DeepCollectionEquality()
-                .equals(other._requisiti, _requisiti) &&
+            other is _$ComplianceAssessmentImpl &&
+            (identical(other.scoreComplessivo, scoreComplessivo) ||
+                other.scoreComplessivo == scoreComplessivo) &&
+            (identical(other.livelloCompliance, livelloCompliance) ||
+                other.livelloCompliance == livelloCompliance) &&
             (identical(other.dataValutazione, dataValutazione) ||
                 other.dataValutazione == dataValutazione) &&
+            (identical(other.complianceGap, complianceGap) ||
+                other.complianceGap == complianceGap) &&
+            (identical(other.complianceRequirement, complianceRequirement) ||
+                other.complianceRequirement == complianceRequirement) &&
+            const DeepCollectionEquality().equals(other._items, _items) &&
+            const DeepCollectionEquality()
+                .equals(other._azioniCorrettive, _azioniCorrettive) &&
+            (identical(other.note, note) || other.note == note) &&
             (identical(other.valutatore, valutatore) ||
                 other.valutatore == valutatore));
   }
@@ -4079,161 +3135,406 @@ class _ComplianceAssessment extends ComplianceAssessment {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(_normative),
-      percentualeConformita,
-      const DeepCollectionEquality().hash(_gaps),
-      const DeepCollectionEquality().hash(_requisiti),
+      scoreComplessivo,
+      livelloCompliance,
       dataValutazione,
+      complianceGap,
+      complianceRequirement,
+      const DeepCollectionEquality().hash(_items),
+      const DeepCollectionEquality().hash(_azioniCorrettive),
+      note,
       valutatore);
 
+  /// Create a copy of ComplianceAssessment
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  String toString() {
-    return 'ComplianceAssessment(normative: $normative, percentualeConformita: $percentualeConformita, gaps: $gaps, requisiti: $requisiti, dataValutazione: $dataValutazione, valutatore: $valutatore)';
+  @pragma('vm:prefer-inline')
+  _$$ComplianceAssessmentImplCopyWith<_$ComplianceAssessmentImpl>
+      get copyWith =>
+          __$$ComplianceAssessmentImplCopyWithImpl<_$ComplianceAssessmentImpl>(
+              this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$ComplianceAssessmentImplToJson(
+      this,
+    );
   }
 }
 
-/// @nodoc
-abstract mixin class _$ComplianceAssessmentCopyWith<$Res>
-    implements $ComplianceAssessmentCopyWith<$Res> {
-  factory _$ComplianceAssessmentCopyWith(_ComplianceAssessment value,
-          $Res Function(_ComplianceAssessment) _then) =
-      __$ComplianceAssessmentCopyWithImpl;
+abstract class _ComplianceAssessment extends ComplianceAssessment {
+  const factory _ComplianceAssessment(
+      {required final double scoreComplessivo,
+      required final ComplianceLevel livelloCompliance,
+      required final DateTime dataValutazione,
+      required final ComplianceGap complianceGap,
+      required final ComplianceRequirement complianceRequirement,
+      required final List<ComplianceItem> items,
+      required final List<ComplianceAction> azioniCorrettive,
+      final String? note,
+      final String? valutatore}) = _$ComplianceAssessmentImpl;
+  const _ComplianceAssessment._() : super._();
+
+  factory _ComplianceAssessment.fromJson(Map<String, dynamic> json) =
+      _$ComplianceAssessmentImpl.fromJson;
+
   @override
-  @useResult
-  $Res call(
-      {Map<String, ComplianceStatus> normative,
-      double percentualeConformita,
-      List<ComplianceGap> gaps,
-      List<ComplianceRequirement> requisiti,
-      DateTime? dataValutazione,
-      String? valutatore});
-}
-
-/// @nodoc
-class __$ComplianceAssessmentCopyWithImpl<$Res>
-    implements _$ComplianceAssessmentCopyWith<$Res> {
-  __$ComplianceAssessmentCopyWithImpl(this._self, this._then);
-
-  final _ComplianceAssessment _self;
-  final $Res Function(_ComplianceAssessment) _then;
+  double get scoreComplessivo;
+  @override
+  ComplianceLevel get livelloCompliance;
+  @override
+  DateTime get dataValutazione;
+  @override
+  ComplianceGap get complianceGap;
+  @override
+  ComplianceRequirement get complianceRequirement;
+  @override
+  List<ComplianceItem> get items;
+  @override
+  List<ComplianceAction> get azioniCorrettive;
+  @override
+  String? get note;
+  @override
+  String? get valutatore;
 
   /// Create a copy of ComplianceAssessment
   /// with the given fields replaced by the non-null parameter values.
   @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$ComplianceAssessmentImplCopyWith<_$ComplianceAssessmentImpl>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+ComplianceGap _$ComplianceGapFromJson(Map<String, dynamic> json) {
+  return _ComplianceGap.fromJson(json);
+}
+
+/// @nodoc
+mixin _$ComplianceGap {
+  int get totaleRequisiti => throw _privateConstructorUsedError;
+  int get requisitiConformi => throw _privateConstructorUsedError;
+  int get requisitiParziali => throw _privateConstructorUsedError;
+  int get requisitiNonConformi => throw _privateConstructorUsedError;
+  double get percentualeConformita => throw _privateConstructorUsedError;
+  List<String> get areeNonConformi => throw _privateConstructorUsedError;
+
+  /// Serializes this ComplianceGap to a JSON map.
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of ComplianceGap
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  $ComplianceGapCopyWith<ComplianceGap> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $ComplianceGapCopyWith<$Res> {
+  factory $ComplianceGapCopyWith(
+          ComplianceGap value, $Res Function(ComplianceGap) then) =
+      _$ComplianceGapCopyWithImpl<$Res, ComplianceGap>;
+  @useResult
+  $Res call(
+      {int totaleRequisiti,
+      int requisitiConformi,
+      int requisitiParziali,
+      int requisitiNonConformi,
+      double percentualeConformita,
+      List<String> areeNonConformi});
+}
+
+/// @nodoc
+class _$ComplianceGapCopyWithImpl<$Res, $Val extends ComplianceGap>
+    implements $ComplianceGapCopyWith<$Res> {
+  _$ComplianceGapCopyWithImpl(this._value, this._then);
+
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
+
+  /// Create a copy of ComplianceGap
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
+  @override
   $Res call({
-    Object? normative = null,
+    Object? totaleRequisiti = null,
+    Object? requisitiConformi = null,
+    Object? requisitiParziali = null,
+    Object? requisitiNonConformi = null,
     Object? percentualeConformita = null,
-    Object? gaps = null,
-    Object? requisiti = null,
-    Object? dataValutazione = freezed,
-    Object? valutatore = freezed,
+    Object? areeNonConformi = null,
   }) {
-    return _then(_ComplianceAssessment(
-      normative: null == normative
-          ? _self._normative
-          : normative // ignore: cast_nullable_to_non_nullable
-              as Map<String, ComplianceStatus>,
+    return _then(_value.copyWith(
+      totaleRequisiti: null == totaleRequisiti
+          ? _value.totaleRequisiti
+          : totaleRequisiti // ignore: cast_nullable_to_non_nullable
+              as int,
+      requisitiConformi: null == requisitiConformi
+          ? _value.requisitiConformi
+          : requisitiConformi // ignore: cast_nullable_to_non_nullable
+              as int,
+      requisitiParziali: null == requisitiParziali
+          ? _value.requisitiParziali
+          : requisitiParziali // ignore: cast_nullable_to_non_nullable
+              as int,
+      requisitiNonConformi: null == requisitiNonConformi
+          ? _value.requisitiNonConformi
+          : requisitiNonConformi // ignore: cast_nullable_to_non_nullable
+              as int,
       percentualeConformita: null == percentualeConformita
-          ? _self.percentualeConformita
+          ? _value.percentualeConformita
           : percentualeConformita // ignore: cast_nullable_to_non_nullable
               as double,
-      gaps: null == gaps
-          ? _self._gaps
-          : gaps // ignore: cast_nullable_to_non_nullable
-              as List<ComplianceGap>,
-      requisiti: null == requisiti
-          ? _self._requisiti
-          : requisiti // ignore: cast_nullable_to_non_nullable
-              as List<ComplianceRequirement>,
-      dataValutazione: freezed == dataValutazione
-          ? _self.dataValutazione
-          : dataValutazione // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      valutatore: freezed == valutatore
-          ? _self.valutatore
-          : valutatore // ignore: cast_nullable_to_non_nullable
-              as String?,
+      areeNonConformi: null == areeNonConformi
+          ? _value.areeNonConformi
+          : areeNonConformi // ignore: cast_nullable_to_non_nullable
+              as List<String>,
+    ) as $Val);
+  }
+}
+
+/// @nodoc
+abstract class _$$ComplianceGapImplCopyWith<$Res>
+    implements $ComplianceGapCopyWith<$Res> {
+  factory _$$ComplianceGapImplCopyWith(
+          _$ComplianceGapImpl value, $Res Function(_$ComplianceGapImpl) then) =
+      __$$ComplianceGapImplCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call(
+      {int totaleRequisiti,
+      int requisitiConformi,
+      int requisitiParziali,
+      int requisitiNonConformi,
+      double percentualeConformita,
+      List<String> areeNonConformi});
+}
+
+/// @nodoc
+class __$$ComplianceGapImplCopyWithImpl<$Res>
+    extends _$ComplianceGapCopyWithImpl<$Res, _$ComplianceGapImpl>
+    implements _$$ComplianceGapImplCopyWith<$Res> {
+  __$$ComplianceGapImplCopyWithImpl(
+      _$ComplianceGapImpl _value, $Res Function(_$ComplianceGapImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of ComplianceGap
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? totaleRequisiti = null,
+    Object? requisitiConformi = null,
+    Object? requisitiParziali = null,
+    Object? requisitiNonConformi = null,
+    Object? percentualeConformita = null,
+    Object? areeNonConformi = null,
+  }) {
+    return _then(_$ComplianceGapImpl(
+      totaleRequisiti: null == totaleRequisiti
+          ? _value.totaleRequisiti
+          : totaleRequisiti // ignore: cast_nullable_to_non_nullable
+              as int,
+      requisitiConformi: null == requisitiConformi
+          ? _value.requisitiConformi
+          : requisitiConformi // ignore: cast_nullable_to_non_nullable
+              as int,
+      requisitiParziali: null == requisitiParziali
+          ? _value.requisitiParziali
+          : requisitiParziali // ignore: cast_nullable_to_non_nullable
+              as int,
+      requisitiNonConformi: null == requisitiNonConformi
+          ? _value.requisitiNonConformi
+          : requisitiNonConformi // ignore: cast_nullable_to_non_nullable
+              as int,
+      percentualeConformita: null == percentualeConformita
+          ? _value.percentualeConformita
+          : percentualeConformita // ignore: cast_nullable_to_non_nullable
+              as double,
+      areeNonConformi: null == areeNonConformi
+          ? _value._areeNonConformi
+          : areeNonConformi // ignore: cast_nullable_to_non_nullable
+              as List<String>,
     ));
   }
 }
 
 /// @nodoc
-mixin _$ComplianceGap {
-  String get id;
-  String get normativa;
-  String get articolo;
-  String get descrizione;
-  ComplianceStatus get status;
-  String get azioneSuggerita;
-  String get priorita;
+@JsonSerializable()
+class _$ComplianceGapImpl extends _ComplianceGap {
+  const _$ComplianceGapImpl(
+      {required this.totaleRequisiti,
+      required this.requisitiConformi,
+      required this.requisitiParziali,
+      required this.requisitiNonConformi,
+      required this.percentualeConformita,
+      required final List<String> areeNonConformi})
+      : _areeNonConformi = areeNonConformi,
+        super._();
 
-  /// Create a copy of ComplianceGap
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $ComplianceGapCopyWith<ComplianceGap> get copyWith =>
-      _$ComplianceGapCopyWithImpl<ComplianceGap>(
-          this as ComplianceGap, _$identity);
+  factory _$ComplianceGapImpl.fromJson(Map<String, dynamic> json) =>
+      _$$ComplianceGapImplFromJson(json);
 
-  /// Serializes this ComplianceGap to a JSON map.
-  Map<String, dynamic> toJson();
+  @override
+  final int totaleRequisiti;
+  @override
+  final int requisitiConformi;
+  @override
+  final int requisitiParziali;
+  @override
+  final int requisitiNonConformi;
+  @override
+  final double percentualeConformita;
+  final List<String> _areeNonConformi;
+  @override
+  List<String> get areeNonConformi {
+    if (_areeNonConformi is EqualUnmodifiableListView) return _areeNonConformi;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_areeNonConformi);
+  }
+
+  @override
+  String toString() {
+    return 'ComplianceGap(totaleRequisiti: $totaleRequisiti, requisitiConformi: $requisitiConformi, requisitiParziali: $requisitiParziali, requisitiNonConformi: $requisitiNonConformi, percentualeConformita: $percentualeConformita, areeNonConformi: $areeNonConformi)';
+  }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is ComplianceGap &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.normativa, normativa) ||
-                other.normativa == normativa) &&
-            (identical(other.articolo, articolo) ||
-                other.articolo == articolo) &&
-            (identical(other.descrizione, descrizione) ||
-                other.descrizione == descrizione) &&
-            (identical(other.status, status) || other.status == status) &&
-            (identical(other.azioneSuggerita, azioneSuggerita) ||
-                other.azioneSuggerita == azioneSuggerita) &&
-            (identical(other.priorita, priorita) ||
-                other.priorita == priorita));
+            other is _$ComplianceGapImpl &&
+            (identical(other.totaleRequisiti, totaleRequisiti) ||
+                other.totaleRequisiti == totaleRequisiti) &&
+            (identical(other.requisitiConformi, requisitiConformi) ||
+                other.requisitiConformi == requisitiConformi) &&
+            (identical(other.requisitiParziali, requisitiParziali) ||
+                other.requisitiParziali == requisitiParziali) &&
+            (identical(other.requisitiNonConformi, requisitiNonConformi) ||
+                other.requisitiNonConformi == requisitiNonConformi) &&
+            (identical(other.percentualeConformita, percentualeConformita) ||
+                other.percentualeConformita == percentualeConformita) &&
+            const DeepCollectionEquality()
+                .equals(other._areeNonConformi, _areeNonConformi));
   }
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  int get hashCode => Object.hash(runtimeType, id, normativa, articolo,
-      descrizione, status, azioneSuggerita, priorita);
+  int get hashCode => Object.hash(
+      runtimeType,
+      totaleRequisiti,
+      requisitiConformi,
+      requisitiParziali,
+      requisitiNonConformi,
+      percentualeConformita,
+      const DeepCollectionEquality().hash(_areeNonConformi));
+
+  /// Create a copy of ComplianceGap
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$ComplianceGapImplCopyWith<_$ComplianceGapImpl> get copyWith =>
+      __$$ComplianceGapImplCopyWithImpl<_$ComplianceGapImpl>(this, _$identity);
 
   @override
-  String toString() {
-    return 'ComplianceGap(id: $id, normativa: $normativa, articolo: $articolo, descrizione: $descrizione, status: $status, azioneSuggerita: $azioneSuggerita, priorita: $priorita)';
+  Map<String, dynamic> toJson() {
+    return _$$ComplianceGapImplToJson(
+      this,
+    );
   }
 }
 
+abstract class _ComplianceGap extends ComplianceGap {
+  const factory _ComplianceGap(
+      {required final int totaleRequisiti,
+      required final int requisitiConformi,
+      required final int requisitiParziali,
+      required final int requisitiNonConformi,
+      required final double percentualeConformita,
+      required final List<String> areeNonConformi}) = _$ComplianceGapImpl;
+  const _ComplianceGap._() : super._();
+
+  factory _ComplianceGap.fromJson(Map<String, dynamic> json) =
+      _$ComplianceGapImpl.fromJson;
+
+  @override
+  int get totaleRequisiti;
+  @override
+  int get requisitiConformi;
+  @override
+  int get requisitiParziali;
+  @override
+  int get requisitiNonConformi;
+  @override
+  double get percentualeConformita;
+  @override
+  List<String> get areeNonConformi;
+
+  /// Create a copy of ComplianceGap
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$ComplianceGapImplCopyWith<_$ComplianceGapImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+ComplianceRequirement _$ComplianceRequirementFromJson(
+    Map<String, dynamic> json) {
+  return _ComplianceRequirement.fromJson(json);
+}
+
 /// @nodoc
-abstract mixin class $ComplianceGapCopyWith<$Res> {
-  factory $ComplianceGapCopyWith(
-          ComplianceGap value, $Res Function(ComplianceGap) _then) =
-      _$ComplianceGapCopyWithImpl;
+mixin _$ComplianceRequirement {
+  String get id => throw _privateConstructorUsedError;
+  String get normativa => throw _privateConstructorUsedError;
+  String get articolo => throw _privateConstructorUsedError;
+  String get descrizione => throw _privateConstructorUsedError;
+  bool get applicabile => throw _privateConstructorUsedError;
+  ComplianceStatus get stato => throw _privateConstructorUsedError;
+  String? get evidenza => throw _privateConstructorUsedError;
+  String? get note => throw _privateConstructorUsedError;
+
+  /// Serializes this ComplianceRequirement to a JSON map.
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of ComplianceRequirement
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  $ComplianceRequirementCopyWith<ComplianceRequirement> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $ComplianceRequirementCopyWith<$Res> {
+  factory $ComplianceRequirementCopyWith(ComplianceRequirement value,
+          $Res Function(ComplianceRequirement) then) =
+      _$ComplianceRequirementCopyWithImpl<$Res, ComplianceRequirement>;
   @useResult
   $Res call(
       {String id,
       String normativa,
       String articolo,
       String descrizione,
-      ComplianceStatus status,
-      String azioneSuggerita,
-      String priorita});
+      bool applicabile,
+      ComplianceStatus stato,
+      String? evidenza,
+      String? note});
 }
 
 /// @nodoc
-class _$ComplianceGapCopyWithImpl<$Res>
-    implements $ComplianceGapCopyWith<$Res> {
-  _$ComplianceGapCopyWithImpl(this._self, this._then);
+class _$ComplianceRequirementCopyWithImpl<$Res,
+        $Val extends ComplianceRequirement>
+    implements $ComplianceRequirementCopyWith<$Res> {
+  _$ComplianceRequirementCopyWithImpl(this._value, this._then);
 
-  final ComplianceGap _self;
-  final $Res Function(ComplianceGap) _then;
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
-  /// Create a copy of ComplianceGap
+  /// Create a copy of ComplianceRequirement
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
@@ -4242,259 +3543,144 @@ class _$ComplianceGapCopyWithImpl<$Res>
     Object? normativa = null,
     Object? articolo = null,
     Object? descrizione = null,
-    Object? status = null,
-    Object? azioneSuggerita = null,
-    Object? priorita = null,
+    Object? applicabile = null,
+    Object? stato = null,
+    Object? evidenza = freezed,
+    Object? note = freezed,
   }) {
-    return _then(_self.copyWith(
+    return _then(_value.copyWith(
       id: null == id
-          ? _self.id
+          ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
       normativa: null == normativa
-          ? _self.normativa
+          ? _value.normativa
           : normativa // ignore: cast_nullable_to_non_nullable
               as String,
       articolo: null == articolo
-          ? _self.articolo
+          ? _value.articolo
           : articolo // ignore: cast_nullable_to_non_nullable
               as String,
       descrizione: null == descrizione
-          ? _self.descrizione
+          ? _value.descrizione
           : descrizione // ignore: cast_nullable_to_non_nullable
               as String,
-      status: null == status
-          ? _self.status
-          : status // ignore: cast_nullable_to_non_nullable
+      applicabile: null == applicabile
+          ? _value.applicabile
+          : applicabile // ignore: cast_nullable_to_non_nullable
+              as bool,
+      stato: null == stato
+          ? _value.stato
+          : stato // ignore: cast_nullable_to_non_nullable
               as ComplianceStatus,
-      azioneSuggerita: null == azioneSuggerita
-          ? _self.azioneSuggerita
-          : azioneSuggerita // ignore: cast_nullable_to_non_nullable
-              as String,
-      priorita: null == priorita
-          ? _self.priorita
-          : priorita // ignore: cast_nullable_to_non_nullable
-              as String,
-    ));
+      evidenza: freezed == evidenza
+          ? _value.evidenza
+          : evidenza // ignore: cast_nullable_to_non_nullable
+              as String?,
+      note: freezed == note
+          ? _value.note
+          : note // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ) as $Val);
   }
 }
 
-/// Adds pattern-matching-related methods to [ComplianceGap].
-extension ComplianceGapPatterns on ComplianceGap {
-  /// A variant of `map` that fallback to returning `orElse`.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case _:
-  ///     return orElse();
-  /// }
-  /// ```
+/// @nodoc
+abstract class _$$ComplianceRequirementImplCopyWith<$Res>
+    implements $ComplianceRequirementCopyWith<$Res> {
+  factory _$$ComplianceRequirementImplCopyWith(
+          _$ComplianceRequirementImpl value,
+          $Res Function(_$ComplianceRequirementImpl) then) =
+      __$$ComplianceRequirementImplCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call(
+      {String id,
+      String normativa,
+      String articolo,
+      String descrizione,
+      bool applicabile,
+      ComplianceStatus stato,
+      String? evidenza,
+      String? note});
+}
 
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>(
-    TResult Function(_ComplianceGap value)? $default, {
-    required TResult orElse(),
+/// @nodoc
+class __$$ComplianceRequirementImplCopyWithImpl<$Res>
+    extends _$ComplianceRequirementCopyWithImpl<$Res,
+        _$ComplianceRequirementImpl>
+    implements _$$ComplianceRequirementImplCopyWith<$Res> {
+  __$$ComplianceRequirementImplCopyWithImpl(_$ComplianceRequirementImpl _value,
+      $Res Function(_$ComplianceRequirementImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of ComplianceRequirement
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? id = null,
+    Object? normativa = null,
+    Object? articolo = null,
+    Object? descrizione = null,
+    Object? applicabile = null,
+    Object? stato = null,
+    Object? evidenza = freezed,
+    Object? note = freezed,
   }) {
-    final _that = this;
-    switch (_that) {
-      case _ComplianceGap() when $default != null:
-        return $default(_that);
-      case _:
-        return orElse();
-    }
-  }
-
-  /// A `switch`-like method, using callbacks.
-  ///
-  /// Callbacks receives the raw object, upcasted.
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case final Subclass2 value:
-  ///     return ...;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>(
-    TResult Function(_ComplianceGap value) $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _ComplianceGap():
-        return $default(_that);
-      case _:
-        throw StateError('Unexpected subclass');
-    }
-  }
-
-  /// A variant of `map` that fallback to returning `null`.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case _:
-  ///     return null;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>(
-    TResult? Function(_ComplianceGap value)? $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _ComplianceGap() when $default != null:
-        return $default(_that);
-      case _:
-        return null;
-    }
-  }
-
-  /// A variant of `when` that fallback to an `orElse` callback.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case _:
-  ///     return orElse();
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>(
-    TResult Function(
-            String id,
-            String normativa,
-            String articolo,
-            String descrizione,
-            ComplianceStatus status,
-            String azioneSuggerita,
-            String priorita)?
-        $default, {
-    required TResult orElse(),
-  }) {
-    final _that = this;
-    switch (_that) {
-      case _ComplianceGap() when $default != null:
-        return $default(
-            _that.id,
-            _that.normativa,
-            _that.articolo,
-            _that.descrizione,
-            _that.status,
-            _that.azioneSuggerita,
-            _that.priorita);
-      case _:
-        return orElse();
-    }
-  }
-
-  /// A `switch`-like method, using callbacks.
-  ///
-  /// As opposed to `map`, this offers destructuring.
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case Subclass2(:final field2):
-  ///     return ...;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>(
-    TResult Function(
-            String id,
-            String normativa,
-            String articolo,
-            String descrizione,
-            ComplianceStatus status,
-            String azioneSuggerita,
-            String priorita)
-        $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _ComplianceGap():
-        return $default(
-            _that.id,
-            _that.normativa,
-            _that.articolo,
-            _that.descrizione,
-            _that.status,
-            _that.azioneSuggerita,
-            _that.priorita);
-      case _:
-        throw StateError('Unexpected subclass');
-    }
-  }
-
-  /// A variant of `when` that fallback to returning `null`
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case _:
-  ///     return null;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>(
-    TResult? Function(
-            String id,
-            String normativa,
-            String articolo,
-            String descrizione,
-            ComplianceStatus status,
-            String azioneSuggerita,
-            String priorita)?
-        $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _ComplianceGap() when $default != null:
-        return $default(
-            _that.id,
-            _that.normativa,
-            _that.articolo,
-            _that.descrizione,
-            _that.status,
-            _that.azioneSuggerita,
-            _that.priorita);
-      case _:
-        return null;
-    }
+    return _then(_$ComplianceRequirementImpl(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      normativa: null == normativa
+          ? _value.normativa
+          : normativa // ignore: cast_nullable_to_non_nullable
+              as String,
+      articolo: null == articolo
+          ? _value.articolo
+          : articolo // ignore: cast_nullable_to_non_nullable
+              as String,
+      descrizione: null == descrizione
+          ? _value.descrizione
+          : descrizione // ignore: cast_nullable_to_non_nullable
+              as String,
+      applicabile: null == applicabile
+          ? _value.applicabile
+          : applicabile // ignore: cast_nullable_to_non_nullable
+              as bool,
+      stato: null == stato
+          ? _value.stato
+          : stato // ignore: cast_nullable_to_non_nullable
+              as ComplianceStatus,
+      evidenza: freezed == evidenza
+          ? _value.evidenza
+          : evidenza // ignore: cast_nullable_to_non_nullable
+              as String?,
+      note: freezed == note
+          ? _value.note
+          : note // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
   }
 }
 
 /// @nodoc
 @JsonSerializable()
-class _ComplianceGap extends ComplianceGap {
-  const _ComplianceGap(
+class _$ComplianceRequirementImpl extends _ComplianceRequirement {
+  const _$ComplianceRequirementImpl(
       {required this.id,
       required this.normativa,
       required this.articolo,
       required this.descrizione,
-      required this.status,
-      required this.azioneSuggerita,
-      this.priorita = 'medium'})
+      required this.applicabile,
+      required this.stato,
+      this.evidenza,
+      this.note})
       : super._();
-  factory _ComplianceGap.fromJson(Map<String, dynamic> json) =>
-      _$ComplianceGapFromJson(json);
+
+  factory _$ComplianceRequirementImpl.fromJson(Map<String, dynamic> json) =>
+      _$$ComplianceRequirementImplFromJson(json);
 
   @override
   final String id;
@@ -4505,33 +3691,24 @@ class _ComplianceGap extends ComplianceGap {
   @override
   final String descrizione;
   @override
-  final ComplianceStatus status;
+  final bool applicabile;
   @override
-  final String azioneSuggerita;
+  final ComplianceStatus stato;
   @override
-  @JsonKey()
-  final String priorita;
-
-  /// Create a copy of ComplianceGap
-  /// with the given fields replaced by the non-null parameter values.
+  final String? evidenza;
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  _$ComplianceGapCopyWith<_ComplianceGap> get copyWith =>
-      __$ComplianceGapCopyWithImpl<_ComplianceGap>(this, _$identity);
+  final String? note;
 
   @override
-  Map<String, dynamic> toJson() {
-    return _$ComplianceGapToJson(
-      this,
-    );
+  String toString() {
+    return 'ComplianceRequirement(id: $id, normativa: $normativa, articolo: $articolo, descrizione: $descrizione, applicabile: $applicabile, stato: $stato, evidenza: $evidenza, note: $note)';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _ComplianceGap &&
+            other is _$ComplianceRequirementImpl &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.normativa, normativa) ||
                 other.normativa == normativa) &&
@@ -4539,589 +3716,816 @@ class _ComplianceGap extends ComplianceGap {
                 other.articolo == articolo) &&
             (identical(other.descrizione, descrizione) ||
                 other.descrizione == descrizione) &&
-            (identical(other.status, status) || other.status == status) &&
-            (identical(other.azioneSuggerita, azioneSuggerita) ||
-                other.azioneSuggerita == azioneSuggerita) &&
-            (identical(other.priorita, priorita) ||
-                other.priorita == priorita));
+            (identical(other.applicabile, applicabile) ||
+                other.applicabile == applicabile) &&
+            (identical(other.stato, stato) || other.stato == stato) &&
+            (identical(other.evidenza, evidenza) ||
+                other.evidenza == evidenza) &&
+            (identical(other.note, note) || other.note == note));
   }
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, id, normativa, articolo,
-      descrizione, status, azioneSuggerita, priorita);
+      descrizione, applicabile, stato, evidenza, note);
 
-  @override
-  String toString() {
-    return 'ComplianceGap(id: $id, normativa: $normativa, articolo: $articolo, descrizione: $descrizione, status: $status, azioneSuggerita: $azioneSuggerita, priorita: $priorita)';
-  }
-}
-
-/// @nodoc
-abstract mixin class _$ComplianceGapCopyWith<$Res>
-    implements $ComplianceGapCopyWith<$Res> {
-  factory _$ComplianceGapCopyWith(
-          _ComplianceGap value, $Res Function(_ComplianceGap) _then) =
-      __$ComplianceGapCopyWithImpl;
-  @override
-  @useResult
-  $Res call(
-      {String id,
-      String normativa,
-      String articolo,
-      String descrizione,
-      ComplianceStatus status,
-      String azioneSuggerita,
-      String priorita});
-}
-
-/// @nodoc
-class __$ComplianceGapCopyWithImpl<$Res>
-    implements _$ComplianceGapCopyWith<$Res> {
-  __$ComplianceGapCopyWithImpl(this._self, this._then);
-
-  final _ComplianceGap _self;
-  final $Res Function(_ComplianceGap) _then;
-
-  /// Create a copy of ComplianceGap
+  /// Create a copy of ComplianceRequirement
   /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = null,
-    Object? normativa = null,
-    Object? articolo = null,
-    Object? descrizione = null,
-    Object? status = null,
-    Object? azioneSuggerita = null,
-    Object? priorita = null,
-  }) {
-    return _then(_ComplianceGap(
-      id: null == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
-      normativa: null == normativa
-          ? _self.normativa
-          : normativa // ignore: cast_nullable_to_non_nullable
-              as String,
-      articolo: null == articolo
-          ? _self.articolo
-          : articolo // ignore: cast_nullable_to_non_nullable
-              as String,
-      descrizione: null == descrizione
-          ? _self.descrizione
-          : descrizione // ignore: cast_nullable_to_non_nullable
-              as String,
-      status: null == status
-          ? _self.status
-          : status // ignore: cast_nullable_to_non_nullable
-              as ComplianceStatus,
-      azioneSuggerita: null == azioneSuggerita
-          ? _self.azioneSuggerita
-          : azioneSuggerita // ignore: cast_nullable_to_non_nullable
-              as String,
-      priorita: null == priorita
-          ? _self.priorita
-          : priorita // ignore: cast_nullable_to_non_nullable
-              as String,
-    ));
+  _$$ComplianceRequirementImplCopyWith<_$ComplianceRequirementImpl>
+      get copyWith => __$$ComplianceRequirementImplCopyWithImpl<
+          _$ComplianceRequirementImpl>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$ComplianceRequirementImplToJson(
+      this,
+    );
   }
 }
 
-/// @nodoc
-mixin _$ComplianceRequirement {
+abstract class _ComplianceRequirement extends ComplianceRequirement {
+  const factory _ComplianceRequirement(
+      {required final String id,
+      required final String normativa,
+      required final String articolo,
+      required final String descrizione,
+      required final bool applicabile,
+      required final ComplianceStatus stato,
+      final String? evidenza,
+      final String? note}) = _$ComplianceRequirementImpl;
+  const _ComplianceRequirement._() : super._();
+
+  factory _ComplianceRequirement.fromJson(Map<String, dynamic> json) =
+      _$ComplianceRequirementImpl.fromJson;
+
+  @override
   String get id;
+  @override
   String get normativa;
-  String get categoria;
+  @override
+  String get articolo;
+  @override
   String get descrizione;
+  @override
   bool get applicabile;
-  ComplianceStatus get status;
+  @override
+  ComplianceStatus get stato;
+  @override
   String? get evidenza;
+  @override
   String? get note;
 
   /// Create a copy of ComplianceRequirement
   /// with the given fields replaced by the non-null parameter values.
+  @override
   @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  $ComplianceRequirementCopyWith<ComplianceRequirement> get copyWith =>
-      _$ComplianceRequirementCopyWithImpl<ComplianceRequirement>(
-          this as ComplianceRequirement, _$identity);
+  _$$ComplianceRequirementImplCopyWith<_$ComplianceRequirementImpl>
+      get copyWith => throw _privateConstructorUsedError;
+}
 
-  /// Serializes this ComplianceRequirement to a JSON map.
-  Map<String, dynamic> toJson();
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is ComplianceRequirement &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.normativa, normativa) ||
-                other.normativa == normativa) &&
-            (identical(other.categoria, categoria) ||
-                other.categoria == categoria) &&
-            (identical(other.descrizione, descrizione) ||
-                other.descrizione == descrizione) &&
-            (identical(other.applicabile, applicabile) ||
-                other.applicabile == applicabile) &&
-            (identical(other.status, status) || other.status == status) &&
-            (identical(other.evidenza, evidenza) ||
-                other.evidenza == evidenza) &&
-            (identical(other.note, note) || other.note == note));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, id, normativa, categoria,
-      descrizione, applicabile, status, evidenza, note);
-
-  @override
-  String toString() {
-    return 'ComplianceRequirement(id: $id, normativa: $normativa, categoria: $categoria, descrizione: $descrizione, applicabile: $applicabile, status: $status, evidenza: $evidenza, note: $note)';
-  }
+ComplianceItem _$ComplianceItemFromJson(Map<String, dynamic> json) {
+  return _ComplianceItem.fromJson(json);
 }
 
 /// @nodoc
-abstract mixin class $ComplianceRequirementCopyWith<$Res> {
-  factory $ComplianceRequirementCopyWith(ComplianceRequirement value,
-          $Res Function(ComplianceRequirement) _then) =
-      _$ComplianceRequirementCopyWithImpl;
+mixin _$ComplianceItem {
+  String get id => throw _privateConstructorUsedError;
+  String get categoria => throw _privateConstructorUsedError;
+  String get requisito => throw _privateConstructorUsedError;
+  String get descrizione => throw _privateConstructorUsedError;
+  ComplianceStatus get stato => throw _privateConstructorUsedError;
+  String get evidenza => throw _privateConstructorUsedError;
+  List<String> get documenti => throw _privateConstructorUsedError;
+  DateTime? get dataVerifica => throw _privateConstructorUsedError;
+  String? get verificatore => throw _privateConstructorUsedError;
+  String? get note => throw _privateConstructorUsedError;
+
+  /// Serializes this ComplianceItem to a JSON map.
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of ComplianceItem
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  $ComplianceItemCopyWith<ComplianceItem> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $ComplianceItemCopyWith<$Res> {
+  factory $ComplianceItemCopyWith(
+          ComplianceItem value, $Res Function(ComplianceItem) then) =
+      _$ComplianceItemCopyWithImpl<$Res, ComplianceItem>;
   @useResult
   $Res call(
       {String id,
-      String normativa,
       String categoria,
+      String requisito,
       String descrizione,
-      bool applicabile,
-      ComplianceStatus status,
-      String? evidenza,
+      ComplianceStatus stato,
+      String evidenza,
+      List<String> documenti,
+      DateTime? dataVerifica,
+      String? verificatore,
       String? note});
 }
 
 /// @nodoc
-class _$ComplianceRequirementCopyWithImpl<$Res>
-    implements $ComplianceRequirementCopyWith<$Res> {
-  _$ComplianceRequirementCopyWithImpl(this._self, this._then);
+class _$ComplianceItemCopyWithImpl<$Res, $Val extends ComplianceItem>
+    implements $ComplianceItemCopyWith<$Res> {
+  _$ComplianceItemCopyWithImpl(this._value, this._then);
 
-  final ComplianceRequirement _self;
-  final $Res Function(ComplianceRequirement) _then;
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
-  /// Create a copy of ComplianceRequirement
+  /// Create a copy of ComplianceItem
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? id = null,
-    Object? normativa = null,
     Object? categoria = null,
+    Object? requisito = null,
     Object? descrizione = null,
-    Object? applicabile = null,
-    Object? status = null,
-    Object? evidenza = freezed,
+    Object? stato = null,
+    Object? evidenza = null,
+    Object? documenti = null,
+    Object? dataVerifica = freezed,
+    Object? verificatore = freezed,
     Object? note = freezed,
   }) {
-    return _then(_self.copyWith(
+    return _then(_value.copyWith(
       id: null == id
-          ? _self.id
+          ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      normativa: null == normativa
-          ? _self.normativa
-          : normativa // ignore: cast_nullable_to_non_nullable
-              as String,
       categoria: null == categoria
-          ? _self.categoria
+          ? _value.categoria
           : categoria // ignore: cast_nullable_to_non_nullable
               as String,
+      requisito: null == requisito
+          ? _value.requisito
+          : requisito // ignore: cast_nullable_to_non_nullable
+              as String,
       descrizione: null == descrizione
-          ? _self.descrizione
+          ? _value.descrizione
           : descrizione // ignore: cast_nullable_to_non_nullable
               as String,
-      applicabile: null == applicabile
-          ? _self.applicabile
-          : applicabile // ignore: cast_nullable_to_non_nullable
-              as bool,
-      status: null == status
-          ? _self.status
-          : status // ignore: cast_nullable_to_non_nullable
+      stato: null == stato
+          ? _value.stato
+          : stato // ignore: cast_nullable_to_non_nullable
               as ComplianceStatus,
-      evidenza: freezed == evidenza
-          ? _self.evidenza
+      evidenza: null == evidenza
+          ? _value.evidenza
           : evidenza // ignore: cast_nullable_to_non_nullable
+              as String,
+      documenti: null == documenti
+          ? _value.documenti
+          : documenti // ignore: cast_nullable_to_non_nullable
+              as List<String>,
+      dataVerifica: freezed == dataVerifica
+          ? _value.dataVerifica
+          : dataVerifica // ignore: cast_nullable_to_non_nullable
+              as DateTime?,
+      verificatore: freezed == verificatore
+          ? _value.verificatore
+          : verificatore // ignore: cast_nullable_to_non_nullable
               as String?,
       note: freezed == note
-          ? _self.note
+          ? _value.note
           : note // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 }
 
-/// Adds pattern-matching-related methods to [ComplianceRequirement].
-extension ComplianceRequirementPatterns on ComplianceRequirement {
-  /// A variant of `map` that fallback to returning `orElse`.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case _:
-  ///     return orElse();
-  /// }
-  /// ```
+/// @nodoc
+abstract class _$$ComplianceItemImplCopyWith<$Res>
+    implements $ComplianceItemCopyWith<$Res> {
+  factory _$$ComplianceItemImplCopyWith(_$ComplianceItemImpl value,
+          $Res Function(_$ComplianceItemImpl) then) =
+      __$$ComplianceItemImplCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call(
+      {String id,
+      String categoria,
+      String requisito,
+      String descrizione,
+      ComplianceStatus stato,
+      String evidenza,
+      List<String> documenti,
+      DateTime? dataVerifica,
+      String? verificatore,
+      String? note});
+}
 
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>(
-    TResult Function(_ComplianceRequirement value)? $default, {
-    required TResult orElse(),
+/// @nodoc
+class __$$ComplianceItemImplCopyWithImpl<$Res>
+    extends _$ComplianceItemCopyWithImpl<$Res, _$ComplianceItemImpl>
+    implements _$$ComplianceItemImplCopyWith<$Res> {
+  __$$ComplianceItemImplCopyWithImpl(
+      _$ComplianceItemImpl _value, $Res Function(_$ComplianceItemImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of ComplianceItem
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? id = null,
+    Object? categoria = null,
+    Object? requisito = null,
+    Object? descrizione = null,
+    Object? stato = null,
+    Object? evidenza = null,
+    Object? documenti = null,
+    Object? dataVerifica = freezed,
+    Object? verificatore = freezed,
+    Object? note = freezed,
   }) {
-    final _that = this;
-    switch (_that) {
-      case _ComplianceRequirement() when $default != null:
-        return $default(_that);
-      case _:
-        return orElse();
-    }
-  }
-
-  /// A `switch`-like method, using callbacks.
-  ///
-  /// Callbacks receives the raw object, upcasted.
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case final Subclass2 value:
-  ///     return ...;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>(
-    TResult Function(_ComplianceRequirement value) $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _ComplianceRequirement():
-        return $default(_that);
-      case _:
-        throw StateError('Unexpected subclass');
-    }
-  }
-
-  /// A variant of `map` that fallback to returning `null`.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case _:
-  ///     return null;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>(
-    TResult? Function(_ComplianceRequirement value)? $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _ComplianceRequirement() when $default != null:
-        return $default(_that);
-      case _:
-        return null;
-    }
-  }
-
-  /// A variant of `when` that fallback to an `orElse` callback.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case _:
-  ///     return orElse();
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>(
-    TResult Function(
-            String id,
-            String normativa,
-            String categoria,
-            String descrizione,
-            bool applicabile,
-            ComplianceStatus status,
-            String? evidenza,
-            String? note)?
-        $default, {
-    required TResult orElse(),
-  }) {
-    final _that = this;
-    switch (_that) {
-      case _ComplianceRequirement() when $default != null:
-        return $default(
-            _that.id,
-            _that.normativa,
-            _that.categoria,
-            _that.descrizione,
-            _that.applicabile,
-            _that.status,
-            _that.evidenza,
-            _that.note);
-      case _:
-        return orElse();
-    }
-  }
-
-  /// A `switch`-like method, using callbacks.
-  ///
-  /// As opposed to `map`, this offers destructuring.
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case Subclass2(:final field2):
-  ///     return ...;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>(
-    TResult Function(
-            String id,
-            String normativa,
-            String categoria,
-            String descrizione,
-            bool applicabile,
-            ComplianceStatus status,
-            String? evidenza,
-            String? note)
-        $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _ComplianceRequirement():
-        return $default(
-            _that.id,
-            _that.normativa,
-            _that.categoria,
-            _that.descrizione,
-            _that.applicabile,
-            _that.status,
-            _that.evidenza,
-            _that.note);
-      case _:
-        throw StateError('Unexpected subclass');
-    }
-  }
-
-  /// A variant of `when` that fallback to returning `null`
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case _:
-  ///     return null;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>(
-    TResult? Function(
-            String id,
-            String normativa,
-            String categoria,
-            String descrizione,
-            bool applicabile,
-            ComplianceStatus status,
-            String? evidenza,
-            String? note)?
-        $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _ComplianceRequirement() when $default != null:
-        return $default(
-            _that.id,
-            _that.normativa,
-            _that.categoria,
-            _that.descrizione,
-            _that.applicabile,
-            _that.status,
-            _that.evidenza,
-            _that.note);
-      case _:
-        return null;
-    }
+    return _then(_$ComplianceItemImpl(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      categoria: null == categoria
+          ? _value.categoria
+          : categoria // ignore: cast_nullable_to_non_nullable
+              as String,
+      requisito: null == requisito
+          ? _value.requisito
+          : requisito // ignore: cast_nullable_to_non_nullable
+              as String,
+      descrizione: null == descrizione
+          ? _value.descrizione
+          : descrizione // ignore: cast_nullable_to_non_nullable
+              as String,
+      stato: null == stato
+          ? _value.stato
+          : stato // ignore: cast_nullable_to_non_nullable
+              as ComplianceStatus,
+      evidenza: null == evidenza
+          ? _value.evidenza
+          : evidenza // ignore: cast_nullable_to_non_nullable
+              as String,
+      documenti: null == documenti
+          ? _value._documenti
+          : documenti // ignore: cast_nullable_to_non_nullable
+              as List<String>,
+      dataVerifica: freezed == dataVerifica
+          ? _value.dataVerifica
+          : dataVerifica // ignore: cast_nullable_to_non_nullable
+              as DateTime?,
+      verificatore: freezed == verificatore
+          ? _value.verificatore
+          : verificatore // ignore: cast_nullable_to_non_nullable
+              as String?,
+      note: freezed == note
+          ? _value.note
+          : note // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
   }
 }
 
 /// @nodoc
 @JsonSerializable()
-class _ComplianceRequirement extends ComplianceRequirement {
-  const _ComplianceRequirement(
+class _$ComplianceItemImpl extends _ComplianceItem {
+  const _$ComplianceItemImpl(
       {required this.id,
-      required this.normativa,
       required this.categoria,
+      required this.requisito,
       required this.descrizione,
-      required this.applicabile,
-      required this.status,
-      this.evidenza,
+      required this.stato,
+      required this.evidenza,
+      final List<String> documenti = const [],
+      this.dataVerifica,
+      this.verificatore,
       this.note})
-      : super._();
-  factory _ComplianceRequirement.fromJson(Map<String, dynamic> json) =>
-      _$ComplianceRequirementFromJson(json);
+      : _documenti = documenti,
+        super._();
+
+  factory _$ComplianceItemImpl.fromJson(Map<String, dynamic> json) =>
+      _$$ComplianceItemImplFromJson(json);
 
   @override
   final String id;
   @override
-  final String normativa;
-  @override
   final String categoria;
+  @override
+  final String requisito;
   @override
   final String descrizione;
   @override
-  final bool applicabile;
+  final ComplianceStatus stato;
   @override
-  final ComplianceStatus status;
+  final String evidenza;
+  final List<String> _documenti;
   @override
-  final String? evidenza;
+  @JsonKey()
+  List<String> get documenti {
+    if (_documenti is EqualUnmodifiableListView) return _documenti;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_documenti);
+  }
+
+  @override
+  final DateTime? dataVerifica;
+  @override
+  final String? verificatore;
   @override
   final String? note;
 
-  /// Create a copy of ComplianceRequirement
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  _$ComplianceRequirementCopyWith<_ComplianceRequirement> get copyWith =>
-      __$ComplianceRequirementCopyWithImpl<_ComplianceRequirement>(
-          this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$ComplianceRequirementToJson(
-      this,
-    );
+  String toString() {
+    return 'ComplianceItem(id: $id, categoria: $categoria, requisito: $requisito, descrizione: $descrizione, stato: $stato, evidenza: $evidenza, documenti: $documenti, dataVerifica: $dataVerifica, verificatore: $verificatore, note: $note)';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _ComplianceRequirement &&
+            other is _$ComplianceItemImpl &&
             (identical(other.id, id) || other.id == id) &&
-            (identical(other.normativa, normativa) ||
-                other.normativa == normativa) &&
             (identical(other.categoria, categoria) ||
                 other.categoria == categoria) &&
+            (identical(other.requisito, requisito) ||
+                other.requisito == requisito) &&
             (identical(other.descrizione, descrizione) ||
                 other.descrizione == descrizione) &&
-            (identical(other.applicabile, applicabile) ||
-                other.applicabile == applicabile) &&
-            (identical(other.status, status) || other.status == status) &&
+            (identical(other.stato, stato) || other.stato == stato) &&
             (identical(other.evidenza, evidenza) ||
                 other.evidenza == evidenza) &&
+            const DeepCollectionEquality()
+                .equals(other._documenti, _documenti) &&
+            (identical(other.dataVerifica, dataVerifica) ||
+                other.dataVerifica == dataVerifica) &&
+            (identical(other.verificatore, verificatore) ||
+                other.verificatore == verificatore) &&
             (identical(other.note, note) || other.note == note));
   }
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  int get hashCode => Object.hash(runtimeType, id, normativa, categoria,
-      descrizione, applicabile, status, evidenza, note);
+  int get hashCode => Object.hash(
+      runtimeType,
+      id,
+      categoria,
+      requisito,
+      descrizione,
+      stato,
+      evidenza,
+      const DeepCollectionEquality().hash(_documenti),
+      dataVerifica,
+      verificatore,
+      note);
+
+  /// Create a copy of ComplianceItem
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$ComplianceItemImplCopyWith<_$ComplianceItemImpl> get copyWith =>
+      __$$ComplianceItemImplCopyWithImpl<_$ComplianceItemImpl>(
+          this, _$identity);
 
   @override
-  String toString() {
-    return 'ComplianceRequirement(id: $id, normativa: $normativa, categoria: $categoria, descrizione: $descrizione, applicabile: $applicabile, status: $status, evidenza: $evidenza, note: $note)';
+  Map<String, dynamic> toJson() {
+    return _$$ComplianceItemImplToJson(
+      this,
+    );
+  }
+}
+
+abstract class _ComplianceItem extends ComplianceItem {
+  const factory _ComplianceItem(
+      {required final String id,
+      required final String categoria,
+      required final String requisito,
+      required final String descrizione,
+      required final ComplianceStatus stato,
+      required final String evidenza,
+      final List<String> documenti,
+      final DateTime? dataVerifica,
+      final String? verificatore,
+      final String? note}) = _$ComplianceItemImpl;
+  const _ComplianceItem._() : super._();
+
+  factory _ComplianceItem.fromJson(Map<String, dynamic> json) =
+      _$ComplianceItemImpl.fromJson;
+
+  @override
+  String get id;
+  @override
+  String get categoria;
+  @override
+  String get requisito;
+  @override
+  String get descrizione;
+  @override
+  ComplianceStatus get stato;
+  @override
+  String get evidenza;
+  @override
+  List<String> get documenti;
+  @override
+  DateTime? get dataVerifica;
+  @override
+  String? get verificatore;
+  @override
+  String? get note;
+
+  /// Create a copy of ComplianceItem
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$ComplianceItemImplCopyWith<_$ComplianceItemImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+ComplianceAction _$ComplianceActionFromJson(Map<String, dynamic> json) {
+  return _ComplianceAction.fromJson(json);
+}
+
+/// @nodoc
+mixin _$ComplianceAction {
+  String get id => throw _privateConstructorUsedError;
+  String get itemId => throw _privateConstructorUsedError;
+  String get titolo => throw _privateConstructorUsedError;
+  String get descrizione => throw _privateConstructorUsedError;
+  ActionStatus get stato => throw _privateConstructorUsedError;
+  Priority get priorita => throw _privateConstructorUsedError;
+  DateTime? get dataScadenza => throw _privateConstructorUsedError;
+  DateTime? get dataCompletamento => throw _privateConstructorUsedError;
+  String? get responsabile => throw _privateConstructorUsedError;
+  List<String> get steps => throw _privateConstructorUsedError;
+  double? get costoStimato => throw _privateConstructorUsedError;
+
+  /// Serializes this ComplianceAction to a JSON map.
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of ComplianceAction
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  $ComplianceActionCopyWith<ComplianceAction> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $ComplianceActionCopyWith<$Res> {
+  factory $ComplianceActionCopyWith(
+          ComplianceAction value, $Res Function(ComplianceAction) then) =
+      _$ComplianceActionCopyWithImpl<$Res, ComplianceAction>;
+  @useResult
+  $Res call(
+      {String id,
+      String itemId,
+      String titolo,
+      String descrizione,
+      ActionStatus stato,
+      Priority priorita,
+      DateTime? dataScadenza,
+      DateTime? dataCompletamento,
+      String? responsabile,
+      List<String> steps,
+      double? costoStimato});
+}
+
+/// @nodoc
+class _$ComplianceActionCopyWithImpl<$Res, $Val extends ComplianceAction>
+    implements $ComplianceActionCopyWith<$Res> {
+  _$ComplianceActionCopyWithImpl(this._value, this._then);
+
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
+
+  /// Create a copy of ComplianceAction
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? id = null,
+    Object? itemId = null,
+    Object? titolo = null,
+    Object? descrizione = null,
+    Object? stato = null,
+    Object? priorita = null,
+    Object? dataScadenza = freezed,
+    Object? dataCompletamento = freezed,
+    Object? responsabile = freezed,
+    Object? steps = null,
+    Object? costoStimato = freezed,
+  }) {
+    return _then(_value.copyWith(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      itemId: null == itemId
+          ? _value.itemId
+          : itemId // ignore: cast_nullable_to_non_nullable
+              as String,
+      titolo: null == titolo
+          ? _value.titolo
+          : titolo // ignore: cast_nullable_to_non_nullable
+              as String,
+      descrizione: null == descrizione
+          ? _value.descrizione
+          : descrizione // ignore: cast_nullable_to_non_nullable
+              as String,
+      stato: null == stato
+          ? _value.stato
+          : stato // ignore: cast_nullable_to_non_nullable
+              as ActionStatus,
+      priorita: null == priorita
+          ? _value.priorita
+          : priorita // ignore: cast_nullable_to_non_nullable
+              as Priority,
+      dataScadenza: freezed == dataScadenza
+          ? _value.dataScadenza
+          : dataScadenza // ignore: cast_nullable_to_non_nullable
+              as DateTime?,
+      dataCompletamento: freezed == dataCompletamento
+          ? _value.dataCompletamento
+          : dataCompletamento // ignore: cast_nullable_to_non_nullable
+              as DateTime?,
+      responsabile: freezed == responsabile
+          ? _value.responsabile
+          : responsabile // ignore: cast_nullable_to_non_nullable
+              as String?,
+      steps: null == steps
+          ? _value.steps
+          : steps // ignore: cast_nullable_to_non_nullable
+              as List<String>,
+      costoStimato: freezed == costoStimato
+          ? _value.costoStimato
+          : costoStimato // ignore: cast_nullable_to_non_nullable
+              as double?,
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract mixin class _$ComplianceRequirementCopyWith<$Res>
-    implements $ComplianceRequirementCopyWith<$Res> {
-  factory _$ComplianceRequirementCopyWith(_ComplianceRequirement value,
-          $Res Function(_ComplianceRequirement) _then) =
-      __$ComplianceRequirementCopyWithImpl;
+abstract class _$$ComplianceActionImplCopyWith<$Res>
+    implements $ComplianceActionCopyWith<$Res> {
+  factory _$$ComplianceActionImplCopyWith(_$ComplianceActionImpl value,
+          $Res Function(_$ComplianceActionImpl) then) =
+      __$$ComplianceActionImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
       {String id,
-      String normativa,
-      String categoria,
+      String itemId,
+      String titolo,
       String descrizione,
-      bool applicabile,
-      ComplianceStatus status,
-      String? evidenza,
-      String? note});
+      ActionStatus stato,
+      Priority priorita,
+      DateTime? dataScadenza,
+      DateTime? dataCompletamento,
+      String? responsabile,
+      List<String> steps,
+      double? costoStimato});
 }
 
 /// @nodoc
-class __$ComplianceRequirementCopyWithImpl<$Res>
-    implements _$ComplianceRequirementCopyWith<$Res> {
-  __$ComplianceRequirementCopyWithImpl(this._self, this._then);
+class __$$ComplianceActionImplCopyWithImpl<$Res>
+    extends _$ComplianceActionCopyWithImpl<$Res, _$ComplianceActionImpl>
+    implements _$$ComplianceActionImplCopyWith<$Res> {
+  __$$ComplianceActionImplCopyWithImpl(_$ComplianceActionImpl _value,
+      $Res Function(_$ComplianceActionImpl) _then)
+      : super(_value, _then);
 
-  final _ComplianceRequirement _self;
-  final $Res Function(_ComplianceRequirement) _then;
-
-  /// Create a copy of ComplianceRequirement
+  /// Create a copy of ComplianceAction
   /// with the given fields replaced by the non-null parameter values.
-  @override
   @pragma('vm:prefer-inline')
+  @override
   $Res call({
     Object? id = null,
-    Object? normativa = null,
-    Object? categoria = null,
+    Object? itemId = null,
+    Object? titolo = null,
     Object? descrizione = null,
-    Object? applicabile = null,
-    Object? status = null,
-    Object? evidenza = freezed,
-    Object? note = freezed,
+    Object? stato = null,
+    Object? priorita = null,
+    Object? dataScadenza = freezed,
+    Object? dataCompletamento = freezed,
+    Object? responsabile = freezed,
+    Object? steps = null,
+    Object? costoStimato = freezed,
   }) {
-    return _then(_ComplianceRequirement(
+    return _then(_$ComplianceActionImpl(
       id: null == id
-          ? _self.id
+          ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      normativa: null == normativa
-          ? _self.normativa
-          : normativa // ignore: cast_nullable_to_non_nullable
+      itemId: null == itemId
+          ? _value.itemId
+          : itemId // ignore: cast_nullable_to_non_nullable
               as String,
-      categoria: null == categoria
-          ? _self.categoria
-          : categoria // ignore: cast_nullable_to_non_nullable
+      titolo: null == titolo
+          ? _value.titolo
+          : titolo // ignore: cast_nullable_to_non_nullable
               as String,
       descrizione: null == descrizione
-          ? _self.descrizione
+          ? _value.descrizione
           : descrizione // ignore: cast_nullable_to_non_nullable
               as String,
-      applicabile: null == applicabile
-          ? _self.applicabile
-          : applicabile // ignore: cast_nullable_to_non_nullable
-              as bool,
-      status: null == status
-          ? _self.status
-          : status // ignore: cast_nullable_to_non_nullable
-              as ComplianceStatus,
-      evidenza: freezed == evidenza
-          ? _self.evidenza
-          : evidenza // ignore: cast_nullable_to_non_nullable
+      stato: null == stato
+          ? _value.stato
+          : stato // ignore: cast_nullable_to_non_nullable
+              as ActionStatus,
+      priorita: null == priorita
+          ? _value.priorita
+          : priorita // ignore: cast_nullable_to_non_nullable
+              as Priority,
+      dataScadenza: freezed == dataScadenza
+          ? _value.dataScadenza
+          : dataScadenza // ignore: cast_nullable_to_non_nullable
+              as DateTime?,
+      dataCompletamento: freezed == dataCompletamento
+          ? _value.dataCompletamento
+          : dataCompletamento // ignore: cast_nullable_to_non_nullable
+              as DateTime?,
+      responsabile: freezed == responsabile
+          ? _value.responsabile
+          : responsabile // ignore: cast_nullable_to_non_nullable
               as String?,
-      note: freezed == note
-          ? _self.note
-          : note // ignore: cast_nullable_to_non_nullable
-              as String?,
+      steps: null == steps
+          ? _value._steps
+          : steps // ignore: cast_nullable_to_non_nullable
+              as List<String>,
+      costoStimato: freezed == costoStimato
+          ? _value.costoStimato
+          : costoStimato // ignore: cast_nullable_to_non_nullable
+              as double?,
     ));
   }
 }
 
-// dart format on
+/// @nodoc
+@JsonSerializable()
+class _$ComplianceActionImpl extends _ComplianceAction {
+  const _$ComplianceActionImpl(
+      {required this.id,
+      required this.itemId,
+      required this.titolo,
+      required this.descrizione,
+      required this.stato,
+      required this.priorita,
+      this.dataScadenza,
+      this.dataCompletamento,
+      this.responsabile,
+      final List<String> steps = const [],
+      this.costoStimato})
+      : _steps = steps,
+        super._();
+
+  factory _$ComplianceActionImpl.fromJson(Map<String, dynamic> json) =>
+      _$$ComplianceActionImplFromJson(json);
+
+  @override
+  final String id;
+  @override
+  final String itemId;
+  @override
+  final String titolo;
+  @override
+  final String descrizione;
+  @override
+  final ActionStatus stato;
+  @override
+  final Priority priorita;
+  @override
+  final DateTime? dataScadenza;
+  @override
+  final DateTime? dataCompletamento;
+  @override
+  final String? responsabile;
+  final List<String> _steps;
+  @override
+  @JsonKey()
+  List<String> get steps {
+    if (_steps is EqualUnmodifiableListView) return _steps;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_steps);
+  }
+
+  @override
+  final double? costoStimato;
+
+  @override
+  String toString() {
+    return 'ComplianceAction(id: $id, itemId: $itemId, titolo: $titolo, descrizione: $descrizione, stato: $stato, priorita: $priorita, dataScadenza: $dataScadenza, dataCompletamento: $dataCompletamento, responsabile: $responsabile, steps: $steps, costoStimato: $costoStimato)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$ComplianceActionImpl &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.itemId, itemId) || other.itemId == itemId) &&
+            (identical(other.titolo, titolo) || other.titolo == titolo) &&
+            (identical(other.descrizione, descrizione) ||
+                other.descrizione == descrizione) &&
+            (identical(other.stato, stato) || other.stato == stato) &&
+            (identical(other.priorita, priorita) ||
+                other.priorita == priorita) &&
+            (identical(other.dataScadenza, dataScadenza) ||
+                other.dataScadenza == dataScadenza) &&
+            (identical(other.dataCompletamento, dataCompletamento) ||
+                other.dataCompletamento == dataCompletamento) &&
+            (identical(other.responsabile, responsabile) ||
+                other.responsabile == responsabile) &&
+            const DeepCollectionEquality().equals(other._steps, _steps) &&
+            (identical(other.costoStimato, costoStimato) ||
+                other.costoStimato == costoStimato));
+  }
+
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  int get hashCode => Object.hash(
+      runtimeType,
+      id,
+      itemId,
+      titolo,
+      descrizione,
+      stato,
+      priorita,
+      dataScadenza,
+      dataCompletamento,
+      responsabile,
+      const DeepCollectionEquality().hash(_steps),
+      costoStimato);
+
+  /// Create a copy of ComplianceAction
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$ComplianceActionImplCopyWith<_$ComplianceActionImpl> get copyWith =>
+      __$$ComplianceActionImplCopyWithImpl<_$ComplianceActionImpl>(
+          this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$ComplianceActionImplToJson(
+      this,
+    );
+  }
+}
+
+abstract class _ComplianceAction extends ComplianceAction {
+  const factory _ComplianceAction(
+      {required final String id,
+      required final String itemId,
+      required final String titolo,
+      required final String descrizione,
+      required final ActionStatus stato,
+      required final Priority priorita,
+      final DateTime? dataScadenza,
+      final DateTime? dataCompletamento,
+      final String? responsabile,
+      final List<String> steps,
+      final double? costoStimato}) = _$ComplianceActionImpl;
+  const _ComplianceAction._() : super._();
+
+  factory _ComplianceAction.fromJson(Map<String, dynamic> json) =
+      _$ComplianceActionImpl.fromJson;
+
+  @override
+  String get id;
+  @override
+  String get itemId;
+  @override
+  String get titolo;
+  @override
+  String get descrizione;
+  @override
+  ActionStatus get stato;
+  @override
+  Priority get priorita;
+  @override
+  DateTime? get dataScadenza;
+  @override
+  DateTime? get dataCompletamento;
+  @override
+  String? get responsabile;
+  @override
+  List<String> get steps;
+  @override
+  double? get costoStimato;
+
+  /// Create a copy of ComplianceAction
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$ComplianceActionImplCopyWith<_$ComplianceActionImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}

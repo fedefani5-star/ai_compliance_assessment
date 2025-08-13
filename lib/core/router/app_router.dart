@@ -7,6 +7,7 @@ import '../../features/auth/presentation/pages/login_page.dart';
 import '../../features/dashboard/presentation/pages/dashboard_page.dart';
 import '../../features/assessment/presentation/pages/assessment_page.dart';
 import '../../features/auth/application/auth_controller.dart';
+import '../../features/auth/domain/auth_state.dart';
 
 /// Provider per il router dell'applicazione
 final routerProvider = Provider<GoRouter>((ref) {
@@ -61,7 +62,7 @@ final routerProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/assessment',
         name: 'assessment',
-        builder: (context, state) => const AssessmentPage(),
+        builder: (context, state) => AssessmentPage(),
       ),
       GoRoute(
         path: '/',
@@ -87,44 +88,51 @@ class _AuthStateNotifier extends ChangeNotifier {
 class _ErrorPage extends StatelessWidget {
   final Exception? error;
 
-  const _ErrorPage({Key? key, this.error}) : super(key: key);
+  const _ErrorPage({super.key, this.error});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color(0xFFF9FAFB),
       appBar: AppBar(
         title: const Text('Errore'),
         backgroundColor: const Color(0xFF0047AB),
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            const Icon(
-              Icons.error_outline,
-              size: 64,
-              color: Color(0xFFEF4444),
-            ),
-            const SizedBox(height: 16),
-            Text(
-              'Si è verificato un errore',
-              style: Theme.of(context).textTheme.headlineSmall,
-            ),
-            const SizedBox(height: 8),
-            Text(
-              error?.toString() ?? 'Errore sconosciuto',
-              style: Theme.of(context).textTheme.bodyMedium,
-              textAlign: TextAlign.center,
-            ),
-            const SizedBox(height: 24),
-            ElevatedButton(
-              onPressed: () => context.go('/dashboard'),
-              style: ElevatedButton.styleFrom(
-                backgroundColor: const Color(0xFF0047AB),
+        child: Padding(
+          padding: const EdgeInsets.all(24),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Icon(
+                Icons.error_outline,
+                size: 64,
+                color: Color(0xFFDC2626),
               ),
-              child: const Text('Torna alla Dashboard'),
-            ),
-          ],
+              const SizedBox(height: 24),
+              Text(
+                'Ops! Qualcosa è andato storto',
+                style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                  fontWeight: FontWeight.w600,
+                ),
+                textAlign: TextAlign.center,
+              ),
+              const SizedBox(height: 16),
+              Text(
+                error?.toString() ?? 'Errore sconosciuto',
+                style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                  color: const Color(0xFF6B7280),
+                ),
+                textAlign: TextAlign.center,
+              ),
+              const SizedBox(height: 32),
+              ElevatedButton.icon(
+                onPressed: () => context.go('/dashboard'),
+                icon: const Icon(Icons.home_outlined),
+                label: const Text('Torna alla Dashboard'),
+              ),
+            ],
+          ),
         ),
       ),
     );

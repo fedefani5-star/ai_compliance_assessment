@@ -40,7 +40,23 @@ class AuthController extends StateNotifier<AuthState> {
   final AuthService _authService;
   final Ref _ref;
 
-  AuthController(this._authService, this._ref) : super(const AuthState.initial());
+  AuthController(this._authService, this._ref) : super(const AuthState.initial()) {
+    _checkAuthStatus();
+  }
+
+  /// Verifica lo stato di autenticazione all'avvio
+  Future<void> _checkAuthStatus() async {
+    try {
+      final user = await _authService.getCurrentUser();
+      if (user != null) {
+        state = AuthState.authenticated(user);
+      } else {
+        state = const AuthState.unauthenticated();
+      }
+    } catch (e) {
+      state = const AuthState.unauthenticated();
+    }
+  }
 
   /// Effettua il login con email e password
   Future<bool> login({
@@ -98,49 +114,13 @@ class AuthController extends StateNotifier<AuthState> {
     }
   }
 
-  /// Controlla lo stato di autenticazione all'avvio
-  Future<void> checkAuthStatus() async {
-    try {
-      state = const AuthState.loading();
-
-      final user = await _authService.getCurrentUser();
-
-      if (user != null) {
-        state = AuthState.authenticated(user);
-      } else {
-        state = const AuthState.unauthenticated();
-      }
-    } catch (e) {
-      state = AuthState.error(e.toString());
-    }
+  /// Aggiorna i dati dell'utente
+  void updateUser(UserModel user) {
+    state = AuthState.authenticated(user);
   }
 
-  /// Aggiorna il token se necessario
-  Future<void> refreshToken() async {
-    try {
-      final currentState = state;
-      currentState.maybeWhen(
-        authenticated: (user) async {
-          final refreshedUser = await _authService.refreshToken();
-          if (refreshedUser != null) {
-            state = AuthState.authenticated(refreshedUser);
-          } else {
-            state = const AuthState.unauthenticated();
-          }
-        },
-        orElse: () {},
-      );
-    } catch (e) {
-      state = AuthState.error(e.toString());
-    }
-  }
-
-  /// Recupera la password
-  Future<bool> resetPassword(String email) async {
-    try {
-      return await _authService.resetPassword(email);
-    } catch (e) {
-      return false;
-    }
+  /// Pulisce gli errori
+  void clearError() {
+    state = const AuthState.unauthenticated();
   }
 }

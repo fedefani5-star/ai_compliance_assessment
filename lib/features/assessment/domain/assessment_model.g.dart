@@ -6,8 +6,9 @@ part of 'assessment_model.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_AssessmentModel _$AssessmentModelFromJson(Map<String, dynamic> json) =>
-    _AssessmentModel(
+_$AssessmentModelImpl _$$AssessmentModelImplFromJson(
+        Map<String, dynamic> json) =>
+    _$AssessmentModelImpl(
       id: json['id'] as String,
       clienteId: json['clienteId'] as String,
       nomeAzienda: json['nomeAzienda'] as String,
@@ -41,7 +42,8 @@ _AssessmentModel _$AssessmentModelFromJson(Map<String, dynamic> json) =>
           const [],
     );
 
-Map<String, dynamic> _$AssessmentModelToJson(_AssessmentModel instance) =>
+Map<String, dynamic> _$$AssessmentModelImplToJson(
+        _$AssessmentModelImpl instance) =>
     <String, dynamic>{
       'id': instance.id,
       'clienteId': instance.clienteId,
@@ -69,7 +71,8 @@ const _$AssessmentStatusEnumMap = {
   AssessmentStatus.archived: 'archived',
 };
 
-_CompanyInfo _$CompanyInfoFromJson(Map<String, dynamic> json) => _CompanyInfo(
+_$CompanyInfoImpl _$$CompanyInfoImplFromJson(Map<String, dynamic> json) =>
+    _$CompanyInfoImpl(
       ragioneSociale: json['ragioneSociale'] as String,
       partitaIva: json['partitaIva'] as String,
       codiceFiscale: json['codiceFiscale'] as String,
@@ -81,11 +84,11 @@ _CompanyInfo _$CompanyInfoFromJson(Map<String, dynamic> json) => _CompanyInfo(
       citta: json['citta'] as String?,
       cap: json['cap'] as String?,
       provincia: json['provincia'] as String?,
-      numeroeDipendenti: (json['numeroeDipendenti'] as num).toInt(),
+      numeroDipendenti: (json['numeroDipendenti'] as num).toInt(),
       isMultinazionale: json['isMultinazionale'] as bool? ?? false,
     );
 
-Map<String, dynamic> _$CompanyInfoToJson(_CompanyInfo instance) =>
+Map<String, dynamic> _$$CompanyInfoImplToJson(_$CompanyInfoImpl instance) =>
     <String, dynamic>{
       'ragioneSociale': instance.ragioneSociale,
       'partitaIva': instance.partitaIva,
@@ -98,12 +101,12 @@ Map<String, dynamic> _$CompanyInfoToJson(_CompanyInfo instance) =>
       'citta': instance.citta,
       'cap': instance.cap,
       'provincia': instance.provincia,
-      'numeroeDipendenti': instance.numeroeDipendenti,
+      'numeroDipendenti': instance.numeroDipendenti,
       'isMultinazionale': instance.isMultinazionale,
     };
 
-_AISystemInfo _$AISystemInfoFromJson(Map<String, dynamic> json) =>
-    _AISystemInfo(
+_$AISystemInfoImpl _$$AISystemInfoImplFromJson(Map<String, dynamic> json) =>
+    _$AISystemInfoImpl(
       nome: json['nome'] as String,
       descrizione: json['descrizione'] as String,
       tipo: $enumDecode(_$AISystemTypeEnumMap, json['tipo']),
@@ -114,17 +117,20 @@ _AISystemInfo _$AISystemInfoFromJson(Map<String, dynamic> json) =>
           .map((e) => e as String)
           .toList(),
       coinvolgeMinori: json['coinvolgeMinori'] as bool,
-      decisoniAutomatizzate: json['decisoniAutomatizzate'] as bool,
+      decisioniAutomatizzate: json['decisioniAutomatizzate'] as bool,
       profilazione: json['profilazione'] as bool,
       fornitore: json['fornitore'] as String?,
       versione: json['versione'] as String?,
-      certificazioni: (json['certificazioni'] as List<dynamic>?)
+      dataDeployment: json['dataDeployment'] == null
+          ? null
+          : DateTime.parse(json['dataDeployment'] as String),
+      paesiOperativi: (json['paesiOperativi'] as List<dynamic>?)
               ?.map((e) => e as String)
               .toList() ??
           const [],
     );
 
-Map<String, dynamic> _$AISystemInfoToJson(_AISystemInfo instance) =>
+Map<String, dynamic> _$$AISystemInfoImplToJson(_$AISystemInfoImpl instance) =>
     <String, dynamic>{
       'nome': instance.nome,
       'descrizione': instance.descrizione,
@@ -133,21 +139,22 @@ Map<String, dynamic> _$AISystemInfoToJson(_AISystemInfo instance) =>
       'finalita': instance.finalita,
       'categorieDati': instance.categorieDati,
       'coinvolgeMinori': instance.coinvolgeMinori,
-      'decisoniAutomatizzate': instance.decisoniAutomatizzate,
+      'decisioniAutomatizzate': instance.decisioniAutomatizzate,
       'profilazione': instance.profilazione,
       'fornitore': instance.fornitore,
       'versione': instance.versione,
-      'certificazioni': instance.certificazioni,
+      'dataDeployment': instance.dataDeployment?.toIso8601String(),
+      'paesiOperativi': instance.paesiOperativi,
     };
 
 const _$AISystemTypeEnumMap = {
-  AISystemType.predictiveAnalytics: 'predictive_analytics',
+  AISystemType.machineLearning: 'machine_learning',
+  AISystemType.deepLearning: 'deep_learning',
   AISystemType.nlp: 'nlp',
   AISystemType.computerVision: 'computer_vision',
-  AISystemType.recommendationSystem: 'recommendation_system',
-  AISystemType.automation: 'automation',
-  AISystemType.generativeAI: 'generative_ai',
-  AISystemType.other: 'other',
+  AISystemType.expertSystem: 'expert_system',
+  AISystemType.robotics: 'robotics',
+  AISystemType.mixed: 'mixed',
 };
 
 const _$AIRiskLevelEnumMap = {
@@ -157,12 +164,13 @@ const _$AIRiskLevelEnumMap = {
   AIRiskLevel.unacceptable: 'unacceptable',
 };
 
-_RiskAssessment _$RiskAssessmentFromJson(Map<String, dynamic> json) =>
-    _RiskAssessment(
+_$RiskAssessmentImpl _$$RiskAssessmentImplFromJson(Map<String, dynamic> json) =>
+    _$RiskAssessmentImpl(
       scoreComplessivo: (json['scoreComplessivo'] as num).toDouble(),
-      livello: $enumDecode(_$RiskLevelEnumMap, json['livello']),
-      dimensioni: (json['dimensioni'] as Map<String, dynamic>).map(
-        (k, e) => MapEntry(k, (e as num).toDouble()),
+      livelloRischio: $enumDecode(_$RiskLevelEnumMap, json['livelloRischio']),
+      dataValutazione: DateTime.parse(json['dataValutazione'] as String),
+      categorie: (json['categorie'] as Map<String, dynamic>).map(
+        (k, e) => MapEntry(k, RiskCategory.fromJson(e as Map<String, dynamic>)),
       ),
       rischiIdentificati: (json['rischiIdentificati'] as List<dynamic>)
           .map((e) => RiskItem.fromJson(e as Map<String, dynamic>))
@@ -170,123 +178,228 @@ _RiskAssessment _$RiskAssessmentFromJson(Map<String, dynamic> json) =>
       mitigazioni: (json['mitigazioni'] as List<dynamic>)
           .map((e) => Mitigation.fromJson(e as Map<String, dynamic>))
           .toList(),
-      dataValutazione: json['dataValutazione'] == null
-          ? null
-          : DateTime.parse(json['dataValutazione'] as String),
+      note: json['note'] as String?,
       valutatore: json['valutatore'] as String?,
     );
 
-Map<String, dynamic> _$RiskAssessmentToJson(_RiskAssessment instance) =>
+Map<String, dynamic> _$$RiskAssessmentImplToJson(
+        _$RiskAssessmentImpl instance) =>
     <String, dynamic>{
       'scoreComplessivo': instance.scoreComplessivo,
-      'livello': _$RiskLevelEnumMap[instance.livello]!,
-      'dimensioni': instance.dimensioni,
+      'livelloRischio': _$RiskLevelEnumMap[instance.livelloRischio]!,
+      'dataValutazione': instance.dataValutazione.toIso8601String(),
+      'categorie': instance.categorie,
       'rischiIdentificati': instance.rischiIdentificati,
       'mitigazioni': instance.mitigazioni,
-      'dataValutazione': instance.dataValutazione?.toIso8601String(),
+      'note': instance.note,
       'valutatore': instance.valutatore,
     };
 
 const _$RiskLevelEnumMap = {
-  RiskLevel.minimal: 'minimal',
-  RiskLevel.limited: 'limited',
+  RiskLevel.low: 'low',
+  RiskLevel.medium: 'medium',
   RiskLevel.high: 'high',
-  RiskLevel.unacceptable: 'unacceptable',
+  RiskLevel.critical: 'critical',
 };
 
-_RiskItem _$RiskItemFromJson(Map<String, dynamic> json) => _RiskItem(
+_$RiskCategoryImpl _$$RiskCategoryImplFromJson(Map<String, dynamic> json) =>
+    _$RiskCategoryImpl(
       id: json['id'] as String,
-      categoria: json['categoria'] as String,
-      descrizione: json['descrizione'] as String,
-      probabilita: (json['probabilita'] as num).toDouble(),
-      impatto: (json['impatto'] as num).toDouble(),
+      nome: json['nome'] as String,
       score: (json['score'] as num).toDouble(),
       livello: $enumDecode(_$RiskLevelEnumMap, json['livello']),
-      normativeViolate: (json['normativeViolate'] as List<dynamic>?)
+      descrizione: json['descrizione'] as String,
+      raccomandazioni: (json['raccomandazioni'] as List<dynamic>?)
               ?.map((e) => e as String)
               .toList() ??
           const [],
     );
 
-Map<String, dynamic> _$RiskItemToJson(_RiskItem instance) => <String, dynamic>{
+Map<String, dynamic> _$$RiskCategoryImplToJson(_$RiskCategoryImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'nome': instance.nome,
+      'score': instance.score,
+      'livello': _$RiskLevelEnumMap[instance.livello]!,
+      'descrizione': instance.descrizione,
+      'raccomandazioni': instance.raccomandazioni,
+    };
+
+_$RiskItemImpl _$$RiskItemImplFromJson(Map<String, dynamic> json) =>
+    _$RiskItemImpl(
+      id: json['id'] as String,
+      categoria: json['categoria'] as String,
+      titolo: json['titolo'] as String,
+      descrizione: json['descrizione'] as String,
+      probabilita: (json['probabilita'] as num).toDouble(),
+      impatto: (json['impatto'] as num).toDouble(),
+      scoreRischio: (json['scoreRischio'] as num).toDouble(),
+      livello: $enumDecode(_$RiskLevelEnumMap, json['livello']),
+      statoMitigazione:
+          $enumDecode(_$MitigationStatusEnumMap, json['statoMitigazione']),
+      dataIdentificazione: json['dataIdentificazione'] == null
+          ? null
+          : DateTime.parse(json['dataIdentificazione'] as String),
+      responsabile: json['responsabile'] as String?,
+    );
+
+Map<String, dynamic> _$$RiskItemImplToJson(_$RiskItemImpl instance) =>
+    <String, dynamic>{
       'id': instance.id,
       'categoria': instance.categoria,
+      'titolo': instance.titolo,
       'descrizione': instance.descrizione,
       'probabilita': instance.probabilita,
       'impatto': instance.impatto,
-      'score': instance.score,
+      'scoreRischio': instance.scoreRischio,
       'livello': _$RiskLevelEnumMap[instance.livello]!,
-      'normativeViolate': instance.normativeViolate,
-    };
-
-_Mitigation _$MitigationFromJson(Map<String, dynamic> json) => _Mitigation(
-      id: json['id'] as String,
-      rischioId: json['rischioId'] as String,
-      descrizione: json['descrizione'] as String,
-      priorita: $enumDecode(_$MitigationPriorityEnumMap, json['priorita']),
-      status: $enumDecode(_$MitigationStatusEnumMap, json['status']),
-      responsabile: json['responsabile'] as String?,
-      dataScadenza: json['dataScadenza'] == null
-          ? null
-          : DateTime.parse(json['dataScadenza'] as String),
-      costoStimato: (json['costoStimato'] as num?)?.toDouble() ?? 0,
-    );
-
-Map<String, dynamic> _$MitigationToJson(_Mitigation instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'rischioId': instance.rischioId,
-      'descrizione': instance.descrizione,
-      'priorita': _$MitigationPriorityEnumMap[instance.priorita]!,
-      'status': _$MitigationStatusEnumMap[instance.status]!,
+      'statoMitigazione': _$MitigationStatusEnumMap[instance.statoMitigazione]!,
+      'dataIdentificazione': instance.dataIdentificazione?.toIso8601String(),
       'responsabile': instance.responsabile,
-      'dataScadenza': instance.dataScadenza?.toIso8601String(),
-      'costoStimato': instance.costoStimato,
     };
-
-const _$MitigationPriorityEnumMap = {
-  MitigationPriority.critical: 'critical',
-  MitigationPriority.high: 'high',
-  MitigationPriority.medium: 'medium',
-  MitigationPriority.low: 'low',
-};
 
 const _$MitigationStatusEnumMap = {
-  MitigationStatus.pending: 'pending',
+  MitigationStatus.notStarted: 'not_started',
   MitigationStatus.inProgress: 'in_progress',
   MitigationStatus.completed: 'completed',
   MitigationStatus.verified: 'verified',
 };
 
-_ComplianceAssessment _$ComplianceAssessmentFromJson(
-        Map<String, dynamic> json) =>
-    _ComplianceAssessment(
-      normative: (json['normative'] as Map<String, dynamic>).map(
-        (k, e) => MapEntry(k, $enumDecode(_$ComplianceStatusEnumMap, e)),
-      ),
-      percentualeConformita: (json['percentualeConformita'] as num).toDouble(),
-      gaps: (json['gaps'] as List<dynamic>)
-          .map((e) => ComplianceGap.fromJson(e as Map<String, dynamic>))
-          .toList(),
-      requisiti: (json['requisiti'] as List<dynamic>)
-          .map((e) => ComplianceRequirement.fromJson(e as Map<String, dynamic>))
-          .toList(),
-      dataValutazione: json['dataValutazione'] == null
+_$MitigationImpl _$$MitigationImplFromJson(Map<String, dynamic> json) =>
+    _$MitigationImpl(
+      id: json['id'] as String,
+      rischioId: json['rischioId'] as String,
+      titolo: json['titolo'] as String,
+      descrizione: json['descrizione'] as String,
+      stato: $enumDecode(_$MitigationStatusEnumMap, json['stato']),
+      priorita: $enumDecode(_$PriorityEnumMap, json['priorita']),
+      dataScadenza: json['dataScadenza'] == null
           ? null
-          : DateTime.parse(json['dataValutazione'] as String),
+          : DateTime.parse(json['dataScadenza'] as String),
+      dataCompletamento: json['dataCompletamento'] == null
+          ? null
+          : DateTime.parse(json['dataCompletamento'] as String),
+      responsabile: json['responsabile'] as String?,
+      azioni: (json['azioni'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList() ??
+          const [],
+      costoStimato: (json['costoStimato'] as num?)?.toDouble(),
+      efficaciaAttesa: (json['efficaciaAttesa'] as num?)?.toDouble(),
+    );
+
+Map<String, dynamic> _$$MitigationImplToJson(_$MitigationImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'rischioId': instance.rischioId,
+      'titolo': instance.titolo,
+      'descrizione': instance.descrizione,
+      'stato': _$MitigationStatusEnumMap[instance.stato]!,
+      'priorita': _$PriorityEnumMap[instance.priorita]!,
+      'dataScadenza': instance.dataScadenza?.toIso8601String(),
+      'dataCompletamento': instance.dataCompletamento?.toIso8601String(),
+      'responsabile': instance.responsabile,
+      'azioni': instance.azioni,
+      'costoStimato': instance.costoStimato,
+      'efficaciaAttesa': instance.efficaciaAttesa,
+    };
+
+const _$PriorityEnumMap = {
+  Priority.low: 'low',
+  Priority.medium: 'medium',
+  Priority.high: 'high',
+  Priority.urgent: 'urgent',
+};
+
+_$ComplianceAssessmentImpl _$$ComplianceAssessmentImplFromJson(
+        Map<String, dynamic> json) =>
+    _$ComplianceAssessmentImpl(
+      scoreComplessivo: (json['scoreComplessivo'] as num).toDouble(),
+      livelloCompliance:
+          $enumDecode(_$ComplianceLevelEnumMap, json['livelloCompliance']),
+      dataValutazione: DateTime.parse(json['dataValutazione'] as String),
+      complianceGap:
+          ComplianceGap.fromJson(json['complianceGap'] as Map<String, dynamic>),
+      complianceRequirement: ComplianceRequirement.fromJson(
+          json['complianceRequirement'] as Map<String, dynamic>),
+      items: (json['items'] as List<dynamic>)
+          .map((e) => ComplianceItem.fromJson(e as Map<String, dynamic>))
+          .toList(),
+      azioniCorrettive: (json['azioniCorrettive'] as List<dynamic>)
+          .map((e) => ComplianceAction.fromJson(e as Map<String, dynamic>))
+          .toList(),
+      note: json['note'] as String?,
       valutatore: json['valutatore'] as String?,
     );
 
-Map<String, dynamic> _$ComplianceAssessmentToJson(
-        _ComplianceAssessment instance) =>
+Map<String, dynamic> _$$ComplianceAssessmentImplToJson(
+        _$ComplianceAssessmentImpl instance) =>
     <String, dynamic>{
-      'normative': instance.normative
-          .map((k, e) => MapEntry(k, _$ComplianceStatusEnumMap[e]!)),
-      'percentualeConformita': instance.percentualeConformita,
-      'gaps': instance.gaps,
-      'requisiti': instance.requisiti,
-      'dataValutazione': instance.dataValutazione?.toIso8601String(),
+      'scoreComplessivo': instance.scoreComplessivo,
+      'livelloCompliance':
+          _$ComplianceLevelEnumMap[instance.livelloCompliance]!,
+      'dataValutazione': instance.dataValutazione.toIso8601String(),
+      'complianceGap': instance.complianceGap,
+      'complianceRequirement': instance.complianceRequirement,
+      'items': instance.items,
+      'azioniCorrettive': instance.azioniCorrettive,
+      'note': instance.note,
       'valutatore': instance.valutatore,
+    };
+
+const _$ComplianceLevelEnumMap = {
+  ComplianceLevel.nonCompliant: 'non_compliant',
+  ComplianceLevel.partiallyCompliant: 'partially_compliant',
+  ComplianceLevel.mostlyCompliant: 'mostly_compliant',
+  ComplianceLevel.fullyCompliant: 'fully_compliant',
+};
+
+_$ComplianceGapImpl _$$ComplianceGapImplFromJson(Map<String, dynamic> json) =>
+    _$ComplianceGapImpl(
+      totaleRequisiti: (json['totaleRequisiti'] as num).toInt(),
+      requisitiConformi: (json['requisitiConformi'] as num).toInt(),
+      requisitiParziali: (json['requisitiParziali'] as num).toInt(),
+      requisitiNonConformi: (json['requisitiNonConformi'] as num).toInt(),
+      percentualeConformita: (json['percentualeConformita'] as num).toDouble(),
+      areeNonConformi: (json['areeNonConformi'] as List<dynamic>)
+          .map((e) => e as String)
+          .toList(),
+    );
+
+Map<String, dynamic> _$$ComplianceGapImplToJson(_$ComplianceGapImpl instance) =>
+    <String, dynamic>{
+      'totaleRequisiti': instance.totaleRequisiti,
+      'requisitiConformi': instance.requisitiConformi,
+      'requisitiParziali': instance.requisitiParziali,
+      'requisitiNonConformi': instance.requisitiNonConformi,
+      'percentualeConformita': instance.percentualeConformita,
+      'areeNonConformi': instance.areeNonConformi,
+    };
+
+_$ComplianceRequirementImpl _$$ComplianceRequirementImplFromJson(
+        Map<String, dynamic> json) =>
+    _$ComplianceRequirementImpl(
+      id: json['id'] as String,
+      normativa: json['normativa'] as String,
+      articolo: json['articolo'] as String,
+      descrizione: json['descrizione'] as String,
+      applicabile: json['applicabile'] as bool,
+      stato: $enumDecode(_$ComplianceStatusEnumMap, json['stato']),
+      evidenza: json['evidenza'] as String?,
+      note: json['note'] as String?,
+    );
+
+Map<String, dynamic> _$$ComplianceRequirementImplToJson(
+        _$ComplianceRequirementImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'normativa': instance.normativa,
+      'articolo': instance.articolo,
+      'descrizione': instance.descrizione,
+      'applicabile': instance.applicabile,
+      'stato': _$ComplianceStatusEnumMap[instance.stato]!,
+      'evidenza': instance.evidenza,
+      'note': instance.note,
     };
 
 const _$ComplianceStatusEnumMap = {
@@ -296,50 +409,81 @@ const _$ComplianceStatusEnumMap = {
   ComplianceStatus.notApplicable: 'not_applicable',
 };
 
-_ComplianceGap _$ComplianceGapFromJson(Map<String, dynamic> json) =>
-    _ComplianceGap(
+_$ComplianceItemImpl _$$ComplianceItemImplFromJson(Map<String, dynamic> json) =>
+    _$ComplianceItemImpl(
       id: json['id'] as String,
-      normativa: json['normativa'] as String,
-      articolo: json['articolo'] as String,
-      descrizione: json['descrizione'] as String,
-      status: $enumDecode(_$ComplianceStatusEnumMap, json['status']),
-      azioneSuggerita: json['azioneSuggerita'] as String,
-      priorita: json['priorita'] as String? ?? 'medium',
-    );
-
-Map<String, dynamic> _$ComplianceGapToJson(_ComplianceGap instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'normativa': instance.normativa,
-      'articolo': instance.articolo,
-      'descrizione': instance.descrizione,
-      'status': _$ComplianceStatusEnumMap[instance.status]!,
-      'azioneSuggerita': instance.azioneSuggerita,
-      'priorita': instance.priorita,
-    };
-
-_ComplianceRequirement _$ComplianceRequirementFromJson(
-        Map<String, dynamic> json) =>
-    _ComplianceRequirement(
-      id: json['id'] as String,
-      normativa: json['normativa'] as String,
       categoria: json['categoria'] as String,
+      requisito: json['requisito'] as String,
       descrizione: json['descrizione'] as String,
-      applicabile: json['applicabile'] as bool,
-      status: $enumDecode(_$ComplianceStatusEnumMap, json['status']),
-      evidenza: json['evidenza'] as String?,
+      stato: $enumDecode(_$ComplianceStatusEnumMap, json['stato']),
+      evidenza: json['evidenza'] as String,
+      documenti: (json['documenti'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList() ??
+          const [],
+      dataVerifica: json['dataVerifica'] == null
+          ? null
+          : DateTime.parse(json['dataVerifica'] as String),
+      verificatore: json['verificatore'] as String?,
       note: json['note'] as String?,
     );
 
-Map<String, dynamic> _$ComplianceRequirementToJson(
-        _ComplianceRequirement instance) =>
+Map<String, dynamic> _$$ComplianceItemImplToJson(
+        _$ComplianceItemImpl instance) =>
     <String, dynamic>{
       'id': instance.id,
-      'normativa': instance.normativa,
       'categoria': instance.categoria,
+      'requisito': instance.requisito,
       'descrizione': instance.descrizione,
-      'applicabile': instance.applicabile,
-      'status': _$ComplianceStatusEnumMap[instance.status]!,
+      'stato': _$ComplianceStatusEnumMap[instance.stato]!,
       'evidenza': instance.evidenza,
+      'documenti': instance.documenti,
+      'dataVerifica': instance.dataVerifica?.toIso8601String(),
+      'verificatore': instance.verificatore,
       'note': instance.note,
     };
+
+_$ComplianceActionImpl _$$ComplianceActionImplFromJson(
+        Map<String, dynamic> json) =>
+    _$ComplianceActionImpl(
+      id: json['id'] as String,
+      itemId: json['itemId'] as String,
+      titolo: json['titolo'] as String,
+      descrizione: json['descrizione'] as String,
+      stato: $enumDecode(_$ActionStatusEnumMap, json['stato']),
+      priorita: $enumDecode(_$PriorityEnumMap, json['priorita']),
+      dataScadenza: json['dataScadenza'] == null
+          ? null
+          : DateTime.parse(json['dataScadenza'] as String),
+      dataCompletamento: json['dataCompletamento'] == null
+          ? null
+          : DateTime.parse(json['dataCompletamento'] as String),
+      responsabile: json['responsabile'] as String?,
+      steps:
+          (json['steps'] as List<dynamic>?)?.map((e) => e as String).toList() ??
+              const [],
+      costoStimato: (json['costoStimato'] as num?)?.toDouble(),
+    );
+
+Map<String, dynamic> _$$ComplianceActionImplToJson(
+        _$ComplianceActionImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'itemId': instance.itemId,
+      'titolo': instance.titolo,
+      'descrizione': instance.descrizione,
+      'stato': _$ActionStatusEnumMap[instance.stato]!,
+      'priorita': _$PriorityEnumMap[instance.priorita]!,
+      'dataScadenza': instance.dataScadenza?.toIso8601String(),
+      'dataCompletamento': instance.dataCompletamento?.toIso8601String(),
+      'responsabile': instance.responsabile,
+      'steps': instance.steps,
+      'costoStimato': instance.costoStimato,
+    };
+
+const _$ActionStatusEnumMap = {
+  ActionStatus.pending: 'pending',
+  ActionStatus.inProgress: 'in_progress',
+  ActionStatus.completed: 'completed',
+  ActionStatus.cancelled: 'cancelled',
+};

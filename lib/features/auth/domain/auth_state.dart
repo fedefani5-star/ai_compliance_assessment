@@ -5,14 +5,11 @@ import 'user_model.dart';
 
 part 'auth_state.freezed.dart';
 
-/// Stati possibili per l'autenticazione
 @freezed
 class AuthState with _$AuthState {
-  const AuthState._(); // Aggiungi questo per metodi custom
-
-  const factory AuthState.initial() = Initial;
-  const factory AuthState.loading() = Loading;
-  const factory AuthState.authenticated(UserModel user) = Authenticated;
-  const factory AuthState.unauthenticated() = Unauthenticated;
-  const factory AuthState.error(String message) = Error;
+  const factory AuthState.initial() = _Initial;
+  const factory AuthState.loading() = _Loading;
+  const factory AuthState.authenticated(UserModel user) = _Authenticated;
+  const factory AuthState.unauthenticated() = _Unauthenticated;
+  const factory AuthState.error(String message) = _Error;
 }
